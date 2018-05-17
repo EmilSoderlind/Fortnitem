@@ -1,0 +1,117 @@
+{
+  'version': 0,
+  'case-sensitive': 'false',
+  'roots': [
+    {
+      'type': 'directory',
+      'name': "/Users/Emil/Grov-Filer/Xcode_kod/Fortn-item/P/Debug-iphoneos/GoogleToolboxForMac/GoogleToolboxForMac.framework/Headers",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "GTMDefines.h",
+          'external-contents': "/Users/Emil/Grov-Filer/Xcode_kod/Fortn-item/Pods/GoogleToolboxForMac/GTMDefines.h"
+        },
+        {
+          'type': 'file',
+          'name': "GTMNSData+zlib.h",
+          'external-contents': "/Users/Emil/Grov-Filer/Xcode_kod/Fortn-item/Pods/GoogleToolboxForMac/Foundation/GTMNSData+zlib.h"
+        },
+        {
+          'type': 'file',
+          'name': "GoogleToolboxForMac-Swift.h",
+          'external-contents': "/Users/Emil/Grov-Filer/Xcode_kod/Fortn-item/P/Debug-iphoneos/GoogleToolboxForMac/GoogleToolboxForMac.framework/Headers/GoogleToolboxForMac-Swift.h"
+        },
+        {
+          'type': 'file',
+          'name': "GoogleToolboxForMac-umbrella.h",
+          'external-contents': "/Users/Emil/Grov-Filer/Xcode_kod/Fortn-item/Pods/Target Support Files/GoogleToolboxForMac/GoogleToolboxForMac-umbrella.h"
+        }
+      ]
+    },
+    {
+      'type': 'directory',
+      'name': "/Users/Emil/Grov-Filer/Xcode_kod/Fortn-item/P/Debug-iphoneos/GoogleToolboxForMac/GoogleToolboxForMac.framework/Modules",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "module.modulemap",
+          'external-contents': "/Users/Emil/Grov-Filer/Xcode_kod/Fortn-item/B/Pods.build/Debug-iphoneos/GoogleToolboxForMac.build/module.modulemap"
+        }
+      ]
+    },
+    {
+      'type': 'directory',
+      'name': "/Users/Emil/Grov-Filer/Xcode_kod/Fortn-item/P/Debug-iphoneos/Pods_Fortn_item.framework/Headers",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "Pods-Fortn-item-umbrella.h",
+          'external-contents': "/Users/Emil/Grov-Filer/Xcode_kod/Fortn-item/Pods/Target Support Files/Pods-Fortn-item/Pods-Fortn-item-umbrella.h"
+        },
+        {
+          'type': 'file',
+          'name': "Pods_Fortn_item-Swift.h",
+          'external-contents': "/Users/Emil/Grov-Filer/Xcode_kod/Fortn-item/P/Debug-iphoneos/Pods_Fortn_item.framework/Headers/Pods_Fortn_item-Swift.h"
+        }
+      ]
+    },
+    {
+      'type': 'directory',
+      'name': "/Users/Emil/Grov-Filer/Xcode_kod/Fortn-item/P/Debug-iphoneos/Pods_Fortn_item.framework/Modules",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "module.modulemap",
+          'external-contents': "/Users/Emil/Grov-Filer/Xcode_kod/Fortn-item/B/Pods.build/Debug-iphoneos/Pods-Fortn-item.build/module.modulemap"
+        }
+      ]
+    },
+    {
+      'type': 'directory',
+      'name': "/Users/Emil/Grov-Filer/Xcode_kod/Fortn-item/P/Debug-iphoneos/nanopb/nanopb.framework/Headers",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "nanopb-Swift.h",
+          'external-contents': "/Users/Emil/Grov-Filer/Xcode_kod/Fortn-item/P/Debug-iphoneos/nanopb/nanopb.framework/Headers/nanopb-Swift.h"
+        },
+        {
+          'type': 'file',
+          'name': "nanopb-umbrella.h",
+          'external-contents': "/Users/Emil/Grov-Filer/Xcode_kod/Fortn-item/Pods/Target Support Files/nanopb/nanopb-umbrella.h"
+        },
+        {
+          'type': 'file',
+          'name': "pb.h",
+          'external-contents': "/Users/Emil/Grov-Filer/Xcode_kod/Fortn-item/Pods/nanopb/pb.h"
+        },
+        {
+          'type': 'file',
+          'name': "pb_common.h",
+          'external-contents': "/Users/Emil/Grov-Filer/Xcode_kod/Fortn-item/Pods/nanopb/pb_common.h"
+        },
+        {
+          'type': 'file',
+          'name': "pb_decode.h",
+          'external-contents': "/Users/Emil/Grov-Filer/Xcode_kod/Fortn-item/Pods/nanopb/pb_decode.h"
+        },
+        {
+          'type': 'file',
+          'name': "pb_encode.h",
+          'external-contents': "/Users/Emil/Grov-Filer/Xcode_kod/Fortn-item/Pods/nanopb/pb_encode.h"
+        }
+      ]
+    },
+    {
+      'type': 'directory',
+      'name': "/Users/Emil/Grov-Filer/Xcode_kod/Fortn-item/P/Debug-iphoneos/nanopb/nanopb.framework/Modules",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "module.modulemap",
+          'external-contents': "/Users/Emil/Grov-Filer/Xcode_kod/Fortn-item/B/Pods.build/Debug-iphoneos/nanopb.build/module.modulemap"
+        }
+      ]
+    }
+  ]
+}
