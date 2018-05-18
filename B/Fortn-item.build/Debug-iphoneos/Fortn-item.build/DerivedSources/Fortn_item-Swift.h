@@ -196,19 +196,18 @@ SWIFT_CLASS("_TtC10Fortn_item11AppDelegate")
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
-
-
 @class NSBundle;
 @class NSCoder;
 
-SWIFT_CLASS("_TtC10Fortn_item14ViewController")
-@interface ViewController : UIViewController
-@property (nonatomic, weak) IBOutlet UIImageView * _Null_unspecified testImage;
+SWIFT_CLASS("_TtC10Fortn_item19StartViewController")
+@interface StartViewController : UIViewController
 - (void)viewDidLoad;
 - (void)didReceiveMemoryWarning;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
+
+
 
 #if __has_attribute(external_source_symbol)
 # pragma clang attribute pop

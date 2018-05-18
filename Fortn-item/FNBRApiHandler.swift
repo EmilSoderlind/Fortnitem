@@ -12,7 +12,7 @@ import UIKit
 // Class responsible for talking directly to FNBR
 class FNBRApiHandler {
     
-    var theView:ViewController?
+    var theView:StartViewController?
     
     func parseCurrentItems(){
         

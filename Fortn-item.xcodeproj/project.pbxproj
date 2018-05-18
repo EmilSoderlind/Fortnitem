@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		202E6C4020AA1B4500FFC784 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 202E6C3F20AA1B4500FFC784 /* AppDelegate.swift */; };
-		202E6C4220AA1B4500FFC784 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 202E6C4120AA1B4500FFC784 /* ViewController.swift */; };
+		202E6C4220AA1B4500FFC784 /* StartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 202E6C4120AA1B4500FFC784 /* StartViewController.swift */; };
 		202E6C4520AA1B4500FFC784 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 202E6C4320AA1B4500FFC784 /* Main.storyboard */; };
 		202E6C4820AA1B4500FFC784 /* Fortn_item.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 202E6C4620AA1B4500FFC784 /* Fortn_item.xcdatamodeld */; };
 		202E6C4A20AA1B4C00FFC784 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 202E6C4920AA1B4C00FFC784 /* Assets.xcassets */; };
@@ -25,7 +25,7 @@
 		1246BDF48BDA7676471FCB14 /* Pods-Fortn-item.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Fortn-item.release.xcconfig"; path = "Pods/Target Support Files/Pods-Fortn-item/Pods-Fortn-item.release.xcconfig"; sourceTree = "<group>"; };
 		202E6C3C20AA1B4500FFC784 /* Fortn-item.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Fortn-item.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		202E6C3F20AA1B4500FFC784 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		202E6C4120AA1B4500FFC784 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		202E6C4120AA1B4500FFC784 /* StartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartViewController.swift; sourceTree = "<group>"; };
 		202E6C4420AA1B4500FFC784 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		202E6C4720AA1B4500FFC784 /* Fortn_item.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Fortn_item.xcdatamodel; sourceTree = "<group>"; };
 		202E6C4920AA1B4C00FFC784 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -75,7 +75,7 @@
 			isa = PBXGroup;
 			children = (
 				202E6C3F20AA1B4500FFC784 /* AppDelegate.swift */,
-				202E6C4120AA1B4500FFC784 /* ViewController.swift */,
+				202E6C4120AA1B4500FFC784 /* StartViewController.swift */,
 				202E6C4320AA1B4500FFC784 /* Main.storyboard */,
 				202E6C4920AA1B4C00FFC784 /* Assets.xcassets */,
 				202E6C4B20AA1B4C00FFC784 /* LaunchScreen.storyboard */,
@@ -231,7 +231,7 @@
 				20ED64EF20AE30B8002FA6E9 /* FullFetch.swift in Sources */,
 				20ED64F120AE314A002FA6E9 /* dataStruct.swift in Sources */,
 				202E6C4820AA1B4500FFC784 /* Fortn_item.xcdatamodeld in Sources */,
-				202E6C4220AA1B4500FFC784 /* ViewController.swift in Sources */,
+				202E6C4220AA1B4500FFC784 /* StartViewController.swift in Sources */,
 				2093523820AEB7B8006AC361 /* imageExt.swift in Sources */,
 				202E6C4020AA1B4500FFC784 /* AppDelegate.swift in Sources */,
 				202E6C5520AA242700FFC784 /* FNBRApiHandler.swift in Sources */,

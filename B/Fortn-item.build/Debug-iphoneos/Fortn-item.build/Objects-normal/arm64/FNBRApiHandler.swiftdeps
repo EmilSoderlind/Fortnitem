@@ -20,13 +20,13 @@ depends-top-level:
 - !private "HTTPURLResponse"
 - !private "JSONDecoder"
 - !private "NSMutableURLRequest"
+- "StartViewController"
 - !private "StringLiteralType"
 - "URL"
 - !private "URLRequest"
 - "URLResponse"
 - !private "URLSession"
 - "UnicodeScalarType"
-- "ViewController"
 - !private "print"
 depends-member:
 - !private ["s23BidirectionalCollectionP", "init"]
@@ -105,11 +105,11 @@ depends-member:
 - !private ["10Fortn_item14FNBRApiHandlerC", "HTTPURLResponse"]
 - !private ["10Fortn_item14FNBRApiHandlerC", "JSONDecoder"]
 - !private ["10Fortn_item14FNBRApiHandlerC", "NSMutableURLRequest"]
+- ["10Fortn_item14FNBRApiHandlerC", "StartViewController"]
 - ["10Fortn_item14FNBRApiHandlerC", "URL"]
 - !private ["10Fortn_item14FNBRApiHandlerC", "URLRequest"]
 - ["10Fortn_item14FNBRApiHandlerC", "URLResponse"]
 - !private ["10Fortn_item14FNBRApiHandlerC", "URLSession"]
-- ["10Fortn_item14FNBRApiHandlerC", "ViewController"]
 - ["10Fortn_item14FNBRApiHandlerC", "deinit"]
 - ["10Fortn_item14FNBRApiHandlerC", "downloadImage"]
 - ["10Fortn_item14FNBRApiHandlerC", "getDataFromUrl"]
@@ -312,4 +312,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
-interface-hash: "a8f718d68e8f8d8cac3cbc6a7696fabc"
+interface-hash: "b6915f10ec7088421123ab5fd60a252a"
