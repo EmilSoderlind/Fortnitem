@@ -15,15 +15,7 @@ class StartViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
-        
-        let ap: FNBRApiHandler = FNBRApiHandler()
-        ap.theView = self
-        
-        
-        //ap.parseCurrentItems()
-        
-        //testImage.downloadedFrom(link: "https://image.fnbr.co/pickaxe/5afc0fa7b6e7f77dcfa32634/gallery.jpg")
-        
+      
         
     }
 

@@ -8,13 +8,16 @@
 
 /* Begin PBXBuildFile section */
 		202E6C4020AA1B4500FFC784 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 202E6C3F20AA1B4500FFC784 /* AppDelegate.swift */; };
-		202E6C4220AA1B4500FFC784 /* StartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 202E6C4120AA1B4500FFC784 /* StartViewController.swift */; };
 		202E6C4520AA1B4500FFC784 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 202E6C4320AA1B4500FFC784 /* Main.storyboard */; };
 		202E6C4820AA1B4500FFC784 /* Fortn_item.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 202E6C4620AA1B4500FFC784 /* Fortn_item.xcdatamodeld */; };
 		202E6C4A20AA1B4C00FFC784 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 202E6C4920AA1B4C00FFC784 /* Assets.xcassets */; };
 		202E6C4D20AA1B4C00FFC784 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 202E6C4B20AA1B4C00FFC784 /* LaunchScreen.storyboard */; };
 		202E6C5520AA242700FFC784 /* FNBRApiHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 202E6C5420AA242700FFC784 /* FNBRApiHandler.swift */; };
 		202E6C5720AA2C4F00FFC784 /* FortniteItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 202E6C5620AA2C4F00FFC784 /* FortniteItem.swift */; };
+		202E7F8D20AF45DC00B8D0FD /* TodaysTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 202E7F8C20AF45DC00B8D0FD /* TodaysTableViewController.swift */; };
+		202E7F8F20AF468700B8D0FD /* ItemTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 202E7F8E20AF468700B8D0FD /* ItemTableViewCell.swift */; };
+		202E7F9120AF4BD100B8D0FD /* gallery.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 202E7F9020AF4BD000B8D0FD /* gallery.jpg */; };
+		202E7F9320AF776600B8D0FD /* ItemModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 202E7F9220AF776600B8D0FD /* ItemModel.swift */; };
 		2093523820AEB7B8006AC361 /* imageExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2093523720AEB7B8006AC361 /* imageExt.swift */; };
 		20ED64EF20AE30B8002FA6E9 /* FullFetch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20ED64EE20AE30B8002FA6E9 /* FullFetch.swift */; };
 		20ED64F120AE314A002FA6E9 /* dataStruct.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20ED64F020AE314A002FA6E9 /* dataStruct.swift */; };
@@ -25,7 +28,6 @@
 		1246BDF48BDA7676471FCB14 /* Pods-Fortn-item.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Fortn-item.release.xcconfig"; path = "Pods/Target Support Files/Pods-Fortn-item/Pods-Fortn-item.release.xcconfig"; sourceTree = "<group>"; };
 		202E6C3C20AA1B4500FFC784 /* Fortn-item.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Fortn-item.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		202E6C3F20AA1B4500FFC784 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		202E6C4120AA1B4500FFC784 /* StartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartViewController.swift; sourceTree = "<group>"; };
 		202E6C4420AA1B4500FFC784 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		202E6C4720AA1B4500FFC784 /* Fortn_item.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Fortn_item.xcdatamodel; sourceTree = "<group>"; };
 		202E6C4920AA1B4C00FFC784 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -33,6 +35,10 @@
 		202E6C4E20AA1B4C00FFC784 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		202E6C5420AA242700FFC784 /* FNBRApiHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FNBRApiHandler.swift; sourceTree = "<group>"; };
 		202E6C5620AA2C4F00FFC784 /* FortniteItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FortniteItem.swift; sourceTree = "<group>"; };
+		202E7F8C20AF45DC00B8D0FD /* TodaysTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodaysTableViewController.swift; sourceTree = "<group>"; };
+		202E7F8E20AF468700B8D0FD /* ItemTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemTableViewCell.swift; sourceTree = "<group>"; };
+		202E7F9020AF4BD000B8D0FD /* gallery.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = gallery.jpg; sourceTree = "<group>"; };
+		202E7F9220AF776600B8D0FD /* ItemModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemModel.swift; sourceTree = "<group>"; };
 		2093523720AEB7B8006AC361 /* imageExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = imageExt.swift; sourceTree = "<group>"; };
 		20ED64EE20AE30B8002FA6E9 /* FullFetch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FullFetch.swift; sourceTree = "<group>"; };
 		20ED64F020AE314A002FA6E9 /* dataStruct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = dataStruct.swift; sourceTree = "<group>"; };
@@ -74,14 +80,17 @@
 		202E6C3E20AA1B4500FFC784 /* Fortn-item */ = {
 			isa = PBXGroup;
 			children = (
+				202E7F9020AF4BD000B8D0FD /* gallery.jpg */,
 				202E6C3F20AA1B4500FFC784 /* AppDelegate.swift */,
-				202E6C4120AA1B4500FFC784 /* StartViewController.swift */,
+				202E7F8C20AF45DC00B8D0FD /* TodaysTableViewController.swift */,
+				202E7F8E20AF468700B8D0FD /* ItemTableViewCell.swift */,
 				202E6C4320AA1B4500FFC784 /* Main.storyboard */,
 				202E6C4920AA1B4C00FFC784 /* Assets.xcassets */,
 				202E6C4B20AA1B4C00FFC784 /* LaunchScreen.storyboard */,
 				202E6C4E20AA1B4C00FFC784 /* Info.plist */,
 				202E6C4620AA1B4500FFC784 /* Fortn_item.xcdatamodeld */,
 				202E6C5420AA242700FFC784 /* FNBRApiHandler.swift */,
+				202E7F9220AF776600B8D0FD /* ItemModel.swift */,
 				202E6C5620AA2C4F00FFC784 /* FortniteItem.swift */,
 				20ED64EE20AE30B8002FA6E9 /* FullFetch.swift */,
 				20ED64F020AE314A002FA6E9 /* dataStruct.swift */,
@@ -175,6 +184,7 @@
 			files = (
 				202E6C4D20AA1B4C00FFC784 /* LaunchScreen.storyboard in Resources */,
 				202E6C4A20AA1B4C00FFC784 /* Assets.xcassets in Resources */,
+				202E7F9120AF4BD100B8D0FD /* gallery.jpg in Resources */,
 				202E6C4520AA1B4500FFC784 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -227,11 +237,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				202E7F9320AF776600B8D0FD /* ItemModel.swift in Sources */,
 				202E6C5720AA2C4F00FFC784 /* FortniteItem.swift in Sources */,
+				202E7F8F20AF468700B8D0FD /* ItemTableViewCell.swift in Sources */,
 				20ED64EF20AE30B8002FA6E9 /* FullFetch.swift in Sources */,
+				202E7F8D20AF45DC00B8D0FD /* TodaysTableViewController.swift in Sources */,
 				20ED64F120AE314A002FA6E9 /* dataStruct.swift in Sources */,
 				202E6C4820AA1B4500FFC784 /* Fortn_item.xcdatamodeld in Sources */,
-				202E6C4220AA1B4500FFC784 /* StartViewController.swift in Sources */,
 				2093523820AEB7B8006AC361 /* imageExt.swift in Sources */,
 				202E6C4020AA1B4500FFC784 /* AppDelegate.swift in Sources */,
 				202E6C5520AA242700FFC784 /* FNBRApiHandler.swift in Sources */,

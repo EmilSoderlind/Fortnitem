@@ -10,15 +10,13 @@ import Foundation
 import UIKit
 
 struct FortniteItem:Decodable {
-    
     var id: String
     var name: String
     var price: String
     var priceIcon: String
     var priceIconLink: String
-    var images: [String: String]
+    var images: [String : String]
     var rarity: String
     var type: String
     var readableType: String
-    
 }

@@ -49,6 +49,7 @@ depends-member:
 - ["s23CustomStringConvertibleP", "stringValue"]
 - ["s9DecodableP", ""]
 - !private ["s9DecodableP", "_getBuiltinLogicValue"]
+- !private ["s9DecodableP", "daily"]
 - !private ["s9DecodableP", "date"]
 - !private ["s9DecodableP", "featured"]
 - ["s9DecodableP", "init"]
@@ -99,6 +100,7 @@ depends-member:
 - !private ["10Fortn_item4dataV", "CodingKeys"]
 - ["10Fortn_item4dataV", "FortniteItem"]
 - ["10Fortn_item4dataV", "String"]
+- ["10Fortn_item4dataV", "daily"]
 - ["10Fortn_item4dataV", "date"]
 - ["10Fortn_item4dataV", "deinit"]
 - ["10Fortn_item4dataV", "featured"]
@@ -171,4 +173,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.3.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.3.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.3.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
-interface-hash: "0ae17e88f306774dc45cb91baa99601f"
+interface-hash: "9be00ebf6446d85e5f4ea707922b0c2e"

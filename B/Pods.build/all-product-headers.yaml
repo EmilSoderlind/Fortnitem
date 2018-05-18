@@ -4,7 +4,7 @@
   'roots': [
     {
       'type': 'directory',
-      'name': "/Users/Emil/Grov-Filer/Xcode_kod/Fortn-item/P/Debug-iphoneos/GoogleToolboxForMac/GoogleToolboxForMac.framework/Headers",
+      'name': "/Users/Emil/Grov-Filer/Xcode_kod/Fortn-item/P/Debug-iphonesimulator/GoogleToolboxForMac/GoogleToolboxForMac.framework/Headers",
       'contents': [
         {
           'type': 'file',
@@ -19,7 +19,7 @@
         {
           'type': 'file',
           'name': "GoogleToolboxForMac-Swift.h",
-          'external-contents': "/Users/Emil/Grov-Filer/Xcode_kod/Fortn-item/P/Debug-iphoneos/GoogleToolboxForMac/GoogleToolboxForMac.framework/Headers/GoogleToolboxForMac-Swift.h"
+          'external-contents': "/Users/Emil/Grov-Filer/Xcode_kod/Fortn-item/P/Debug-iphonesimulator/GoogleToolboxForMac/GoogleToolboxForMac.framework/Headers/GoogleToolboxForMac-Swift.h"
         },
         {
           'type': 'file',
@@ -30,18 +30,18 @@
     },
     {
       'type': 'directory',
-      'name': "/Users/Emil/Grov-Filer/Xcode_kod/Fortn-item/P/Debug-iphoneos/GoogleToolboxForMac/GoogleToolboxForMac.framework/Modules",
+      'name': "/Users/Emil/Grov-Filer/Xcode_kod/Fortn-item/P/Debug-iphonesimulator/GoogleToolboxForMac/GoogleToolboxForMac.framework/Modules",
       'contents': [
         {
           'type': 'file',
           'name': "module.modulemap",
-          'external-contents': "/Users/Emil/Grov-Filer/Xcode_kod/Fortn-item/B/Pods.build/Debug-iphoneos/GoogleToolboxForMac.build/module.modulemap"
+          'external-contents': "/Users/Emil/Grov-Filer/Xcode_kod/Fortn-item/B/Pods.build/Debug-iphonesimulator/GoogleToolboxForMac.build/module.modulemap"
         }
       ]
     },
     {
       'type': 'directory',
-      'name': "/Users/Emil/Grov-Filer/Xcode_kod/Fortn-item/P/Debug-iphoneos/Pods_Fortn_item.framework/Headers",
+      'name': "/Users/Emil/Grov-Filer/Xcode_kod/Fortn-item/P/Debug-iphonesimulator/Pods_Fortn_item.framework/Headers",
       'contents': [
         {
           'type': 'file',
@@ -51,29 +51,29 @@
         {
           'type': 'file',
           'name': "Pods_Fortn_item-Swift.h",
-          'external-contents': "/Users/Emil/Grov-Filer/Xcode_kod/Fortn-item/P/Debug-iphoneos/Pods_Fortn_item.framework/Headers/Pods_Fortn_item-Swift.h"
+          'external-contents': "/Users/Emil/Grov-Filer/Xcode_kod/Fortn-item/P/Debug-iphonesimulator/Pods_Fortn_item.framework/Headers/Pods_Fortn_item-Swift.h"
         }
       ]
     },
     {
       'type': 'directory',
-      'name': "/Users/Emil/Grov-Filer/Xcode_kod/Fortn-item/P/Debug-iphoneos/Pods_Fortn_item.framework/Modules",
+      'name': "/Users/Emil/Grov-Filer/Xcode_kod/Fortn-item/P/Debug-iphonesimulator/Pods_Fortn_item.framework/Modules",
       'contents': [
         {
           'type': 'file',
           'name': "module.modulemap",
-          'external-contents': "/Users/Emil/Grov-Filer/Xcode_kod/Fortn-item/B/Pods.build/Debug-iphoneos/Pods-Fortn-item.build/module.modulemap"
+          'external-contents': "/Users/Emil/Grov-Filer/Xcode_kod/Fortn-item/B/Pods.build/Debug-iphonesimulator/Pods-Fortn-item.build/module.modulemap"
         }
       ]
     },
     {
       'type': 'directory',
-      'name': "/Users/Emil/Grov-Filer/Xcode_kod/Fortn-item/P/Debug-iphoneos/nanopb/nanopb.framework/Headers",
+      'name': "/Users/Emil/Grov-Filer/Xcode_kod/Fortn-item/P/Debug-iphonesimulator/nanopb/nanopb.framework/Headers",
       'contents': [
         {
           'type': 'file',
           'name': "nanopb-Swift.h",
-          'external-contents': "/Users/Emil/Grov-Filer/Xcode_kod/Fortn-item/P/Debug-iphoneos/nanopb/nanopb.framework/Headers/nanopb-Swift.h"
+          'external-contents': "/Users/Emil/Grov-Filer/Xcode_kod/Fortn-item/P/Debug-iphonesimulator/nanopb/nanopb.framework/Headers/nanopb-Swift.h"
         },
         {
           'type': 'file',
@@ -104,12 +104,12 @@
     },
     {
       'type': 'directory',
-      'name': "/Users/Emil/Grov-Filer/Xcode_kod/Fortn-item/P/Debug-iphoneos/nanopb/nanopb.framework/Modules",
+      'name': "/Users/Emil/Grov-Filer/Xcode_kod/Fortn-item/P/Debug-iphonesimulator/nanopb/nanopb.framework/Modules",
       'contents': [
         {
           'type': 'file',
           'name': "module.modulemap",
-          'external-contents': "/Users/Emil/Grov-Filer/Xcode_kod/Fortn-item/B/Pods.build/Debug-iphoneos/nanopb.build/module.modulemap"
+          'external-contents': "/Users/Emil/Grov-Filer/Xcode_kod/Fortn-item/B/Pods.build/Debug-iphonesimulator/nanopb.build/module.modulemap"
         }
       ]
     }

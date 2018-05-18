@@ -12,7 +12,7 @@ import UIKit
 // Class responsible for talking directly to FNBR
 class FNBRApiHandler {
     
-    var theView:StartViewController?
+    var theView:TodaysTableViewController?
     
     func parseCurrentItems(){
         
@@ -51,17 +51,28 @@ class FNBRApiHandler {
             }
                         
             do {
-                let fetch = try JSONDecoder().decode(FullFetch.self, from: data)
+                
+                var dataString = String(NSString(data: data, encoding: String.Encoding.utf8.rawValue)!)
+
+                print("DataString before:",dataString)
+                
+                dataString = dataString.replacingOccurrences(of: ":false}", with: ":\"\"}", options: .literal, range: nil)
+
+                print("DataString after:",dataString)
+                
+                let fetch = try JSONDecoder().decode(FullFetch.self, from: dataString.data(using: String.Encoding.utf8)!)
                 
                 print(fetch)
                 
+                // When we got data, do stuff on main queue
                 DispatchQueue.main.async {
-
-
+                    
+                    
+                    
                 }
              
-            } catch let jsonErr {
-                print("Error serializing json:", jsonErr)
+            } catch let err {
+                print("Error serializing json:", err)
             }
             
             

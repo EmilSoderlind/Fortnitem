@@ -2,25 +2,25 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <array>
-	<string>FirebaseStorage</string>
 	<string>FirebaseCrash</string>
+	<string>CoreData</string>
 	<string>Crashlytics</string>
 	<string>GoogleMobileAds</string>
 	<string>FirebaseMessaging</string>
 	<string>FirebaseCore</string>
 	<string>Fabric</string>
 	<string>FirebaseDynamicLinks</string>
-	<string>CoreData</string>
 	<string>FirebaseAnalytics</string>
-	<string>FirebaseDatabase</string>
 	<string>FirebaseAuth</string>
+	<string>FirebaseDatabase</string>
 	<string>FirebaseAppIndexing</string>
+	<string>FirebaseFirestore</string>
 	<string>UIKit</string>
 	<string>Foundation</string>
-	<string>FirebaseFirestore</string>
 	<string>FirebaseInvites</string>
 	<string>FirebaseInstanceID</string>
 	<string>FirebasePerformance</string>
 	<string>FirebaseRemoteConfig</string>
+	<string>FirebaseStorage</string>
 </array>
 </plist>

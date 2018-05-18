@@ -12,6 +12,7 @@ struct data:Decodable {
     
     var date:String
     var featured:[FortniteItem]
+    var daily:[FortniteItem]
     
 }
 
