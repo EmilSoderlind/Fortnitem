@@ -15,6 +15,7 @@
 		202E6C4D20AA1B4C00FFC784 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 202E6C4B20AA1B4C00FFC784 /* LaunchScreen.storyboard */; };
 		202E6C5520AA242700FFC784 /* FNBRApiHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 202E6C5420AA242700FFC784 /* FNBRApiHandler.swift */; };
 		202E6C5720AA2C4F00FFC784 /* FortniteItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 202E6C5620AA2C4F00FFC784 /* FortniteItem.swift */; };
+		2093523820AEB7B8006AC361 /* imageExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2093523720AEB7B8006AC361 /* imageExt.swift */; };
 		20ED64EF20AE30B8002FA6E9 /* FullFetch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20ED64EE20AE30B8002FA6E9 /* FullFetch.swift */; };
 		20ED64F120AE314A002FA6E9 /* dataStruct.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20ED64F020AE314A002FA6E9 /* dataStruct.swift */; };
 		B6FEAB17AA264C205DE9CDAB /* Pods_Fortn_item.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EFDC17C51EF4154F51351655 /* Pods_Fortn_item.framework */; };
@@ -32,6 +33,7 @@
 		202E6C4E20AA1B4C00FFC784 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		202E6C5420AA242700FFC784 /* FNBRApiHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FNBRApiHandler.swift; sourceTree = "<group>"; };
 		202E6C5620AA2C4F00FFC784 /* FortniteItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FortniteItem.swift; sourceTree = "<group>"; };
+		2093523720AEB7B8006AC361 /* imageExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = imageExt.swift; sourceTree = "<group>"; };
 		20ED64EE20AE30B8002FA6E9 /* FullFetch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FullFetch.swift; sourceTree = "<group>"; };
 		20ED64F020AE314A002FA6E9 /* dataStruct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = dataStruct.swift; sourceTree = "<group>"; };
 		20ED64F220AE43A0002FA6E9 /* Fortn-item.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Fortn-item.entitlements"; sourceTree = "<group>"; };
@@ -84,6 +86,7 @@
 				20ED64EE20AE30B8002FA6E9 /* FullFetch.swift */,
 				20ED64F020AE314A002FA6E9 /* dataStruct.swift */,
 				20ED64F220AE43A0002FA6E9 /* Fortn-item.entitlements */,
+				2093523720AEB7B8006AC361 /* imageExt.swift */,
 			);
 			path = "Fortn-item";
 			sourceTree = "<group>";
@@ -229,6 +232,7 @@
 				20ED64F120AE314A002FA6E9 /* dataStruct.swift in Sources */,
 				202E6C4820AA1B4500FFC784 /* Fortn_item.xcdatamodeld in Sources */,
 				202E6C4220AA1B4500FFC784 /* ViewController.swift in Sources */,
+				2093523820AEB7B8006AC361 /* imageExt.swift in Sources */,
 				202E6C4020AA1B4500FFC784 /* AppDelegate.swift in Sources */,
 				202E6C5520AA242700FFC784 /* FNBRApiHandler.swift in Sources */,
 			);

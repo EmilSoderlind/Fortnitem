@@ -10,6 +10,7 @@ import UIKit
 
 class ViewController: UIViewController {
     
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -19,8 +20,10 @@ class ViewController: UIViewController {
         ap.theView = self
         
         
+        //ap.parseCurrentItems()
         
-        ap.parseCurrentItems()
+        //testImage.downloadedFrom(link: "https://image.fnbr.co/pickaxe/5afc0fa7b6e7f77dcfa32634/gallery.jpg")
+        
         
     }
 

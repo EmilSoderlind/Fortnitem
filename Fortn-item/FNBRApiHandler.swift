@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import UIKit
 
 // Class responsible for talking directly to FNBR
 class FNBRApiHandler {
@@ -55,7 +56,8 @@ class FNBRApiHandler {
                 print(fetch)
                 
                 DispatchQueue.main.async {
-                    self.theView?.updateTestLabel(s: fetch.data.featured[0].name)
+
+
                 }
              
             } catch let jsonErr {
@@ -67,6 +69,28 @@ class FNBRApiHandler {
             task.resume()
         
     }
+    
+    func downloadImage(url: URL) {
+        print("Download Started")
+        getDataFromUrl(url: url) { data, response, error in
+            guard let data = data, error == nil else { return }
+            print(response?.suggestedFilename ?? url.lastPathComponent)
+            print("Download Finished")
+            DispatchQueue.main.async() {
+                
+                
+                
+                //self.imageView.image = UIImage(data: data)
+            }
+        }
+    }
+    
+    func getDataFromUrl(url: URL, completion: @escaping (Data?, URLResponse?, Error?) -> ()) {
+        URLSession.shared.dataTask(with: url) { data, response, error in
+            completion(data, response, error)
+            }.resume()
+    }
+    
 }
     
 

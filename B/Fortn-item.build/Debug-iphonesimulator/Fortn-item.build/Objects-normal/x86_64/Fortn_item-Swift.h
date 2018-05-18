@@ -196,13 +196,14 @@ SWIFT_CLASS("_TtC10Fortn_item11AppDelegate")
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
-@class UILabel;
+
+
 @class NSBundle;
 @class NSCoder;
 
 SWIFT_CLASS("_TtC10Fortn_item14ViewController")
 @interface ViewController : UIViewController
-@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified testLabel;
+@property (nonatomic, weak) IBOutlet UIImageView * _Null_unspecified testImage;
 - (void)viewDidLoad;
 - (void)didReceiveMemoryWarning;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;

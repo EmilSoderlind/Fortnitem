@@ -1,10 +1,11 @@
 version: "Apple Swift version 4.1 (swiftlang-902.0.48 clang-902.0.37.1)"
 options: "a163f380f6d626becd09006bd5e791f3"
-build_time: [1526597426, 702278000]
+build_time: [1526628923, 657850000]
 inputs:
   "/Users/Emil/Grov-Filer/Xcode_kod/Fortn-item/Fortn-item/FortniteItem.swift": [1526595686, 0]
   "/Users/Emil/Grov-Filer/Xcode_kod/Fortn-item/Fortn-item/FullFetch.swift": [1526594194, 0]
   "/Users/Emil/Grov-Filer/Xcode_kod/Fortn-item/Fortn-item/dataStruct.swift": [1526596197, 0]
-  "/Users/Emil/Grov-Filer/Xcode_kod/Fortn-item/Fortn-item/ViewController.swift": [1526597289, 0]
-  "/Users/Emil/Grov-Filer/Xcode_kod/Fortn-item/Fortn-item/AppDelegate.swift": [1526596551, 0]
-  "/Users/Emil/Grov-Filer/Xcode_kod/Fortn-item/Fortn-item/FNBRApiHandler.swift": [1526597424, 0]
+  "/Users/Emil/Grov-Filer/Xcode_kod/Fortn-item/Fortn-item/ViewController.swift": [1526628923, 0]
+  "/Users/Emil/Grov-Filer/Xcode_kod/Fortn-item/Fortn-item/imageExt.swift": [1526628739, 0]
+  "/Users/Emil/Grov-Filer/Xcode_kod/Fortn-item/Fortn-item/AppDelegate.swift": [1526598639, 0]
+  "/Users/Emil/Grov-Filer/Xcode_kod/Fortn-item/Fortn-item/FNBRApiHandler.swift": [1526628633, 0]
