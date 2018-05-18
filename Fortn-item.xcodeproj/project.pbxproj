@@ -17,7 +17,7 @@
 		202E7F8D20AF45DC00B8D0FD /* TodaysTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 202E7F8C20AF45DC00B8D0FD /* TodaysTableViewController.swift */; };
 		202E7F8F20AF468700B8D0FD /* ItemTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 202E7F8E20AF468700B8D0FD /* ItemTableViewCell.swift */; };
 		202E7F9120AF4BD100B8D0FD /* gallery.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 202E7F9020AF4BD000B8D0FD /* gallery.jpg */; };
-		202E7F9320AF776600B8D0FD /* ItemModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 202E7F9220AF776600B8D0FD /* ItemModel.swift */; };
+		202E7F9520AF7B1900B8D0FD /* ItemModelList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 202E7F9420AF7B1900B8D0FD /* ItemModelList.swift */; };
 		2093523820AEB7B8006AC361 /* imageExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2093523720AEB7B8006AC361 /* imageExt.swift */; };
 		20ED64EF20AE30B8002FA6E9 /* FullFetch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20ED64EE20AE30B8002FA6E9 /* FullFetch.swift */; };
 		20ED64F120AE314A002FA6E9 /* dataStruct.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20ED64F020AE314A002FA6E9 /* dataStruct.swift */; };
@@ -38,7 +38,7 @@
 		202E7F8C20AF45DC00B8D0FD /* TodaysTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodaysTableViewController.swift; sourceTree = "<group>"; };
 		202E7F8E20AF468700B8D0FD /* ItemTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemTableViewCell.swift; sourceTree = "<group>"; };
 		202E7F9020AF4BD000B8D0FD /* gallery.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = gallery.jpg; sourceTree = "<group>"; };
-		202E7F9220AF776600B8D0FD /* ItemModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemModel.swift; sourceTree = "<group>"; };
+		202E7F9420AF7B1900B8D0FD /* ItemModelList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemModelList.swift; sourceTree = "<group>"; };
 		2093523720AEB7B8006AC361 /* imageExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = imageExt.swift; sourceTree = "<group>"; };
 		20ED64EE20AE30B8002FA6E9 /* FullFetch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FullFetch.swift; sourceTree = "<group>"; };
 		20ED64F020AE314A002FA6E9 /* dataStruct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = dataStruct.swift; sourceTree = "<group>"; };
@@ -90,7 +90,7 @@
 				202E6C4E20AA1B4C00FFC784 /* Info.plist */,
 				202E6C4620AA1B4500FFC784 /* Fortn_item.xcdatamodeld */,
 				202E6C5420AA242700FFC784 /* FNBRApiHandler.swift */,
-				202E7F9220AF776600B8D0FD /* ItemModel.swift */,
+				202E7F9420AF7B1900B8D0FD /* ItemModelList.swift */,
 				202E6C5620AA2C4F00FFC784 /* FortniteItem.swift */,
 				20ED64EE20AE30B8002FA6E9 /* FullFetch.swift */,
 				20ED64F020AE314A002FA6E9 /* dataStruct.swift */,
@@ -199,11 +199,15 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-Fortn-item/Pods-Fortn-item-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/AlamofireImage/AlamofireImage.framework",
 				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
 				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AlamofireImage.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
 			);
@@ -237,12 +241,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				202E7F9320AF776600B8D0FD /* ItemModel.swift in Sources */,
 				202E6C5720AA2C4F00FFC784 /* FortniteItem.swift in Sources */,
 				202E7F8F20AF468700B8D0FD /* ItemTableViewCell.swift in Sources */,
 				20ED64EF20AE30B8002FA6E9 /* FullFetch.swift in Sources */,
 				202E7F8D20AF45DC00B8D0FD /* TodaysTableViewController.swift in Sources */,
 				20ED64F120AE314A002FA6E9 /* dataStruct.swift in Sources */,
+				202E7F9520AF7B1900B8D0FD /* ItemModelList.swift in Sources */,
 				202E6C4820AA1B4500FFC784 /* Fortn_item.xcdatamodeld in Sources */,
 				2093523820AEB7B8006AC361 /* imageExt.swift in Sources */,
 				202E6C4020AA1B4500FFC784 /* AppDelegate.swift in Sources */,

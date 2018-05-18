@@ -26,27 +26,27 @@
 		</data>
 		<key>Base.lproj/Main.storyboardc/3rR-Mv-D8e-view-VUS-s8-r5Z.nib/objects-11.0+.nib</key>
 		<data>
-		MhRh7saRR++XCnuZzoVsQqhzfRw=
+		YKlpPqSWsAdX9hm8Ka+XortA9So=
 		</data>
 		<key>Base.lproj/Main.storyboardc/3rR-Mv-D8e-view-VUS-s8-r5Z.nib/runtime.nib</key>
 		<data>
-		oQmEJCMP3yb7gFQ4GUrHs+qNvFk=
+		S+B9+zdWltoHpYZBAb1aiUJEfi8=
 		</data>
 		<key>Base.lproj/Main.storyboardc/4qw-Np-Hsd-view-XJZ-bo-WIZ.nib/objects-11.0+.nib</key>
 		<data>
-		eOv1qCf9nr2CRZOaQypp2ZFzzX4=
+		xI7EfLmAq7lUi1Yvqw8JrIM7Ips=
 		</data>
 		<key>Base.lproj/Main.storyboardc/4qw-Np-Hsd-view-XJZ-bo-WIZ.nib/runtime.nib</key>
 		<data>
-		7LOhN9IkbVhVNUkMae+o2ThhjEE=
+		2VFmQF4+s4h8jjQLC2zNJOnfgWY=
 		</data>
 		<key>Base.lproj/Main.storyboardc/GcM-vX-iF0-view-Z8g-Gc-Fr0.nib/objects-11.0+.nib</key>
 		<data>
-		nMeyE9/ep9X/5lA+Ufdl0Q2aSlw=
+		IQltmUITy4P+Gp0vYIw56tMfOHY=
 		</data>
 		<key>Base.lproj/Main.storyboardc/GcM-vX-iF0-view-Z8g-Gc-Fr0.nib/runtime.nib</key>
 		<data>
-		LJ5snv2h1kmRUnR1xwgZtOiZoj8=
+		jbNoiWa1nmyvPdktJDt4kZlJiuE=
 		</data>
 		<key>Base.lproj/Main.storyboardc/Info.plist</key>
 		<data>
@@ -54,11 +54,11 @@
 		</data>
 		<key>Base.lproj/Main.storyboardc/UITabBarController-iIE-XP-Xa5.nib/objects-11.0+.nib</key>
 		<data>
-		Ssl+AxFdCKG90mVyHxtKmPIhxAQ=
+		Gyh6M8TIaDC2NHqPD7r4VHcYzzY=
 		</data>
 		<key>Base.lproj/Main.storyboardc/UITabBarController-iIE-XP-Xa5.nib/runtime.nib</key>
 		<data>
-		OlE43HS0hBs6oYI7gYiQfNE2mRs=
+		In1XP7Mg8ufqgzsyIxT48Bf29eU=
 		</data>
 		<key>Fortn_item.momd/Fortn_item.mom</key>
 		<data>
@@ -71,6 +71,30 @@
 		<key>Fortn_item.momd/VersionInfo.plist</key>
 		<data>
 		7VWVQB9TVU0QJE7sZ6/iDzG+lyg=
+		</data>
+		<key>Frameworks/Alamofire.framework/Alamofire</key>
+		<data>
+		6PNSCk02azPCySp8axJ/IMZPw64=
+		</data>
+		<key>Frameworks/Alamofire.framework/Info.plist</key>
+		<data>
+		fPqLrNcWmXTTJXZ9WHSIMz+T7YI=
+		</data>
+		<key>Frameworks/Alamofire.framework/_CodeSignature/CodeResources</key>
+		<data>
+		0Xkuq6JqWTiRFM4qn4V8GW2X2CY=
+		</data>
+		<key>Frameworks/AlamofireImage.framework/AlamofireImage</key>
+		<data>
+		kHkzG5JkUjDMvehvYXiDwz0ljYk=
+		</data>
+		<key>Frameworks/AlamofireImage.framework/Info.plist</key>
+		<data>
+		NeHOXRaDRvye7kjWH5VvIJ5M3jA=
+		</data>
+		<key>Frameworks/AlamofireImage.framework/_CodeSignature/CodeResources</key>
+		<data>
+		BJ9i8GXoXiWWobOBXx+OONiT/ZU=
 		</data>
 		<key>Frameworks/GoogleToolboxForMac.framework/GoogleToolboxForMac</key>
 		<data>
@@ -230,66 +254,66 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			MhRh7saRR++XCnuZzoVsQqhzfRw=
+			YKlpPqSWsAdX9hm8Ka+XortA9So=
 			</data>
 			<key>hash2</key>
 			<data>
-			kWyLWYLsP3qxKG3zWZwzOwlMx1L87B7LzEdMa17apgA=
+			wjZALlTE7SqBL9CwV47+gtyDYpR7qTSdxR1/dIdNfa0=
 			</data>
 		</dict>
 		<key>Base.lproj/Main.storyboardc/3rR-Mv-D8e-view-VUS-s8-r5Z.nib/runtime.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			oQmEJCMP3yb7gFQ4GUrHs+qNvFk=
+			S+B9+zdWltoHpYZBAb1aiUJEfi8=
 			</data>
 			<key>hash2</key>
 			<data>
-			0yItpeuzFMBW137krxeYVdR+s88g3PZuoAXO6vTI9fc=
+			Gjdz7R3mZdWr1+/1pz+GtYTTLxu8RfJyLMrG7YXPw1M=
 			</data>
 		</dict>
 		<key>Base.lproj/Main.storyboardc/4qw-Np-Hsd-view-XJZ-bo-WIZ.nib/objects-11.0+.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			eOv1qCf9nr2CRZOaQypp2ZFzzX4=
+			xI7EfLmAq7lUi1Yvqw8JrIM7Ips=
 			</data>
 			<key>hash2</key>
 			<data>
-			kCITlSXZQF0dmFAlfpoqHgF+k0nASuPwwD2cqudgGXQ=
+			jzWV/02a+huuzn97o+YQoA8/gjMhi6fzCYGDi7S+l/k=
 			</data>
 		</dict>
 		<key>Base.lproj/Main.storyboardc/4qw-Np-Hsd-view-XJZ-bo-WIZ.nib/runtime.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			7LOhN9IkbVhVNUkMae+o2ThhjEE=
+			2VFmQF4+s4h8jjQLC2zNJOnfgWY=
 			</data>
 			<key>hash2</key>
 			<data>
-			IhWGq9yPKofG4Evp08nRjOft+d9HMTBFJBKB5louUYY=
+			DersmJcUcfPwZt3jZi/NrRlEWNFEbg6HagW9PUnkdkg=
 			</data>
 		</dict>
 		<key>Base.lproj/Main.storyboardc/GcM-vX-iF0-view-Z8g-Gc-Fr0.nib/objects-11.0+.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			nMeyE9/ep9X/5lA+Ufdl0Q2aSlw=
+			IQltmUITy4P+Gp0vYIw56tMfOHY=
 			</data>
 			<key>hash2</key>
 			<data>
-			K0N5oGjyqyYIyzRRQNgXyTEvJMS/cfteOvhS6K5PgFQ=
+			RhGjnm/FnOrMGvkQ2xwszUTT7TefauBSwkPoMrzchp8=
 			</data>
 		</dict>
 		<key>Base.lproj/Main.storyboardc/GcM-vX-iF0-view-Z8g-Gc-Fr0.nib/runtime.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			LJ5snv2h1kmRUnR1xwgZtOiZoj8=
+			jbNoiWa1nmyvPdktJDt4kZlJiuE=
 			</data>
 			<key>hash2</key>
 			<data>
-			BFVrLSxNZZ+DQUZ2Wn1WCOmvgXzXgtJ5xtVTDogzgG0=
+			7cAD/eBTbUHUCuYpP4XLg0gu1Ro1TLQ7aHzOAaXRi+c=
 			</data>
 		</dict>
 		<key>Base.lproj/Main.storyboardc/Info.plist</key>
@@ -307,22 +331,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			Ssl+AxFdCKG90mVyHxtKmPIhxAQ=
+			Gyh6M8TIaDC2NHqPD7r4VHcYzzY=
 			</data>
 			<key>hash2</key>
 			<data>
-			OTrfFT2IhhvBEKnWrlcR723lbxETFoZn9SLEaIQczKQ=
+			QIGhJPoC1OakGIz/InA+e6l6a3ETcQxZuzwd2ppwGuw=
 			</data>
 		</dict>
 		<key>Base.lproj/Main.storyboardc/UITabBarController-iIE-XP-Xa5.nib/runtime.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			OlE43HS0hBs6oYI7gYiQfNE2mRs=
+			In1XP7Mg8ufqgzsyIxT48Bf29eU=
 			</data>
 			<key>hash2</key>
 			<data>
-			vQhQ/5OXGgtu0yv5zuIjJtMO+HWUCNBGV+45No/C9Cc=
+			6VEm3A3P3+28eUqXbMO+kJM90MWZSrDRqt1p7PfC6hU=
 			</data>
 		</dict>
 		<key>Fortn_item.momd/Fortn_item.mom</key>
@@ -356,6 +380,72 @@
 			<key>hash2</key>
 			<data>
 			g28Yow+c1hVSsCDWRWfTjDmUD7zgxBubnv30M27gELM=
+			</data>
+		</dict>
+		<key>Frameworks/Alamofire.framework/Alamofire</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			6PNSCk02azPCySp8axJ/IMZPw64=
+			</data>
+			<key>hash2</key>
+			<data>
+			lhnmiKipkPutFHnOiBhoWFgl9SusMOYkK/OoOYBMKk8=
+			</data>
+		</dict>
+		<key>Frameworks/Alamofire.framework/Info.plist</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			fPqLrNcWmXTTJXZ9WHSIMz+T7YI=
+			</data>
+			<key>hash2</key>
+			<data>
+			UHqxh7hFXwAAiBwxmGUXECaK0HBsrD8YfVnsPler4GQ=
+			</data>
+		</dict>
+		<key>Frameworks/Alamofire.framework/_CodeSignature/CodeResources</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			0Xkuq6JqWTiRFM4qn4V8GW2X2CY=
+			</data>
+			<key>hash2</key>
+			<data>
+			2YYIoEMWb5lj6chqZB6+Pa1j3mRWkBdBp1tz9Ihu+Vg=
+			</data>
+		</dict>
+		<key>Frameworks/AlamofireImage.framework/AlamofireImage</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			kHkzG5JkUjDMvehvYXiDwz0ljYk=
+			</data>
+			<key>hash2</key>
+			<data>
+			b4yl+yvFl0wL695LbrANo5P0ITYwENIdqBAEObZ8cNY=
+			</data>
+		</dict>
+		<key>Frameworks/AlamofireImage.framework/Info.plist</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			NeHOXRaDRvye7kjWH5VvIJ5M3jA=
+			</data>
+			<key>hash2</key>
+			<data>
+			8BX5tR8BbAymYqAVP0oLGez0netV3RaQOH7Yjnr0R1M=
+			</data>
+		</dict>
+		<key>Frameworks/AlamofireImage.framework/_CodeSignature/CodeResources</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			BJ9i8GXoXiWWobOBXx+OONiT/ZU=
+			</data>
+			<key>hash2</key>
+			<data>
+			YtrGhcB23lzJH3Uj7y4QmJNLls7JSVEHX4tzZ8V7IiI=
 			</data>
 		</dict>
 		<key>Frameworks/GoogleToolboxForMac.framework/GoogleToolboxForMac</key>

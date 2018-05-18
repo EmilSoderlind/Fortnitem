@@ -2,6 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:LIcenses">
+   </FileRef>
+   <FileRef
       location = "group:Fortn-item.xcodeproj">
    </FileRef>
    <FileRef

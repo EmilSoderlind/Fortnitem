@@ -10,22 +10,33 @@ import UIKit
 
 class TodaysTableViewController: UITableViewController {
     
-    var itemModelList: [ItemModel] = []
-
+    
+    var dailyList:[FortniteItem] = []
+    var featuredList:[FortniteItem] = []
+    var parseDone:Bool = false
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         print("TodaysTableViewController ViewDidLoad")
         
         let ap: FNBRApiHandler = FNBRApiHandler()
-        ap.theView = self
         
-        
-        ap.parseCurrentItems()
+        ap.parseCurrentItems(vc: self)
         
         //testImage.downloadedFrom(link: "https://image.fnbr.co/pickaxe/5afc0fa7b6e7f77dcfa32634/gallery.jpg")
         
-        
         print("TodaysTableViewController ViewDidLoad - DONE")
+    }
+    
+    func doneParsing(daily: [FortniteItem], featured: [FortniteItem]){
+        print("Done parsing - updating tableView")
+        parseDone = true
+        
+        dailyList = daily
+        featuredList = featured
+        
+        self.tableView.reloadData()
+        print("Done parsing - updating tableView - DONE")
     }
 
     override func didReceiveMemoryWarning() {
@@ -44,11 +55,11 @@ class TodaysTableViewController: UITableViewController {
         
         let date = Date()
         let formatter = DateFormatter()
-        formatter.dateFormat = "Item Shop | dd.MM.yyyy"
+        formatter.dateFormat = "dd.MM.yyyy"
         let result = formatter.string(from: date)
         
         if(section == 0){
-            return result
+            return "Item Shop | \(result)"
         }else if(section == 1){
             return "Featured"
         }else{
@@ -59,19 +70,31 @@ class TodaysTableViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
         
+        
         if(section == 0){
             return 0
+        }else if(section == 1){
+            return featuredList.count
+        }else if (section == 2){
+            return dailyList.count
         }
-        
-        return 3
     
-    
+        return 0
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> ItemTableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "itemCell", for: indexPath) as! ItemTableViewCell
         
-        cell.mainImage.downloadedFrom(link: "https://image.fnbr.co/pickaxe/5ab176665f957f27504aa51b/featured.png")
+        if(indexPath.section == 1){
+            
+            cell.mainImage.downloadedFrom(link: featuredList[indexPath.row].images["icon"]!)
+            
+        }else if(indexPath.section == 2){
+            
+            cell.mainImage.downloadedFrom(link: dailyList[indexPath.row].images["icon"]!)
+
+        }
+        
         
         return cell
     }

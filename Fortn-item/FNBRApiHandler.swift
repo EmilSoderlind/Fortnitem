@@ -12,9 +12,11 @@ import UIKit
 // Class responsible for talking directly to FNBR
 class FNBRApiHandler {
     
-    var theView:TodaysTableViewController?
+    var mainView:TodaysTableViewController?
     
-    func parseCurrentItems(){
+    func parseCurrentItems(vc:TodaysTableViewController){
+        
+        mainView = vc
         
         let urlString = URL(string: "https://fnbr.co/api/shop")
         
@@ -53,21 +55,16 @@ class FNBRApiHandler {
             do {
                 
                 var dataString = String(NSString(data: data, encoding: String.Encoding.utf8.rawValue)!)
-
-                print("DataString before:",dataString)
-                
                 dataString = dataString.replacingOccurrences(of: ":false}", with: ":\"\"}", options: .literal, range: nil)
-
-                print("DataString after:",dataString)
-                
                 let fetch = try JSONDecoder().decode(FullFetch.self, from: dataString.data(using: String.Encoding.utf8)!)
-                
-                print(fetch)
                 
                 // When we got data, do stuff on main queue
                 DispatchQueue.main.async {
                     
+                    var publishDate:Date = fetch.data.date.dateFromISO8601!
+
                     
+                    vc.doneParsing(daily: fetch.data.daily, featured: fetch.data.featured)
                     
                 }
              

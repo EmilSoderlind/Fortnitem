@@ -8,5 +8,7 @@ target 'Fortn-item' do
   # Pods for Fortn-item
 
 pod 'Firebase/Core'
+pod 'Alamofire'
+pod 'AlamofireImage'
 
 end

@@ -10,10 +10,10 @@ struct ItemModel {
     var priceIcon: String
     var priceIconLink: UIImage
     
-    var imgIcon:UIImage
-    var imgGallery:UIImage
-    var imgPng:UIImage?
-    var imgFeatured:UIImage?
+    var imgIcon:UIImageView
+    var imgGallery:UIImageView
+    var imgPng:UIImageView?
+    var imgFeatured:UIImageView?
     
     var rarity: String
     var type: String
