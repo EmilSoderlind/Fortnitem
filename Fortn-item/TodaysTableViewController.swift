@@ -8,7 +8,7 @@
 
 import UIKit
 
-class TodaysTableViewController: UITableViewController {
+class TodaysTableViewController: UITableViewController, UITabBarControllerDelegate {
     
     
     var iml: ItemModelList = ItemModelList(date: Date(), featured: [], daily: [])
@@ -18,11 +18,10 @@ class TodaysTableViewController: UITableViewController {
         super.viewDidLoad()
         print("TodaysTableViewController ViewDidLoad")
         
+        self.tabBarController?.delegate = self
+        
         let ap: FNBRApiHandler = FNBRApiHandler()
-        
         ap.parseCurrentItems(vc: self)
-        
-        //testImage.downloadedFrom(link: "https://image.fnbr.co/pickaxe/5afc0fa7b6e7f77dcfa32634/gallery.jpg")
         
         print("TodaysTableViewController ViewDidLoad - DONE")
     }
@@ -60,9 +59,11 @@ class TodaysTableViewController: UITableViewController {
             return "Item Shop | Version: \(Bundle.main.releaseVersionNumber!)"
         }else if(section == 1){
             return "Featured"
-        }else{
+        }else if(section == 2){
             return "Daily"
         }
+        
+        return "Whops, to many sections..!"
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -75,6 +76,8 @@ class TodaysTableViewController: UITableViewController {
             return iml.featured.count
         }else if (section == 2){
             return iml.daily.count
+        }else if (section == 3){
+            return 0
         }
     
         return 0
@@ -86,11 +89,16 @@ class TodaysTableViewController: UITableViewController {
         if(indexPath.section == 1){
             
             cell.mainImage.image = iml.featured[indexPath.row].imgPng
+            cell.title.text = iml.featured[indexPath.row].name
+            cell.priceLabel.text = iml.featured[indexPath.row].price
+            cell.priceImg.image = iml.featured[indexPath.row].imgPriceIconLink
             
         }else if(indexPath.section == 2){
             
             cell.mainImage.image = iml.daily[indexPath.row].imgPng
-
+            cell.title.text = iml.daily[indexPath.row].name
+            cell.priceLabel.text = iml.daily[indexPath.row].price
+            cell.priceImg.image = iml.daily[indexPath.row].imgPriceIconLink
         }
         
         
@@ -143,5 +151,16 @@ class TodaysTableViewController: UITableViewController {
         // Pass the selected object to the new view controller.
     }
     */
+    
+    func tabBarController(_ tabBarController: UITabBarController, didSelect viewController: UIViewController) {
+        
+        let tabBarIndex = tabBarController.selectedIndex
+        
+        print(tabBarIndex)
+        
+        if tabBarIndex == 0 {
+            self.tableView.setContentOffset(CGPoint(x: 0, y: 0), animated: true)
+        }
+    }
 
 }

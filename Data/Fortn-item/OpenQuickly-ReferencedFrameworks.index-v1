@@ -20,10 +20,10 @@
 	<string>FirebaseRemoteConfig</string>
 	<string>Crashlytics</string>
 	<string>Dispatch</string>
-	<string>WatchKit</string>
+	<string>FirebaseCrash</string>
 	<string>Foundation</string>
 	<string>Fabric</string>
-	<string>FirebaseCrash</string>
+	<string>WatchKit</string>
 	<string>FirebaseAppIndexing</string>
 	<string>Alamofire</string>
 	<string>AppKit</string>

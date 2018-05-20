@@ -10,6 +10,9 @@ import UIKit
 
 class ItemTableViewCell: UITableViewCell {
     
+    @IBOutlet weak var priceImg: UIImageView!
+    @IBOutlet weak var title: UILabel!
+    @IBOutlet weak var priceLabel: UILabel!
     @IBOutlet weak var mainImage: UIImageView!
     
     override func awakeFromNib() {

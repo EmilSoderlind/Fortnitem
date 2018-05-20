@@ -457,6 +457,7 @@ depends-member:
 - !private ["So30UIResponderStandardEditActionsP", "doneParsing"]
 - !private ["So20UIScrollViewDelegateP", "doneParsing"]
 - !private ["So16UIStateRestoringP", "doneParsing"]
+- !private ["So26UITabBarControllerDelegateP", "doneParsing"]
 - !private ["So21UITableViewControllerC", "doneParsing"]
 - !private ["So21UITableViewDataSourceP", "doneParsing"]
 - !private ["So19UITableViewDelegateP", "doneParsing"]
@@ -624,6 +625,7 @@ depends-nominal:
 - !private "So30UIResponderStandardEditActionsP"
 - !private "So20UIScrollViewDelegateP"
 - !private "So16UIStateRestoringP"
+- !private "So26UITabBarControllerDelegateP"
 - !private "So21UITableViewControllerC"
 - !private "So21UITableViewDataSourceP"
 - !private "So19UITableViewDelegateP"

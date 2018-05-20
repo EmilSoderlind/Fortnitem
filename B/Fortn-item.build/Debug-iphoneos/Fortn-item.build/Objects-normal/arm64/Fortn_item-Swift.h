@@ -199,6 +199,8 @@ SWIFT_CLASS("_TtC10Fortn_item11AppDelegate")
 
 
 
+
+
 @class UIImageView;
 @class NSCoder;
 
@@ -212,10 +214,11 @@ SWIFT_CLASS("_TtC10Fortn_item17ItemTableViewCell")
 @end
 
 @class UITableView;
-@class NSBundle;
+@class UITabBarController;
+@class UIViewController;
 
 SWIFT_CLASS("_TtC10Fortn_item25TodaysTableViewController")
-@interface TodaysTableViewController : UITableViewController
+@interface TodaysTableViewController : UITableViewController <UITabBarControllerDelegate>
 - (void)viewDidLoad;
 - (void)didReceiveMemoryWarning;
 - (NSInteger)numberOfSectionsInTableView:(UITableView * _Nonnull)tableView SWIFT_WARN_UNUSED_RESULT;
@@ -223,10 +226,13 @@ SWIFT_CLASS("_TtC10Fortn_item25TodaysTableViewController")
 - (NSInteger)tableView:(UITableView * _Nonnull)tableView numberOfRowsInSection:(NSInteger)section SWIFT_WARN_UNUSED_RESULT;
 - (ItemTableViewCell * _Nonnull)tableView:(UITableView * _Nonnull)tableView cellForRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath SWIFT_WARN_UNUSED_RESULT;
 - (BOOL)tableView:(UITableView * _Nonnull)tableView canMoveRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath SWIFT_WARN_UNUSED_RESULT;
+- (void)tabBarController:(UITabBarController * _Nonnull)tabBarController didSelectViewController:(UIViewController * _Nonnull)viewController;
 - (nonnull instancetype)initWithStyle:(UITableViewStyle)style OBJC_DESIGNATED_INITIALIZER;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
+
+
 
 
 

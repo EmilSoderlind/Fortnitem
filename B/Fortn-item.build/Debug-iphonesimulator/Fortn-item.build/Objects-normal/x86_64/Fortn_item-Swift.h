@@ -165,6 +165,7 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 #if __has_feature(modules)
 @import UIKit;
 @import Foundation;
+@import CoreGraphics;
 #endif
 
 #pragma clang diagnostic ignored "-Wproperty-attribute-mismatch"
@@ -202,10 +203,14 @@ SWIFT_CLASS("_TtC10Fortn_item11AppDelegate")
 
 
 @class UIImageView;
+@class UILabel;
 @class NSCoder;
 
 SWIFT_CLASS("_TtC10Fortn_item17ItemTableViewCell")
 @interface ItemTableViewCell : UITableViewCell
+@property (nonatomic, weak) IBOutlet UIImageView * _Null_unspecified priceImg;
+@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified title;
+@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified priceLabel;
 @property (nonatomic, weak) IBOutlet UIImageView * _Null_unspecified mainImage;
 - (void)awakeFromNib;
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated;
@@ -214,9 +219,11 @@ SWIFT_CLASS("_TtC10Fortn_item17ItemTableViewCell")
 @end
 
 @class UITableView;
+@class UITabBarController;
+@class UIViewController;
 
 SWIFT_CLASS("_TtC10Fortn_item25TodaysTableViewController")
-@interface TodaysTableViewController : UITableViewController
+@interface TodaysTableViewController : UITableViewController <UITabBarControllerDelegate>
 - (void)viewDidLoad;
 - (void)didReceiveMemoryWarning;
 - (NSInteger)numberOfSectionsInTableView:(UITableView * _Nonnull)tableView SWIFT_WARN_UNUSED_RESULT;
@@ -224,6 +231,7 @@ SWIFT_CLASS("_TtC10Fortn_item25TodaysTableViewController")
 - (NSInteger)tableView:(UITableView * _Nonnull)tableView numberOfRowsInSection:(NSInteger)section SWIFT_WARN_UNUSED_RESULT;
 - (ItemTableViewCell * _Nonnull)tableView:(UITableView * _Nonnull)tableView cellForRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath SWIFT_WARN_UNUSED_RESULT;
 - (BOOL)tableView:(UITableView * _Nonnull)tableView canMoveRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath SWIFT_WARN_UNUSED_RESULT;
+- (void)tabBarController:(UITabBarController * _Nonnull)tabBarController didSelectViewController:(UIViewController * _Nonnull)viewController;
 - (nonnull instancetype)initWithStyle:(UITableViewStyle)style OBJC_DESIGNATED_INITIALIZER;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
@@ -232,6 +240,20 @@ SWIFT_CLASS("_TtC10Fortn_item25TodaysTableViewController")
 
 
 
+
+
+SWIFT_CLASS("_TtC10Fortn_item18priceContainerView")
+@interface priceContainerView : UIView
+- (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+SWIFT_CLASS("_TtC10Fortn_item18titleContainerView")
+@interface titleContainerView : UIView
+- (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+@end
 
 #if __has_attribute(external_source_symbol)
 # pragma clang attribute pop
