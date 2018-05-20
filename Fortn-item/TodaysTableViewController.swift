@@ -57,13 +57,13 @@ class TodaysTableViewController: UITableViewController, UITabBarControllerDelega
         
         if(section == 0){
             return "Item Shop | Version: \(Bundle.main.releaseVersionNumber!)"
-        }else if(section == 1){
+        }else if(section == 1 && parseDone){
             return "Featured"
-        }else if(section == 2){
+        }else if(section == 2 && parseDone){
             return "Daily"
         }
         
-        return "Whops, to many sections..!"
+        return "Loading.."
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
