@@ -242,6 +242,8 @@ SWIFT_CLASS("_TtC10Fortn_item25TodaysTableViewController")
 
 
 
+
+
 SWIFT_CLASS("_TtC10Fortn_item18priceContainerView")
 @interface priceContainerView : UIView
 - (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
