@@ -89,12 +89,11 @@
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1.200" lineBreakMode="clip" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dqQ-CV-bj9">
                                                     <rect key="frame" x="54" y="8" width="261" height="37"/>
-                                                    <fontDescription key="fontDescription" name="BurbankBigCondensed-Bold" family="Burbank Big Condensed" pointSize="21"/>
-                                                    <nil key="textColor"/>
+                                                    <fontDescription key="fontDescription" name="BurbankBigCondensed-Bold" family="Burbank Big Condensed" pointSize="26"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
-                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <constraints>
                                                 <constraint firstItem="WWo-1S-7e5" firstAttribute="bottom" secondItem="dqQ-CV-bj9" secondAttribute="bottom" id="LZ5-Ek-iOD"/>
                                                 <constraint firstItem="WWo-1S-7e5" firstAttribute="leading" secondItem="sjm-eD-G3a" secondAttribute="leadingMargin" id="RSV-9T-nZ9"/>
@@ -115,7 +114,7 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
-                                            <color key="backgroundColor" red="0.31764705879999999" green="0.63921568630000003" blue="0.45098039220000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            <color key="backgroundColor" red="0.26051741839999998" green="0.2605243921" blue="0.260520637" alpha="0.69999999999999996" colorSpace="custom" customColorSpace="sRGB"/>
                                             <constraints>
                                                 <constraint firstItem="0dm-yS-0fO" firstAttribute="top" secondItem="1Bd-bN-d70" secondAttribute="top" id="L7u-Tw-ydq"/>
                                                 <constraint firstItem="0dm-yS-0fO" firstAttribute="leading" secondItem="1Bd-bN-d70" secondAttribute="leadingMargin" constant="-8" id="UCO-l3-kS8"/>

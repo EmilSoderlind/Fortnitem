@@ -123,9 +123,26 @@ class FNBRApiHandler {
         print("convertToItemModelItem (parse images)")
         
         let newPriceIconLink:UIImage = parseImgURL(uri: fi.priceIconLink)
-        let newPngImg:UIImage = parseImgURL(uri: fi.images["png"]!)
         
-        let imi:itemModelItem = itemModelItem(id: fi.id, name: fi.name, price: fi.price, priceIcon: fi.priceIcon, priceIconLink: fi.priceIconLink, images: fi.images, rarity: fi.rarity, type: fi.type, readableType: fi.readableType, imagesParsed: true, imgPriceIconLink: newPriceIconLink, imgPng: newPngImg)
+        var newIconImg = UIImage()
+        var newPngImg = UIImage()
+        
+        if(fi.type == "emote"){
+            newIconImg = parseImgURL(uri: fi.images["icon"]!)
+        
+        }else{
+            newPngImg = parseImgURL(uri: fi.images["png"]!)
+           
+        }
+        
+        // If there is a emote, return icon otherwise the png.png
+        if(fi.type == "emote"){
+            
+            let imi:itemModelItem = itemModelItem(id: fi.id, name: fi.name, price: fi.price, priceIcon: fi.priceIcon, priceIconLink: fi.priceIconLink, images: fi.images, rarity: fi.rarity, type: fi.type, readableType: fi.readableType, imagesParsed: true, imgPriceIconLink: newPriceIconLink, imgPng: nil, imgIcon: newIconImg)
+            return imi
+        }
+        
+        let imi:itemModelItem = itemModelItem(id: fi.id, name: fi.name, price: fi.price, priceIcon: fi.priceIcon, priceIconLink: fi.priceIconLink, images: fi.images, rarity: fi.rarity, type: fi.type, readableType: fi.readableType, imagesParsed: true, imgPriceIconLink: newPriceIconLink, imgPng: newPngImg, imgIcon: nil)
         
         print("convertToItemModelItem (parse images) - DONE")
         return imi

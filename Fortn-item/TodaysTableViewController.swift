@@ -88,19 +88,32 @@ class TodaysTableViewController: UITableViewController, UITabBarControllerDelega
         
         if(indexPath.section == 1){
             
-            cell.mainImage.image = iml.featured[indexPath.row].imgPng
+            if(iml.featured[indexPath.row].type == "emote"){
+                cell.mainImage.image = iml.featured[indexPath.row].imgIcon
+            }else{
+                cell.mainImage.image = iml.featured[indexPath.row].imgPng
+            }
+            
             cell.title.text = iml.featured[indexPath.row].name
             cell.priceLabel.text = iml.featured[indexPath.row].price
             cell.priceImg.image = iml.featured[indexPath.row].imgPriceIconLink
             
         }else if(indexPath.section == 2){
             
-            cell.mainImage.image = iml.daily[indexPath.row].imgPng
+            if(iml.daily[indexPath.row].type == "emote"){
+                cell.mainImage.image = iml.daily[indexPath.row].imgIcon
+            }else{
+                cell.mainImage.image = iml.daily[indexPath.row].imgPng
+            }
+            
             cell.title.text = iml.daily[indexPath.row].name
             cell.priceLabel.text = iml.daily[indexPath.row].price
             cell.priceImg.image = iml.daily[indexPath.row].imgPriceIconLink
         }
         
+        cell.priceLabel.baselineAdjustment = .alignCenters
+        cell.sendSubview(toBack: cell.mainImage)
+        cell.bringSubview(toFront: cell.title)
         
         return cell
     }

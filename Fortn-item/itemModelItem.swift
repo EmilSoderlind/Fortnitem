@@ -34,7 +34,9 @@ struct itemModelItem {
     
     var imagesParsed:Bool = false
     var imgPriceIconLink: UIImage
-    var imgPng:UIImage
+    var imgPng:UIImage?
+    var imgIcon:UIImage?
+
 
     
 }
