@@ -23,6 +23,7 @@
 		204B131620B1BF95008AC4BE /* BurbankBigCondensed-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 204B131520B1BF3B008AC4BE /* BurbankBigCondensed-Bold.otf */; };
 		204B131820B1C141008AC4BE /* priceContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 204B131720B1C141008AC4BE /* priceContainerView.swift */; };
 		204B131A20B1C16B008AC4BE /* titleContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 204B131920B1C16B008AC4BE /* titleContainerView.swift */; };
+		204B131C20B1E35E008AC4BE /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 204B131B20B1E35E008AC4BE /* logo.png */; };
 		2093523820AEB7B8006AC361 /* imageExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2093523720AEB7B8006AC361 /* imageExt.swift */; };
 		20ED64EF20AE30B8002FA6E9 /* FullFetch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20ED64EE20AE30B8002FA6E9 /* FullFetch.swift */; };
 		20ED64F120AE314A002FA6E9 /* dataStruct.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20ED64F020AE314A002FA6E9 /* dataStruct.swift */; };
@@ -49,6 +50,7 @@
 		204B131520B1BF3B008AC4BE /* BurbankBigCondensed-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "BurbankBigCondensed-Bold.otf"; sourceTree = "<group>"; };
 		204B131720B1C141008AC4BE /* priceContainerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = priceContainerView.swift; sourceTree = "<group>"; };
 		204B131920B1C16B008AC4BE /* titleContainerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = titleContainerView.swift; sourceTree = "<group>"; };
+		204B131B20B1E35E008AC4BE /* logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo.png; sourceTree = "<group>"; };
 		2093523720AEB7B8006AC361 /* imageExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = imageExt.swift; sourceTree = "<group>"; };
 		20ED64EE20AE30B8002FA6E9 /* FullFetch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FullFetch.swift; sourceTree = "<group>"; };
 		20ED64F020AE314A002FA6E9 /* dataStruct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = dataStruct.swift; sourceTree = "<group>"; };
@@ -92,6 +94,7 @@
 			children = (
 				204B131420B1BF2E008AC4BE /* font */,
 				202E7F9020AF4BD000B8D0FD /* gallery.jpg */,
+				204B131B20B1E35E008AC4BE /* logo.png */,
 				204B131220B1B93D008AC4BE /* png.png */,
 				202E6C3F20AA1B4500FFC784 /* AppDelegate.swift */,
 				202E7F8C20AF45DC00B8D0FD /* TodaysTableViewController.swift */,
@@ -209,6 +212,7 @@
 				204B131320B1B93E008AC4BE /* png.png in Resources */,
 				202E6C4D20AA1B4C00FFC784 /* LaunchScreen.storyboard in Resources */,
 				202E6C4A20AA1B4C00FFC784 /* Assets.xcassets in Resources */,
+				204B131C20B1E35E008AC4BE /* logo.png in Resources */,
 				202E7F9120AF4BD100B8D0FD /* gallery.jpg in Resources */,
 				202E6C4520AA1B4500FFC784 /* Main.storyboard in Resources */,
 			);

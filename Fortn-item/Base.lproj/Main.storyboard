@@ -8,7 +8,6 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
-        <capability name="Stack View standard spacing" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <customFonts key="customFonts">
@@ -250,7 +249,7 @@
             </objects>
             <point key="canvasLocation" x="1599.375" y="1145.0704225352113"/>
         </scene>
-        <!--View Controller-->
+        <!--About-->
         <scene sceneID="YAf-1B-Cvx">
             <objects>
                 <viewController id="3rR-Mv-D8e" sceneMemberID="viewController">
@@ -258,47 +257,63 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="SSz-t3-soN">
-                                <rect key="frame" x="0.0" y="20" width="320" height="499"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="Yy6-G7-aXV">
+                                <rect key="frame" x="16" y="20" width="288" height="499"/>
                                 <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="gallery.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="gc9-4x-p6D">
-                                        <rect key="frame" x="0.0" y="0.0" width="320" height="245.5"/>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo.png" translatesAutoresizingMaskIntoConstraints="NO" id="gc9-4x-p6D">
+                                        <rect key="frame" x="0.0" y="0.0" width="288" height="249.5"/>
                                     </imageView>
-                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="rbJ-NY-nwg">
-                                        <rect key="frame" x="0.0" y="253.5" width="320" height="245.5"/>
-                                        <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="4nite Item Shop" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="30" translatesAutoresizingMaskIntoConstraints="NO" id="CKT-ll-ywU">
-                                                <rect key="frame" x="0.0" y="0.0" width="320" height="26"/>
-                                                <fontDescription key="fontDescription" name="BurbankBigCondensed-Bold" family="Burbank Big Condensed" pointSize="29"/>
-                                                <nil key="textColor"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="m6X-rq-3Rp">
-                                                <rect key="frame" x="0.0" y="26" width="320" height="219.5"/>
-                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
-                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                                            </textView>
-                                        </subviews>
-                                    </stackView>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="m6X-rq-3Rp">
+                                        <rect key="frame" x="0.0" y="249.5" width="288" height="249.5"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <mutableString key="text">ITEM SHOP
+
+TJEIÅFJIDOSÅFJIODSÅFJIOSDJFIOSFJIOSÅFJIOSDÅJFIOSDFSÅDÄMFKCckm&lt;ds
+
+
+Licenses below:
+Copyright (c) 2014-2018 Alamofire Software Foundation (http://alamofire.org/)
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in
+all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+THE SOFTWARE.
+
+
+</mutableString>
+                                        <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
                                 </subviews>
                             </stackView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="SSz-t3-soN" firstAttribute="top" secondItem="ebD-CT-cyZ" secondAttribute="top" id="IYp-kL-AcK"/>
-                            <constraint firstItem="SSz-t3-soN" firstAttribute="bottom" secondItem="ebD-CT-cyZ" secondAttribute="bottom" id="SeH-SL-nXx"/>
-                            <constraint firstItem="SSz-t3-soN" firstAttribute="leading" secondItem="VUS-s8-r5Z" secondAttribute="leading" id="V44-2s-v9N"/>
-                            <constraint firstAttribute="trailing" secondItem="SSz-t3-soN" secondAttribute="trailing" id="bmV-bg-Sm8"/>
+                            <constraint firstItem="Yy6-G7-aXV" firstAttribute="bottom" secondItem="ebD-CT-cyZ" secondAttribute="bottom" id="7P1-re-O0a"/>
+                            <constraint firstItem="Yy6-G7-aXV" firstAttribute="trailing" secondItem="VUS-s8-r5Z" secondAttribute="trailingMargin" id="P0j-tJ-LU7"/>
+                            <constraint firstItem="Yy6-G7-aXV" firstAttribute="top" secondItem="ebD-CT-cyZ" secondAttribute="top" id="fqu-6P-psi"/>
+                            <constraint firstItem="Yy6-G7-aXV" firstAttribute="leading" secondItem="VUS-s8-r5Z" secondAttribute="leadingMargin" id="iat-S7-qLs"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="ebD-CT-cyZ"/>
                     </view>
-                    <tabBarItem key="tabBarItem" systemItem="more" id="O8r-nN-Pla"/>
+                    <tabBarItem key="tabBarItem" title="About" id="O8r-nN-Pla"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sn6-T8-OZw" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="662" y="1912"/>
+            <point key="canvasLocation" x="661.875" y="1911.9718309859154"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="HIu-WR-uxd">
@@ -321,7 +336,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="gallery.jpg" width="840" height="840"/>
+        <image name="logo.png" width="1024" height="1024"/>
         <image name="png.png" width="1100" height="1100"/>
     </resources>
 </document>
