@@ -74,15 +74,15 @@
 		</data>
 		<key>Assets.car</key>
 		<data>
-		qNf8X+MiOf9UocCLAGeCuuMcYkU=
+		o0wGWTON6zp5HtOtd40dBW5nRo8=
 		</data>
 		<key>Base.lproj/LaunchScreen.storyboardc/01J-lp-oVM-view-Ze5-6b-2t3.nib/objects-11.0+.nib</key>
 		<data>
-		n9OCov0SpVjtO352Ho4ZQvf1M9M=
+		KiHHLw4yQUFRHB1Wty/eVmaaHHo=
 		</data>
 		<key>Base.lproj/LaunchScreen.storyboardc/01J-lp-oVM-view-Ze5-6b-2t3.nib/runtime.nib</key>
 		<data>
-		4Inv0jLx8hbc7koFNRnGelVeWjs=
+		597nJ5id3VN7im3ieFFnxeBUKGI=
 		</data>
 		<key>Base.lproj/LaunchScreen.storyboardc/Info.plist</key>
 		<data>
@@ -90,27 +90,27 @@
 		</data>
 		<key>Base.lproj/LaunchScreen.storyboardc/UIViewController-01J-lp-oVM.nib/objects-11.0+.nib</key>
 		<data>
-		1zM5pyXTP7NQOl7AmbvfeVGRhwQ=
+		OBtJc30+RL3SQNUqE//DO8g3nYI=
 		</data>
 		<key>Base.lproj/LaunchScreen.storyboardc/UIViewController-01J-lp-oVM.nib/runtime.nib</key>
 		<data>
-		RNOPVSqvDORLXsGCd3V9JXVZriM=
+		Vl2fRgTG5LDsJtXIpDC9NjbYuBs=
 		</data>
 		<key>Base.lproj/Main.storyboardc/3rR-Mv-D8e-view-VUS-s8-r5Z.nib/objects-11.0+.nib</key>
 		<data>
-		i5OpQZN3U2iuIFqCSys2YLptOmo=
+		FbhMWRFa7Ozw9tAojSRrpVnhjYY=
 		</data>
 		<key>Base.lproj/Main.storyboardc/3rR-Mv-D8e-view-VUS-s8-r5Z.nib/runtime.nib</key>
 		<data>
-		bAHREZAJfFPgUqDuaZu0C+4subg=
+		hab+Seo4MQ/CwMYzQJwACl0QcnU=
 		</data>
 		<key>Base.lproj/Main.storyboardc/GcM-vX-iF0-view-Z8g-Gc-Fr0.nib/objects-11.0+.nib</key>
 		<data>
-		qdWe/s5JCy6jYVZ99ZQEOAHNQG4=
+		5goGijHck14WLtRqEQZl2pUQfHQ=
 		</data>
 		<key>Base.lproj/Main.storyboardc/GcM-vX-iF0-view-Z8g-Gc-Fr0.nib/runtime.nib</key>
 		<data>
-		nS94Lds1MVKUu8M+sFBJR/qyN0U=
+		iuKtOn4ZmtKiImgfBuUB4Ycijxs=
 		</data>
 		<key>Base.lproj/Main.storyboardc/Info.plist</key>
 		<data>
@@ -118,11 +118,11 @@
 		</data>
 		<key>Base.lproj/Main.storyboardc/UITabBarController-iIE-XP-Xa5.nib/objects-11.0+.nib</key>
 		<data>
-		guCe72SOFUcDNRBh4Ph2zaY9j/4=
+		39W4licBzODkTqPeb3HEaP5DZHU=
 		</data>
 		<key>Base.lproj/Main.storyboardc/UITabBarController-iIE-XP-Xa5.nib/runtime.nib</key>
 		<data>
-		3yg1oq2UwiPRwJD4zhqqJVLLoj8=
+		KVN8bgoIQXOK1k6QgEaIGFRH2P8=
 		</data>
 		<key>BurbankBigCondensed-Bold.otf</key>
 		<data>
@@ -246,7 +246,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		97AQRiT9kqo1gw2+GodCqSpKa4w=
+		2Fec6xgwgND/IhJM5Ikh2ldOiIs=
 		</data>
 		<key>PkgInfo</key>
 		<data>
@@ -259,6 +259,10 @@
 		<key>libswiftRemoteMirror.dylib</key>
 		<data>
 		KXPuhJWVj384i4gmYkXy8E9WM40=
+		</data>
+		<key>logo.png</key>
+		<data>
+		ZUt6KdkDrIaJBqCeTd1TVxZyb4g=
 		</data>
 		<key>png.png</key>
 		<data>
@@ -458,33 +462,33 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			qNf8X+MiOf9UocCLAGeCuuMcYkU=
+			o0wGWTON6zp5HtOtd40dBW5nRo8=
 			</data>
 			<key>hash2</key>
 			<data>
-			ls0CfShdJGLETcbZqsh4CzO6xbsimlq5xLCPvu60qOQ=
+			ywTi9FKdk3gQdeJXzT4YaXeE+LAWV/AKGO+uKW4LymE=
 			</data>
 		</dict>
 		<key>Base.lproj/LaunchScreen.storyboardc/01J-lp-oVM-view-Ze5-6b-2t3.nib/objects-11.0+.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			n9OCov0SpVjtO352Ho4ZQvf1M9M=
+			KiHHLw4yQUFRHB1Wty/eVmaaHHo=
 			</data>
 			<key>hash2</key>
 			<data>
-			zHDXCh5cblpV4qn76D7+jMvUowtg7bms47VOmOSHw30=
+			3wCcfk2Ex7J2o1LW2XvBeZhB3g9E/7G62cEyoOCTxWg=
 			</data>
 		</dict>
 		<key>Base.lproj/LaunchScreen.storyboardc/01J-lp-oVM-view-Ze5-6b-2t3.nib/runtime.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			4Inv0jLx8hbc7koFNRnGelVeWjs=
+			597nJ5id3VN7im3ieFFnxeBUKGI=
 			</data>
 			<key>hash2</key>
 			<data>
-			cGMZtGPgGHTqutWDDDhDZ1myr3cmoiSg2P/8QPVnf9U=
+			Qrx2EPfA97zpeN5/pJ5FfGJO6/WkEJ1zjaUzqMhAyE0=
 			</data>
 		</dict>
 		<key>Base.lproj/LaunchScreen.storyboardc/Info.plist</key>
@@ -502,66 +506,66 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			1zM5pyXTP7NQOl7AmbvfeVGRhwQ=
+			OBtJc30+RL3SQNUqE//DO8g3nYI=
 			</data>
 			<key>hash2</key>
 			<data>
-			SahD2X2RTJP/VDJkxt65GsfHM1sbrTeq1D5q0GBFMkA=
+			gdbIStjUi/YVi171CXaU4jjL/QSW2g/xeJZnylcV6r8=
 			</data>
 		</dict>
 		<key>Base.lproj/LaunchScreen.storyboardc/UIViewController-01J-lp-oVM.nib/runtime.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			RNOPVSqvDORLXsGCd3V9JXVZriM=
+			Vl2fRgTG5LDsJtXIpDC9NjbYuBs=
 			</data>
 			<key>hash2</key>
 			<data>
-			fS3F8dkVmC4toz55agoRfgjh62wyma688OWxGtfxkZY=
+			a/BW/EyrgdeNL2c8fSysCsyg9Kw6k1ynt28b2foIkQs=
 			</data>
 		</dict>
 		<key>Base.lproj/Main.storyboardc/3rR-Mv-D8e-view-VUS-s8-r5Z.nib/objects-11.0+.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			i5OpQZN3U2iuIFqCSys2YLptOmo=
+			FbhMWRFa7Ozw9tAojSRrpVnhjYY=
 			</data>
 			<key>hash2</key>
 			<data>
-			7fVOSrcfpGaLjG2Ih5BRk66TmHz1rqYEGG/GfepXVJ8=
+			GeJa26Ejm0SjKLXbFw/hPKCzEUOqp0ecn2NZA4BrUR4=
 			</data>
 		</dict>
 		<key>Base.lproj/Main.storyboardc/3rR-Mv-D8e-view-VUS-s8-r5Z.nib/runtime.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			bAHREZAJfFPgUqDuaZu0C+4subg=
+			hab+Seo4MQ/CwMYzQJwACl0QcnU=
 			</data>
 			<key>hash2</key>
 			<data>
-			pXx9pC1ItiVwTo+TZgHbbgGRbkWmSetfbJhxqY0S+ME=
+			6QMo84ohksutLnVD4llbsra2S78nDvyrH5jMbVb+/w4=
 			</data>
 		</dict>
 		<key>Base.lproj/Main.storyboardc/GcM-vX-iF0-view-Z8g-Gc-Fr0.nib/objects-11.0+.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			qdWe/s5JCy6jYVZ99ZQEOAHNQG4=
+			5goGijHck14WLtRqEQZl2pUQfHQ=
 			</data>
 			<key>hash2</key>
 			<data>
-			6WuJyZak7yiHlc4acU77p5mjkT3afT2NztxvcRx33Vo=
+			NRW+sUjqStE2027RTCtTmIHC7GTpmLb2Oln/7/jeWVk=
 			</data>
 		</dict>
 		<key>Base.lproj/Main.storyboardc/GcM-vX-iF0-view-Z8g-Gc-Fr0.nib/runtime.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			nS94Lds1MVKUu8M+sFBJR/qyN0U=
+			iuKtOn4ZmtKiImgfBuUB4Ycijxs=
 			</data>
 			<key>hash2</key>
 			<data>
-			ISBNbFRTgaMMsKOJTKX610NvEjmdaOZgDeFkvYy/D+E=
+			GAPsxYRhD8Q2n+xLV+kH6QWAEgO6i3/oRw+JwiZTRRI=
 			</data>
 		</dict>
 		<key>Base.lproj/Main.storyboardc/Info.plist</key>
@@ -579,22 +583,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			guCe72SOFUcDNRBh4Ph2zaY9j/4=
+			39W4licBzODkTqPeb3HEaP5DZHU=
 			</data>
 			<key>hash2</key>
 			<data>
-			kTm5D1DtlSnH7ncjgb4mlvaAiTfzzkGkvz9XXFmNUdg=
+			1cAmRdHgOWcs6gtsvw5+wj6pwiFJVJ5DZL5pKoYhFSg=
 			</data>
 		</dict>
 		<key>Base.lproj/Main.storyboardc/UITabBarController-iIE-XP-Xa5.nib/runtime.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			3yg1oq2UwiPRwJD4zhqqJVLLoj8=
+			KVN8bgoIQXOK1k6QgEaIGFRH2P8=
 			</data>
 			<key>hash2</key>
 			<data>
-			S5MjYSeaLYb4HuKxg5CI34DRwFmugssRstUlEs+VQaU=
+			sffYEAkNKzkQd04kCmUiEmcCGJYUqT863Gh5klVNEzw=
 			</data>
 		</dict>
 		<key>BurbankBigCondensed-Bold.otf</key>
@@ -947,6 +951,17 @@
 			<key>hash2</key>
 			<data>
 			E6imofsK1m6yFqU1x9vPZZT13ZGjMx7L6Q1PVL03hOk=
+			</data>
+		</dict>
+		<key>logo.png</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			ZUt6KdkDrIaJBqCeTd1TVxZyb4g=
+			</data>
+			<key>hash2</key>
+			<data>
+			2VGqK9hc/ozj4oZkK6+oeTk/MPktYatwzVMSUG0FWdM=
 			</data>
 		</dict>
 		<key>png.png</key>

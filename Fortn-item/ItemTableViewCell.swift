@@ -14,16 +14,10 @@ class ItemTableViewCell: UITableViewCell {
     @IBOutlet weak var title: UILabel!
     @IBOutlet weak var priceLabel: UILabel!
     @IBOutlet weak var mainImage: UIImageView!
-    
-    var rarity:String!
-    
+        
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
-        
-       
-        
-        
     }
     
     override func setSelected(_ selected: Bool, animated: Bool) {

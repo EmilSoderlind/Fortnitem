@@ -74,7 +74,7 @@
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="S1g-gR-dg2" id="Yen-Cr-Ge1">
                                     <rect key="frame" x="0.0" y="0.0" width="320" height="319.5"/>
-                                    <autoresizingMask key="autoresizingMask"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                     <subviews>
                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sjm-eD-G3a" userLabel="priceContainer" customClass="priceContainerView" customModule="Fortn_item" customModuleProvider="target">
                                             <rect key="frame" x="0.0" y="0.0" width="320" height="53"/>
@@ -132,16 +132,18 @@
                                     <constraints>
                                         <constraint firstItem="Rdd-C1-74N" firstAttribute="top" secondItem="Yen-Cr-Ge1" secondAttribute="top" id="3yd-dK-JII"/>
                                         <constraint firstItem="1Bd-bN-d70" firstAttribute="leading" secondItem="Yen-Cr-Ge1" secondAttribute="leading" id="4L4-qE-P27"/>
-                                        <constraint firstAttribute="trailing" secondItem="Rdd-C1-74N" secondAttribute="trailing" id="5l2-S8-COI"/>
                                         <constraint firstItem="1Bd-bN-d70" firstAttribute="centerX" secondItem="Yen-Cr-Ge1" secondAttribute="centerX" id="DvK-eI-zlH"/>
+                                        <constraint firstItem="Rdd-C1-74N" firstAttribute="centerY" secondItem="Yen-Cr-Ge1" secondAttribute="centerY" id="Ip3-jN-dH8"/>
                                         <constraint firstAttribute="bottom" secondItem="1Bd-bN-d70" secondAttribute="bottom" constant="-0.5" id="KvC-xH-1xo"/>
                                         <constraint firstItem="sjm-eD-G3a" firstAttribute="leading" secondItem="Rdd-C1-74N" secondAttribute="leading" id="QUe-gw-G78"/>
                                         <constraint firstAttribute="bottom" secondItem="sjm-eD-G3a" secondAttribute="bottom" constant="266" id="ScR-ta-Jtv"/>
                                         <constraint firstItem="sjm-eD-G3a" firstAttribute="trailing" secondItem="Rdd-C1-74N" secondAttribute="trailing" id="X5S-AY-yHf"/>
                                         <constraint firstAttribute="trailing" secondItem="1Bd-bN-d70" secondAttribute="trailing" id="XF0-C6-G1D"/>
+                                        <constraint firstItem="Rdd-C1-74N" firstAttribute="centerX" secondItem="Yen-Cr-Ge1" secondAttribute="centerX" id="ZQu-Sk-UI4"/>
                                         <constraint firstItem="1Bd-bN-d70" firstAttribute="top" secondItem="Yen-Cr-Ge1" secondAttribute="top" constant="273" id="acZ-be-Tla"/>
                                         <constraint firstItem="Rdd-C1-74N" firstAttribute="leading" secondItem="Yen-Cr-Ge1" secondAttribute="leading" id="icY-GU-QLu"/>
                                         <constraint firstAttribute="bottom" secondItem="Rdd-C1-74N" secondAttribute="bottom" id="laR-k0-oaL"/>
+                                        <constraint firstAttribute="trailing" secondItem="Rdd-C1-74N" secondAttribute="trailing" id="shg-y4-vi9"/>
                                         <constraint firstItem="sjm-eD-G3a" firstAttribute="top" secondItem="Rdd-C1-74N" secondAttribute="top" id="xnv-8l-RK4"/>
                                     </constraints>
                                 </tableViewCellContentView>
@@ -249,7 +251,7 @@
             </objects>
             <point key="canvasLocation" x="1599.375" y="1145.0704225352113"/>
         </scene>
-        <!--About-->
+        <!--View Controller-->
         <scene sceneID="YAf-1B-Cvx">
             <objects>
                 <viewController id="3rR-Mv-D8e" sceneMemberID="viewController">
@@ -263,37 +265,9 @@
                                     <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo.png" translatesAutoresizingMaskIntoConstraints="NO" id="gc9-4x-p6D">
                                         <rect key="frame" x="0.0" y="0.0" width="288" height="249.5"/>
                                     </imageView>
-                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="m6X-rq-3Rp">
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="ITEM SHOP" translatesAutoresizingMaskIntoConstraints="NO" id="m6X-rq-3Rp">
                                         <rect key="frame" x="0.0" y="249.5" width="288" height="249.5"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <mutableString key="text">ITEM SHOP
-
-TJEIÅFJIDOSÅFJIODSÅFJIOSDJFIOSFJIOSÅFJIOSDÅJFIOSDFSÅDÄMFKCckm&lt;ds
-
-
-Licenses below:
-Copyright (c) 2014-2018 Alamofire Software Foundation (http://alamofire.org/)
-
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
-
-The above copyright notice and this permission notice shall be included in
-all copies or substantial portions of the Software.
-
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
-THE SOFTWARE.
-
-
-</mutableString>
                                         <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                     </textView>
@@ -309,7 +283,7 @@ THE SOFTWARE.
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="ebD-CT-cyZ"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="About" id="O8r-nN-Pla"/>
+                    <tabBarItem key="tabBarItem" systemItem="more" id="O8r-nN-Pla"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sn6-T8-OZw" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
