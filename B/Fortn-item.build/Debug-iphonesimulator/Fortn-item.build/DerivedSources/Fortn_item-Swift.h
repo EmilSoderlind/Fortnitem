@@ -199,6 +199,8 @@ SWIFT_CLASS("_TtC10Fortn_item11AppDelegate")
 
 
 
+
+
 @class UIImageView;
 @class NSCoder;
 
@@ -212,7 +214,6 @@ SWIFT_CLASS("_TtC10Fortn_item17ItemTableViewCell")
 @end
 
 @class UITableView;
-@class NSBundle;
 
 SWIFT_CLASS("_TtC10Fortn_item25TodaysTableViewController")
 @interface TodaysTableViewController : UITableViewController
@@ -227,6 +228,8 @@ SWIFT_CLASS("_TtC10Fortn_item25TodaysTableViewController")
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
+
+
 
 
 

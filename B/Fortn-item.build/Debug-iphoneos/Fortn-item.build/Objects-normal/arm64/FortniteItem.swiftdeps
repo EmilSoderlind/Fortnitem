@@ -8,16 +8,22 @@ provides-member:
 provides-dynamic-lookup:
 depends-top-level:
 - "=="
+- !private "Bundle"
 - "Decodable"
 - "FortniteItem"
 - "String"
 - !private "StringLiteralType"
+- "UIImage"
 - !private "~="
 depends-member:
 - !private ["s23BidirectionalCollectionP", "init"]
 - !private ["Sb", "_getBuiltinLogicValue"]
+- !private ["So6BundleC", "main"]
+- !private ["So6BundleC", "path"]
 - !private ["s7CVarArgP", "_getBuiltinLogicValue"]
 - !private ["s7CVarArgP", "init"]
+- !private ["s7CVarArgP", "main"]
+- !private ["s7CVarArgP", "path"]
 - !private ["s9CodingKeyP", ""]
 - ["s9CodingKeyP", "debugDescription"]
 - ["s9CodingKeyP", "description"]
@@ -33,6 +39,8 @@ depends-member:
 - ["s28CustomDebugStringConvertibleP", "hashValue"]
 - ["s28CustomDebugStringConvertibleP", "init"]
 - ["s28CustomDebugStringConvertibleP", "intValue"]
+- !private ["s28CustomDebugStringConvertibleP", "main"]
+- !private ["s28CustomDebugStringConvertibleP", "path"]
 - ["s28CustomDebugStringConvertibleP", "stringValue"]
 - !private ["s29CustomPlaygroundQuickLookableP", "_getBuiltinLogicValue"]
 - !private ["s29CustomPlaygroundQuickLookableP", "init"]
@@ -45,7 +53,11 @@ depends-member:
 - ["s23CustomStringConvertibleP", "hashValue"]
 - ["s23CustomStringConvertibleP", "init"]
 - ["s23CustomStringConvertibleP", "intValue"]
+- !private ["s23CustomStringConvertibleP", "main"]
+- !private ["s23CustomStringConvertibleP", "path"]
 - ["s23CustomStringConvertibleP", "stringValue"]
+- !private ["s9DecodableP", "Bundle"]
+- !private ["s9DecodableP", "UIImage"]
 - ["s9DecodableP", ""]
 - !private ["s9DecodableP", "_getBuiltinLogicValue"]
 - !private ["s9DecodableP", "id"]
@@ -68,18 +80,23 @@ depends-member:
 - ["s9EquatableP", "hashValue"]
 - ["s9EquatableP", "init"]
 - ["s9EquatableP", "intValue"]
+- !private ["s9EquatableP", "main"]
+- !private ["s9EquatableP", "path"]
 - ["s9EquatableP", "stringValue"]
 - !private ["s27ExpressibleByBooleanLiteralP", "_getBuiltinLogicValue"]
 - !private ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "init"]
 - !private ["s26ExpressibleByStringLiteralP", "init"]
 - !private ["s33ExpressibleByUnicodeScalarLiteralP", "init"]
+- !private ["10Fortn_item12FortniteItemV", "Bundle"]
 - !private ["10Fortn_item12FortniteItemV", "CodingKeys"]
 - ["10Fortn_item12FortniteItemV", "String"]
+- ["10Fortn_item12FortniteItemV", "UIImage"]
 - ["10Fortn_item12FortniteItemV", "deinit"]
 - ["10Fortn_item12FortniteItemV", "id"]
 - ["10Fortn_item12FortniteItemV", "images"]
 - ["10Fortn_item12FortniteItemV", "init"]
 - ["10Fortn_item12FortniteItemV", "name"]
+- ["10Fortn_item12FortniteItemV", "parseImgURL"]
 - ["10Fortn_item12FortniteItemV", "price"]
 - ["10Fortn_item12FortniteItemV", "priceIcon"]
 - ["10Fortn_item12FortniteItemV", "priceIconLink"]
@@ -93,30 +110,50 @@ depends-member:
 - ["s8HashableP", "hashValue"]
 - ["s8HashableP", "init"]
 - ["s8HashableP", "intValue"]
+- !private ["s8HashableP", "main"]
+- !private ["s8HashableP", "path"]
 - ["s8HashableP", "stringValue"]
 - !private ["s22KeyedDecodingContainerV", "decode"]
 - !private ["s30KeyedDecodingContainerProtocolP", "decode"]
 - !private ["s25LosslessStringConvertibleP", "_getBuiltinLogicValue"]
 - !private ["s25LosslessStringConvertibleP", "init"]
 - !private ["s10MirrorPathP", "init"]
+- !private ["So8NSCodingP", "init"]
+- !private ["So21NSItemProviderReadingP", "init"]
+- !private ["So21NSItemProviderWritingP", "init"]
+- !private ["So8NSObjectC", "main"]
+- !private ["So8NSObjectC", "path"]
+- !private ["So16NSObjectProtocolP", "init"]
+- !private ["So16NSObjectProtocolP", "main"]
+- !private ["So16NSObjectProtocolP", "path"]
+- !private ["So14NSSecureCodingP", "init"]
 - !private ["s26RangeReplaceableCollectionP", "init"]
 - !private ["s8SequenceP", "init"]
 - !private ["SS", "init"]
 - !private ["s14StringProtocolP", "init"]
 - !private ["s16TextOutputStreamP", "init"]
 - !private ["s20TextOutputStreamableP", "init"]
+- !private ["So29UIAccessibilityIdentificationP", "init"]
+- !private ["So7UIImageC", "init"]
+- !private ["So39UIItemProviderPresentationSizeProvidingP", "init"]
+- !private ["9Alamofire14URLConvertibleP", "init"]
 - !private ["s35_ExpressibleByBuiltinBooleanLiteralP", "_getBuiltinLogicValue"]
 - !private ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", "init"]
 - !private ["s34_ExpressibleByBuiltinStringLiteralP", "init"]
 - !private ["s39_ExpressibleByBuiltinUTF16StringLiteralP", "init"]
 - !private ["s41_ExpressibleByBuiltinUnicodeScalarLiteralP", "init"]
+- !private ["s26_ExpressibleByImageLiteralP", "init"]
 - !private ["s33_ExpressibleByStringInterpolationP", "init"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "init"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "main"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "path"]
 - !private ["s21_ObjectiveCBridgeableP", "_getBuiltinLogicValue"]
 - !private ["s21_ObjectiveCBridgeableP", "init"]
 - !private ["s16_SwiftStringViewP", "init"]
 depends-nominal:
 - !private "s23BidirectionalCollectionP"
 - !private "Sb"
+- !private "So6BundleC"
 - !private "s7CVarArgP"
 - "s9CodingKeyP"
 - !private "s10CollectionP"
@@ -139,23 +176,37 @@ depends-nominal:
 - !private "s30KeyedDecodingContainerProtocolP"
 - !private "s25LosslessStringConvertibleP"
 - !private "s10MirrorPathP"
+- !private "So8NSCodingP"
+- !private "So21NSItemProviderReadingP"
+- !private "So21NSItemProviderWritingP"
+- !private "So8NSObjectC"
+- !private "So16NSObjectProtocolP"
+- !private "So14NSSecureCodingP"
 - !private "s26RangeReplaceableCollectionP"
 - !private "s8SequenceP"
 - !private "SS"
 - !private "s14StringProtocolP"
 - !private "s16TextOutputStreamP"
 - !private "s20TextOutputStreamableP"
+- !private "So29UIAccessibilityIdentificationP"
+- !private "So7UIImageC"
+- !private "So39UIItemProviderPresentationSizeProvidingP"
+- !private "9Alamofire14URLConvertibleP"
 - !private "s35_ExpressibleByBuiltinBooleanLiteralP"
 - !private "s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP"
 - !private "s34_ExpressibleByBuiltinStringLiteralP"
 - !private "s39_ExpressibleByBuiltinUTF16StringLiteralP"
 - !private "s41_ExpressibleByBuiltinUnicodeScalarLiteralP"
+- !private "s26_ExpressibleByImageLiteralP"
 - !private "s33_ExpressibleByStringInterpolationP"
+- !private "10Foundation27_KeyValueCodingAndObservingP"
 - !private "s21_ObjectiveCBridgeableP"
 - !private "s16_SwiftStringViewP"
 depends-dynamic-lookup:
 depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Dispatch.apinotesc"
+- "/Users/Emil/Grov-Filer/Xcode_kod/Fortn-item/P/Debug-iphoneos/AlamofireImage/AlamofireImage.framework/Modules/AlamofireImage.swiftmodule/arm64.swiftmodule"
+- "/Users/Emil/Grov-Filer/Xcode_kod/Fortn-item/P/Debug-iphoneos/Alamofire/Alamofire.framework/Modules/Alamofire.swiftmodule/arm64.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/ObjectiveC.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreData.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreImage.swiftmodule"
@@ -169,7 +220,13 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Swift.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/UIKit.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/SwiftOnoneSupport.swiftmodule"
+- "/Users/Emil/Grov-Filer/Xcode_kod/Fortn-item/P/Debug-iphoneos/AlamofireImage/AlamofireImage.framework/Headers/AlamofireImage-umbrella.h"
+- "/Users/Emil/Grov-Filer/Xcode_kod/Fortn-item/P/Debug-iphoneos/Alamofire/Alamofire.framework/Headers/Alamofire-umbrella.h"
+- "/Users/Emil/Grov-Filer/Xcode_kod/Fortn-item/P/Debug-iphoneos/AlamofireImage/AlamofireImage.framework/Headers/AlamofireImage-Swift.h"
+- "/Users/Emil/Grov-Filer/Xcode_kod/Fortn-item/P/Debug-iphoneos/Alamofire/Alamofire.framework/Headers/Alamofire-Swift.h"
 - "/Users/Emil/Grov-Filer/Xcode_kod/Fortn-item/Pods/Firebase/Core/Sources/module.modulemap"
+- "/Users/Emil/Grov-Filer/Xcode_kod/Fortn-item/P/Debug-iphoneos/AlamofireImage/AlamofireImage.framework/Modules/module.modulemap"
+- "/Users/Emil/Grov-Filer/Xcode_kod/Fortn-item/P/Debug-iphoneos/Alamofire/Alamofire.framework/Modules/module.modulemap"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/usr/include/objc/ObjectiveC.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/OpenGLES.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/CoreData.framework/Headers/CoreData.apinotes"
@@ -181,4 +238,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
-interface-hash: "f2ba7b008218a25f3b1d8118f6948433"
+interface-hash: "4ad83141eb2645ff7d4b339b0de5af7e"

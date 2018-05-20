@@ -1,4 +1,14 @@
 //
+//  itemModelItem.swift
+//  Fortn-item
+//
+//  Created by Emil Söderlind on 2018-05-20.
+//  Copyright © 2018 ENOS Pr. All rights reserved.
+//
+
+import Foundation
+
+//
 //  Item.swift
 //  Fortn-item
 //
@@ -11,7 +21,7 @@ import UIKit
 import Alamofire
 import AlamofireImage
 
-struct FortniteItem:Decodable {
+struct itemModelItem {
     var id: String
     var name: String
     var price: String
@@ -21,8 +31,10 @@ struct FortniteItem:Decodable {
     var rarity: String
     var type: String
     var readableType: String
+    
+    var imagesParsed:Bool = false
+    var imgPriceIconLink: UIImage
+    var imgPng:UIImage
 
     
-    
-
 }

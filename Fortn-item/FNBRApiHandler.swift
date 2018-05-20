@@ -16,6 +16,8 @@ class FNBRApiHandler {
     
     func parseCurrentItems(vc:TodaysTableViewController){
         
+        var startDate:Date = Date()
+        
         mainView = vc
         
         let urlString = URL(string: "https://fnbr.co/api/shop")
@@ -56,15 +58,32 @@ class FNBRApiHandler {
                 
                 var dataString = String(NSString(data: data, encoding: String.Encoding.utf8.rawValue)!)
                 dataString = dataString.replacingOccurrences(of: ":false}", with: ":\"\"}", options: .literal, range: nil)
+                dataString = dataString.replacingOccurrences(of: ":false,", with: ":\"\",", options: .literal, range: nil)
                 let fetch = try JSONDecoder().decode(FullFetch.self, from: dataString.data(using: String.Encoding.utf8)!)
                 
+                
+                let publishDate:Date = fetch.data.date.dateFromISO8601!
+                
+                let nrOfDaily:Int = fetch.data.daily.count
+                let nrOfFeatured:Int = fetch.data.featured.count
+
+                var iml:ItemModelList = ItemModelList(date: publishDate, featured: [], daily: [])
+                
+                // Parse daily to itemModelItem (with images)
+                for i in 0..<nrOfDaily {
+                    iml.daily.append(self.convertToItemModelItem(fi: (fetch.data.daily[i])))
+                }
+                
+                // Parse daily to itemModelItem (with images)
+                for i in 0..<nrOfFeatured {
+                    iml.featured.append(self.convertToItemModelItem(fi: (fetch.data.featured[i])))
+                }
+                
+                print("Parse took: ",-startDate.timeIntervalSinceNow)
                 // When we got data, do stuff on main queue
                 DispatchQueue.main.async {
                     
-                    var publishDate:Date = fetch.data.date.dateFromISO8601!
-
-                    
-                    vc.doneParsing(daily: fetch.data.daily, featured: fetch.data.featured)
+                    vc.doneParsing(parsedIML: iml)
                     
                 }
              
@@ -97,6 +116,26 @@ class FNBRApiHandler {
         URLSession.shared.dataTask(with: url) { data, response, error in
             completion(data, response, error)
             }.resume()
+    }
+    
+    // Convert and parse images to itemModelItems
+    func convertToItemModelItem(fi:FortniteItem) -> itemModelItem {
+        print("convertToItemModelItem (parse images)")
+        
+        let newPriceIconLink:UIImage = parseImgURL(uri: fi.priceIconLink)
+        let newPngImg:UIImage = parseImgURL(uri: fi.images["png"]!)
+        
+        let imi:itemModelItem = itemModelItem(id: fi.id, name: fi.name, price: fi.price, priceIcon: fi.priceIcon, priceIconLink: fi.priceIconLink, images: fi.images, rarity: fi.rarity, type: fi.type, readableType: fi.readableType, imagesParsed: true, imgPriceIconLink: newPriceIconLink, imgPng: newPngImg)
+        
+        print("convertToItemModelItem (parse images) - DONE")
+        return imi
+    }
+    
+    func parseImgURL(uri:String)->UIImage{
+        print("parseImgURL")
+        var img:UIImage = UIImage(url: (URL(string: uri)))!
+        print("parseImgURL - DONE")
+        return img
     }
     
 }

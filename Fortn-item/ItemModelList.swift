@@ -11,7 +11,7 @@ import Foundation
 struct ItemModelList {
     
     var date:Date
-    var featured:[FortniteItem]
-    var daily:[FortniteItem]
+    var featured:[itemModelItem]
+    var daily:[itemModelItem]
     
 }

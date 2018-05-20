@@ -62,3 +62,25 @@ extension Date {
     }
 }
 
+extension UIImage {
+    convenience init?(url: URL?) {
+        guard let url = url else { return nil }
+        
+        do {
+            let data = try Data(contentsOf: url)
+            self.init(data: data)
+        } catch {
+            print("Cannot load image from url: \(url) with error: \(error)")
+            return nil
+        }
+    }
+}
+
+extension Bundle {
+    var releaseVersionNumber: String? {
+        return infoDictionary?["CFBundleShortVersionString"] as? String
+    }
+    var buildVersionNumber: String? {
+        return infoDictionary?["CFBundleVersion"] as? String
+    }
+}

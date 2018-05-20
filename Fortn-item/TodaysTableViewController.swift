@@ -11,8 +11,7 @@ import UIKit
 class TodaysTableViewController: UITableViewController {
     
     
-    var dailyList:[FortniteItem] = []
-    var featuredList:[FortniteItem] = []
+    var iml: ItemModelList = ItemModelList(date: Date(), featured: [], daily: [])
     var parseDone:Bool = false
     
     override func viewDidLoad() {
@@ -28,12 +27,11 @@ class TodaysTableViewController: UITableViewController {
         print("TodaysTableViewController ViewDidLoad - DONE")
     }
     
-    func doneParsing(daily: [FortniteItem], featured: [FortniteItem]){
+    func doneParsing(parsedIML: ItemModelList){
         print("Done parsing - updating tableView")
-        parseDone = true
         
-        dailyList = daily
-        featuredList = featured
+        iml = parsedIML
+        parseDone = true
         
         self.tableView.reloadData()
         print("Done parsing - updating tableView - DONE")
@@ -59,7 +57,7 @@ class TodaysTableViewController: UITableViewController {
         let result = formatter.string(from: date)
         
         if(section == 0){
-            return "Item Shop | \(result)"
+            return "Item Shop | Version: \(Bundle.main.releaseVersionNumber!)"
         }else if(section == 1){
             return "Featured"
         }else{
@@ -74,9 +72,9 @@ class TodaysTableViewController: UITableViewController {
         if(section == 0){
             return 0
         }else if(section == 1){
-            return featuredList.count
+            return iml.featured.count
         }else if (section == 2){
-            return dailyList.count
+            return iml.daily.count
         }
     
         return 0
@@ -87,11 +85,11 @@ class TodaysTableViewController: UITableViewController {
         
         if(indexPath.section == 1){
             
-            cell.mainImage.downloadedFrom(link: featuredList[indexPath.row].images["icon"]!)
+            cell.mainImage.image = iml.featured[indexPath.row].imgPng
             
         }else if(indexPath.section == 2){
             
-            cell.mainImage.downloadedFrom(link: dailyList[indexPath.row].images["icon"]!)
+            cell.mainImage.image = iml.daily[indexPath.row].imgPng
 
         }
         

@@ -1,13 +1,14 @@
 version: "Apple Swift version 4.1 (swiftlang-902.0.48 clang-902.0.37.1)"
 options: "f04c7b8eff11d292a7c11a0e969ea2dc"
-build_time: [1526683455, 965268000]
+build_time: [1526818242, 930921000]
 inputs:
-  "/Users/Emil/Grov-Filer/Xcode_kod/Fortn-item/Fortn-item/FortniteItem.swift": [1526682136, 0]
+  "/Users/Emil/Grov-Filer/Xcode_kod/Fortn-item/Fortn-item/FortniteItem.swift": [1526817490, 0]
   "/Users/Emil/Grov-Filer/Xcode_kod/Fortn-item/Fortn-item/ItemTableViewCell.swift": [1526682416, 0]
   "/Users/Emil/Grov-Filer/Xcode_kod/Fortn-item/Fortn-item/FullFetch.swift": [1526594194, 0]
-  "/Users/Emil/Grov-Filer/Xcode_kod/Fortn-item/Fortn-item/TodaysTableViewController.swift": [1526683454, 0]
+  "/Users/Emil/Grov-Filer/Xcode_kod/Fortn-item/Fortn-item/TodaysTableViewController.swift": [1526818241, 0]
   "/Users/Emil/Grov-Filer/Xcode_kod/Fortn-item/Fortn-item/dataStruct.swift": [1526669775, 0]
-  "/Users/Emil/Grov-Filer/Xcode_kod/Fortn-item/Fortn-item/ItemModelList.swift": [1526682838, 0]
-  "/Users/Emil/Grov-Filer/Xcode_kod/Fortn-item/Fortn-item/imageExt.swift": [1526681263, 0]
+  "/Users/Emil/Grov-Filer/Xcode_kod/Fortn-item/Fortn-item/ItemModelList.swift": [1526817486, 0]
+  "/Users/Emil/Grov-Filer/Xcode_kod/Fortn-item/Fortn-item/imageExt.swift": [1526818200, 0]
+  "/Users/Emil/Grov-Filer/Xcode_kod/Fortn-item/Fortn-item/itemModelItem.swift": [1526816905, 0]
   "/Users/Emil/Grov-Filer/Xcode_kod/Fortn-item/Fortn-item/AppDelegate.swift": [1526598639, 0]
-  "/Users/Emil/Grov-Filer/Xcode_kod/Fortn-item/Fortn-item/FNBRApiHandler.swift": !dirty [1526682874, 0]
+  "/Users/Emil/Grov-Filer/Xcode_kod/Fortn-item/Fortn-item/FNBRApiHandler.swift": [1526818210, 0]
