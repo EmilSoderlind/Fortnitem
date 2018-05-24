@@ -22,6 +22,7 @@ class FNBRApiHandler {
         
         var possibleError = ""
         
+        
         mainView = vc
         
         let urlString = URL(string: "https://fnbr.co/api/shop")
@@ -50,6 +51,12 @@ class FNBRApiHandler {
                     print("HTTP response: \(httpResponse.statusCode).")
                     possibleError = "HTTP response: \(httpResponse.statusCode)."
                 }
+            }
+            
+            print("Reachability.isConnectedToNetwork(): \(Reachability.isConnectedToNetwork())")
+            
+            if(!Reachability.isConnectedToNetwork()){
+                possibleError = "No internet connection."
             }
             
             // If we have recieved error, present error pop-up via vc.

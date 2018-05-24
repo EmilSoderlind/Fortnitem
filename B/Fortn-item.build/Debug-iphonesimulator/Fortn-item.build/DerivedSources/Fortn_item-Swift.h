@@ -262,20 +262,6 @@ SWIFT_CLASS("_TtC10Fortn_item25TodaysTableViewController")
 
 
 
-
-SWIFT_CLASS("_TtC10Fortn_item18priceContainerView")
-@interface priceContainerView : UIView
-- (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
-- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
-@end
-
-
-SWIFT_CLASS("_TtC10Fortn_item18titleContainerView")
-@interface titleContainerView : UIView
-- (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
-- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
-@end
-
 #if __has_attribute(external_source_symbol)
 # pragma clang attribute pop
 #endif

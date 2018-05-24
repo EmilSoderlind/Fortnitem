@@ -26,6 +26,7 @@ depends-top-level:
 - !private "JSONDecoder"
 - !private "NSMutableURLRequest"
 - !private "NSString"
+- !private "Reachability"
 - "String"
 - !private "StringLiteralType"
 - "TodaysTableViewController"
@@ -224,6 +225,7 @@ depends-member:
 - !private ["10Fortn_item14FNBRApiHandlerC", "JSONDecoder"]
 - !private ["10Fortn_item14FNBRApiHandlerC", "NSMutableURLRequest"]
 - !private ["10Fortn_item14FNBRApiHandlerC", "NSString"]
+- !private ["10Fortn_item14FNBRApiHandlerC", "Reachability"]
 - ["10Fortn_item14FNBRApiHandlerC", "String"]
 - ["10Fortn_item14FNBRApiHandlerC", "TodaysTableViewController"]
 - ["10Fortn_item14FNBRApiHandlerC", "UIImage"]
@@ -380,6 +382,8 @@ depends-member:
 - !private ["s16RawRepresentableP", "literal"]
 - !private ["s16RawRepresentableP", "rawValue"]
 - !private ["s16RawRepresentableP", "utf8"]
+- !private ["10Fortn_item12ReachabilityC", "init"]
+- !private ["10Fortn_item12ReachabilityC", "isConnectedToNetwork"]
 - !private ["10Foundation20ReferenceConvertibleP", "init"]
 - !private ["10Foundation20ReferenceConvertibleP", "timeIntervalSinceNow"]
 - !private ["s8SequenceP", "Encoding"]
@@ -576,6 +580,7 @@ depends-nominal:
 - !private "s22RandomAccessCollectionP"
 - !private "s26RangeReplaceableCollectionP"
 - !private "s16RawRepresentableP"
+- !private "10Fortn_item12ReachabilityC"
 - !private "10Foundation20ReferenceConvertibleP"
 - !private "s8SequenceP"
 - !private "s10SetAlgebraP"

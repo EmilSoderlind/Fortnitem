@@ -48,7 +48,13 @@ class TodaysTableViewController: UITableViewController, UITabBarControllerDelega
 
     override func numberOfSections(in tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
-        return 3
+        
+        if(!parseDone){
+            return 2
+        }else{
+            return 3
+        }
+        
     }
     
     override func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
@@ -66,7 +72,7 @@ class TodaysTableViewController: UITableViewController, UITabBarControllerDelega
             return "Daily"
         }
         
-        return "Loading.."
+        return "Loading..."
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {

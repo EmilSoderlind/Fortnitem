@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2019768420B757A700C6D2F7 /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2019768320B757A700C6D2F7 /* Reachability.swift */; };
 		202E6C4020AA1B4500FFC784 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 202E6C3F20AA1B4500FFC784 /* AppDelegate.swift */; };
 		202E6C4520AA1B4500FFC784 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 202E6C4320AA1B4500FFC784 /* Main.storyboard */; };
 		202E6C4820AA1B4500FFC784 /* Fortn_item.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 202E6C4620AA1B4500FFC784 /* Fortn_item.xcdatamodeld */; };
@@ -21,8 +22,6 @@
 		204B130F20B193A4008AC4BE /* itemModelItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 204B130E20B193A4008AC4BE /* itemModelItem.swift */; };
 		204B131320B1B93E008AC4BE /* png.png in Resources */ = {isa = PBXBuildFile; fileRef = 204B131220B1B93D008AC4BE /* png.png */; };
 		204B131620B1BF95008AC4BE /* BurbankBigCondensed-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 204B131520B1BF3B008AC4BE /* BurbankBigCondensed-Bold.otf */; };
-		204B131820B1C141008AC4BE /* priceContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 204B131720B1C141008AC4BE /* priceContainerView.swift */; };
-		204B131A20B1C16B008AC4BE /* titleContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 204B131920B1C16B008AC4BE /* titleContainerView.swift */; };
 		204B131C20B1E35E008AC4BE /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 204B131B20B1E35E008AC4BE /* logo.png */; };
 		2093523820AEB7B8006AC361 /* imageExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2093523720AEB7B8006AC361 /* imageExt.swift */; };
 		20ED64EF20AE30B8002FA6E9 /* FullFetch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20ED64EE20AE30B8002FA6E9 /* FullFetch.swift */; };
@@ -32,6 +31,7 @@
 
 /* Begin PBXFileReference section */
 		1246BDF48BDA7676471FCB14 /* Pods-Fortn-item.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Fortn-item.release.xcconfig"; path = "Pods/Target Support Files/Pods-Fortn-item/Pods-Fortn-item.release.xcconfig"; sourceTree = "<group>"; };
+		2019768320B757A700C6D2F7 /* Reachability.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reachability.swift; sourceTree = "<group>"; };
 		202E6C3C20AA1B4500FFC784 /* Fortn-item.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Fortn-item.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		202E6C3F20AA1B4500FFC784 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		202E6C4420AA1B4500FFC784 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -48,8 +48,6 @@
 		204B130E20B193A4008AC4BE /* itemModelItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = itemModelItem.swift; sourceTree = "<group>"; };
 		204B131220B1B93D008AC4BE /* png.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = png.png; sourceTree = "<group>"; };
 		204B131520B1BF3B008AC4BE /* BurbankBigCondensed-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "BurbankBigCondensed-Bold.otf"; sourceTree = "<group>"; };
-		204B131720B1C141008AC4BE /* priceContainerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = priceContainerView.swift; sourceTree = "<group>"; };
-		204B131920B1C16B008AC4BE /* titleContainerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = titleContainerView.swift; sourceTree = "<group>"; };
 		204B131B20B1E35E008AC4BE /* logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo.png; sourceTree = "<group>"; };
 		2093523720AEB7B8006AC361 /* imageExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = imageExt.swift; sourceTree = "<group>"; };
 		20ED64EE20AE30B8002FA6E9 /* FullFetch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FullFetch.swift; sourceTree = "<group>"; };
@@ -98,8 +96,6 @@
 				204B131220B1B93D008AC4BE /* png.png */,
 				202E6C3F20AA1B4500FFC784 /* AppDelegate.swift */,
 				202E7F8C20AF45DC00B8D0FD /* TodaysTableViewController.swift */,
-				204B131720B1C141008AC4BE /* priceContainerView.swift */,
-				204B131920B1C16B008AC4BE /* titleContainerView.swift */,
 				202E7F8E20AF468700B8D0FD /* ItemTableViewCell.swift */,
 				202E6C4320AA1B4500FFC784 /* Main.storyboard */,
 				202E6C4920AA1B4C00FFC784 /* Assets.xcassets */,
@@ -114,6 +110,7 @@
 				20ED64F020AE314A002FA6E9 /* dataStruct.swift */,
 				20ED64F220AE43A0002FA6E9 /* Fortn-item.entitlements */,
 				2093523720AEB7B8006AC361 /* imageExt.swift */,
+				2019768320B757A700C6D2F7 /* Reachability.swift */,
 			);
 			path = "Fortn-item";
 			sourceTree = "<group>";
@@ -272,14 +269,13 @@
 			files = (
 				202E6C5720AA2C4F00FFC784 /* FortniteItem.swift in Sources */,
 				202E7F8F20AF468700B8D0FD /* ItemTableViewCell.swift in Sources */,
+				2019768420B757A700C6D2F7 /* Reachability.swift in Sources */,
 				20ED64EF20AE30B8002FA6E9 /* FullFetch.swift in Sources */,
 				202E7F8D20AF45DC00B8D0FD /* TodaysTableViewController.swift in Sources */,
-				204B131820B1C141008AC4BE /* priceContainerView.swift in Sources */,
 				20ED64F120AE314A002FA6E9 /* dataStruct.swift in Sources */,
 				202E7F9520AF7B1900B8D0FD /* ItemModelList.swift in Sources */,
 				202E6C4820AA1B4500FFC784 /* Fortn_item.xcdatamodeld in Sources */,
 				2093523820AEB7B8006AC361 /* imageExt.swift in Sources */,
-				204B131A20B1C16B008AC4BE /* titleContainerView.swift in Sources */,
 				204B130F20B193A4008AC4BE /* itemModelItem.swift in Sources */,
 				202E6C4020AA1B4500FFC784 /* AppDelegate.swift in Sources */,
 				202E6C5520AA242700FFC784 /* FNBRApiHandler.swift in Sources */,

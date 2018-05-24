@@ -20,7 +20,6 @@ class ItemTableViewCell: UITableViewCell {
         super.awakeFromNib()
         // Initialization code
         
-        print("awakeFromNib -> \(title.text)")
     }
     
     override func setSelected(_ selected: Bool, animated: Bool) {
