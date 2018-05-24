@@ -28,7 +28,7 @@ extension UIImageView {
                 self.image = image
                 print("Starting image-parse - DONE (\(-t.timeIntervalSinceNow)s)")
             }
-            }.resume()
+        }.resume()
     }
     func downloadedFrom(link: String, contentMode mode: UIViewContentMode = .scaleAspectFit) {
         guard let url = URL(string: link) else {
@@ -93,6 +93,11 @@ extension UIView{
         gradientLayer.frame = CGRect(x: 0, y: 0, width: 400, height: 400)
         gradientLayer.startPoint = CGPoint(x: 0, y: 1)
         gradientLayer.endPoint = CGPoint(x: 0, y: 0)
-        self.layer.insertSublayer(gradientLayer, at: 0)
+        
+        // If cell dosen't have gradient background, add it!
+        if(!(self.layer.sublayers?.contains(gradientLayer))!){
+            self.layer.insertSublayer(gradientLayer, at: 0)
+        }
+        
     }
 }
