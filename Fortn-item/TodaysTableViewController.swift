@@ -23,6 +23,9 @@ class TodaysTableViewController: UITableViewController, UITabBarControllerDelega
         let ap: FNBRApiHandler = FNBRApiHandler()
         ap.parseCurrentItems(vc: self)
         
+        let fortniteFont = UIFont(name: "BurbankBigCondensed-Bold", size: 17)
+        UITabBarItem.appearance().setTitleTextAttributes([kCTFontAttributeName as NSAttributedStringKey: fortniteFont!], for: .normal)
+        
         print("TodaysTableViewController ViewDidLoad - DONE")
     }
     
@@ -94,7 +97,7 @@ class TodaysTableViewController: UITableViewController, UITabBarControllerDelega
                 cell.mainImage.image = iml.featured[indexPath.row].imgPng
             }
             
-            cell.title.text = iml.featured[indexPath.row].rarity
+            cell.title.text = iml.featured[indexPath.row].name
             cell.priceLabel.text = iml.featured[indexPath.row].price
             cell.priceImg.image = iml.featured[indexPath.row].imgPriceIconLink
             
@@ -110,7 +113,7 @@ class TodaysTableViewController: UITableViewController, UITabBarControllerDelega
                 cell.mainImage.image = iml.daily[indexPath.row].imgPng
             }
             
-            cell.title.text = iml.daily[indexPath.row].rarity
+            cell.title.text = iml.daily[indexPath.row].name
             cell.priceLabel.text = iml.daily[indexPath.row].price
             cell.priceImg.image = iml.daily[indexPath.row].imgPriceIconLink
             
@@ -121,24 +124,18 @@ class TodaysTableViewController: UITableViewController, UITabBarControllerDelega
             
         }
         
-        
-        //cell.gradientBackgroundView.backgroundColor = UIColor.green
-        
-        /*
-        var i = 0
-        print("")
-        for layer in cell.layer.sublayers!{
-            print("")
-            print("layer \(i) -> \(String(describing: layer.sublayers))")
-            print("")
-            i = i + 1
-        }
-        print("")
-*/
-        
         return cell
     }
     
+    
+    override func tableView(_ tableView: UITableView, willDisplayHeaderView view: UIView, forSection section: Int) {
+        guard let header = view as? UITableViewHeaderFooterView else { return }
+        header.textLabel?.textColor = UIColor(red: 51.0/255.0, green: 180.0/255.0, blue: 239.0/255.0, alpha: 1)
+        header.textLabel?.font = UIFont(name: "BurbankBigCondensed-Bold", size: 25)
+            //UIFont.fontNames(forFamilyName: "BurbankBigCondensed-Bold.otf")[0]
+        header.textLabel?.frame = header.frame
+        header.textLabel?.textAlignment = .center
+    }
     
 
     /*

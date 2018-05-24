@@ -284,7 +284,7 @@
                                     <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo.png" translatesAutoresizingMaskIntoConstraints="NO" id="gc9-4x-p6D">
                                         <rect key="frame" x="0.0" y="0.0" width="288" height="249.5"/>
                                     </imageView>
-                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="ITEM SHOP" translatesAutoresizingMaskIntoConstraints="NO" id="m6X-rq-3Rp">
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="ITEM SHOP" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="m6X-rq-3Rp">
                                         <rect key="frame" x="0.0" y="249.5" width="288" height="249.5"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
