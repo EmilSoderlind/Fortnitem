@@ -222,7 +222,6 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly) Class _Nonnull layer
 
 @class UIImageView;
 @class UILabel;
-@class UITapGestureRecognizer;
 
 SWIFT_CLASS("_TtC10Fortn_item17ItemTableViewCell")
 @interface ItemTableViewCell : UITableViewCell
@@ -233,7 +232,6 @@ SWIFT_CLASS("_TtC10Fortn_item17ItemTableViewCell")
 @property (nonatomic, weak) IBOutlet UIImageView * _Null_unspecified mainImage;
 - (void)awakeFromNib;
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated;
-- (void)dismissFullscreenImage:(UITapGestureRecognizer * _Nonnull)sender;
 - (nonnull instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString * _Nullable)reuseIdentifier OBJC_DESIGNATED_INITIALIZER SWIFT_AVAILABILITY(ios,introduced=3.0);
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
