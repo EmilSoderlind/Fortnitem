@@ -61,7 +61,6 @@ class FNBRApiHandler {
                 dataString = dataString.replacingOccurrences(of: ":false,", with: ":\"\",", options: .literal, range: nil)
                 let fetch = try JSONDecoder().decode(FullFetch.self, from: dataString.data(using: String.Encoding.utf8)!)
                 
-                
                 let publishDate:Date = fetch.data.date.dateFromISO8601!
                 
                 let nrOfDaily:Int = fetch.data.daily.count

@@ -145,11 +145,7 @@ class TodaysTableViewController: UITableViewController, UITabBarControllerDelega
             }else if(iml.daily[indexPath.row].rarity == "legendary"){
                 cell.addGradientBackground(firstColor: UIColor(red: 223.0/255.0, green: 133.0/255.0, blue: 41.0/255.0, alpha: 1), secondColor: UIColor(red: 147.0/255.0, green: 88.0/255.0, blue: 50.0/255.0, alpha: 1))
             }
-            
         }
-        
-        
-        
 
         return cell
     }

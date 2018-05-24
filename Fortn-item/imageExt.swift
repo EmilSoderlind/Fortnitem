@@ -84,11 +84,12 @@ extension Bundle {
         return infoDictionary?["CFBundleVersion"] as? String
     }
 }
+
 extension UIView{
     func addGradientBackground(firstColor: UIColor, secondColor: UIColor){
         clipsToBounds = true
         let gradientLayer = CAGradientLayer()
-        gradientLayer.colors = [firstColor.cgColor, secondColor.cgColor]
+        gradientLayer.colors = [secondColor.cgColor, firstColor.cgColor]
         gradientLayer.frame = CGRect(x: 0, y: 0, width: 400, height: 400)
         gradientLayer.startPoint = CGPoint(x: 0, y: 1)
         gradientLayer.endPoint = CGPoint(x: 0, y: 0)
