@@ -165,6 +165,7 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 #if __has_feature(modules)
 @import UIKit;
 @import Foundation;
+@import CoreGraphics;
 #endif
 
 #pragma clang diagnostic ignored "-Wproperty-attribute-mismatch"
@@ -201,11 +202,33 @@ SWIFT_CLASS("_TtC10Fortn_item11AppDelegate")
 
 
 
-@class UIImageView;
+@class UIColor;
 @class NSCoder;
+
+SWIFT_CLASS("_TtC10Fortn_item12GradientView")
+@interface GradientView : UIView
+@property (nonatomic, strong) UIColor * _Nonnull startColor;
+@property (nonatomic, strong) UIColor * _Nonnull endColor;
+@property (nonatomic) double startLocation;
+@property (nonatomic) double endLocation;
+@property (nonatomic) BOOL horizontalMode;
+@property (nonatomic) BOOL diagonalMode;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly) Class _Nonnull layerClass;)
++ (Class _Nonnull)layerClass SWIFT_WARN_UNUSED_RESULT;
+- (void)layoutSubviews;
+- (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+@class UIImageView;
+@class UILabel;
 
 SWIFT_CLASS("_TtC10Fortn_item17ItemTableViewCell")
 @interface ItemTableViewCell : UITableViewCell
+@property (nonatomic, weak) IBOutlet GradientView * _Null_unspecified gradientBackgroundView;
+@property (nonatomic, weak) IBOutlet UIImageView * _Null_unspecified priceImg;
+@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified title;
+@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified priceLabel;
 @property (nonatomic, weak) IBOutlet UIImageView * _Null_unspecified mainImage;
 - (void)awakeFromNib;
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated;
@@ -225,12 +248,15 @@ SWIFT_CLASS("_TtC10Fortn_item25TodaysTableViewController")
 - (NSString * _Nullable)tableView:(UITableView * _Nonnull)tableView titleForHeaderInSection:(NSInteger)section SWIFT_WARN_UNUSED_RESULT;
 - (NSInteger)tableView:(UITableView * _Nonnull)tableView numberOfRowsInSection:(NSInteger)section SWIFT_WARN_UNUSED_RESULT;
 - (ItemTableViewCell * _Nonnull)tableView:(UITableView * _Nonnull)tableView cellForRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath SWIFT_WARN_UNUSED_RESULT;
+- (void)tableView:(UITableView * _Nonnull)tableView willDisplayHeaderView:(UIView * _Nonnull)view forSection:(NSInteger)section;
 - (BOOL)tableView:(UITableView * _Nonnull)tableView canMoveRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath SWIFT_WARN_UNUSED_RESULT;
 - (void)tabBarController:(UITabBarController * _Nonnull)tabBarController didSelectViewController:(UIViewController * _Nonnull)viewController;
 - (nonnull instancetype)initWithStyle:(UITableViewStyle)style OBJC_DESIGNATED_INITIALIZER;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
+
+
 
 
 

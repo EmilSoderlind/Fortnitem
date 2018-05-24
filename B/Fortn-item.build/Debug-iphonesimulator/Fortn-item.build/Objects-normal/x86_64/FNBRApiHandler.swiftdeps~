@@ -7,6 +7,7 @@ provides-member:
 - ["10Fortn_item14FNBRApiHandlerC", ""]
 provides-dynamic-lookup:
 depends-top-level:
+- !private "!"
 - !private "!="
 - !private "-"
 - !private "=="
@@ -382,7 +383,6 @@ depends-member:
 - !private ["s16RawRepresentableP", "literal"]
 - !private ["s16RawRepresentableP", "rawValue"]
 - !private ["s16RawRepresentableP", "utf8"]
-- !private ["10Fortn_item12ReachabilityC", "init"]
 - !private ["10Fortn_item12ReachabilityC", "isConnectedToNetwork"]
 - !private ["10Foundation20ReferenceConvertibleP", "init"]
 - !private ["10Foundation20ReferenceConvertibleP", "timeIntervalSinceNow"]
