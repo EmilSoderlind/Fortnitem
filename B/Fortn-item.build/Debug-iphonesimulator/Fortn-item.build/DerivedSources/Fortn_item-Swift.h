@@ -202,12 +202,30 @@ SWIFT_CLASS("_TtC10Fortn_item11AppDelegate")
 
 
 
+@class UIColor;
+@class NSCoder;
+
+SWIFT_CLASS("_TtC10Fortn_item12GradientView")
+@interface GradientView : UIView
+@property (nonatomic, strong) UIColor * _Nonnull startColor;
+@property (nonatomic, strong) UIColor * _Nonnull endColor;
+@property (nonatomic) double startLocation;
+@property (nonatomic) double endLocation;
+@property (nonatomic) BOOL horizontalMode;
+@property (nonatomic) BOOL diagonalMode;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly) Class _Nonnull layerClass;)
++ (Class _Nonnull)layerClass SWIFT_WARN_UNUSED_RESULT;
+- (void)layoutSubviews;
+- (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+@end
+
 @class UIImageView;
 @class UILabel;
-@class NSCoder;
 
 SWIFT_CLASS("_TtC10Fortn_item17ItemTableViewCell")
 @interface ItemTableViewCell : UITableViewCell
+@property (nonatomic, weak) IBOutlet GradientView * _Null_unspecified gradientBackgroundView;
 @property (nonatomic, weak) IBOutlet UIImageView * _Null_unspecified priceImg;
 @property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified title;
 @property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified priceLabel;

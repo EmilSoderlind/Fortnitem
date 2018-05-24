@@ -98,8 +98,8 @@ class TodaysTableViewController: UITableViewController, UITabBarControllerDelega
             cell.priceLabel.text = iml.featured[indexPath.row].price
             cell.priceImg.image = iml.featured[indexPath.row].imgPriceIconLink
             
-            cell.setGradientBackground(item: iml.featured[indexPath.row])
-
+            cell.gradientBackgroundView.startColor = getRarityColor(rarityStr: iml.featured[indexPath.row].rarity + "0")
+            cell.gradientBackgroundView.endColor = getRarityColor(rarityStr: iml.featured[indexPath.row].rarity + "1")
             
         }else if(indexPath.section == 2){
             
@@ -114,21 +114,27 @@ class TodaysTableViewController: UITableViewController, UITabBarControllerDelega
             cell.priceLabel.text = iml.daily[indexPath.row].price
             cell.priceImg.image = iml.daily[indexPath.row].imgPriceIconLink
             
-            cell.setGradientBackground(item: iml.daily[indexPath.row])
+            //cell.setGradientBackground(item: iml.daily[indexPath.row])
+            
+            cell.gradientBackgroundView.startColor = getRarityColor(rarityStr: iml.daily[indexPath.row].rarity + "0")
+            cell.gradientBackgroundView.endColor = getRarityColor(rarityStr: iml.daily[indexPath.row].rarity + "1")
             
         }
         
         
+        //cell.gradientBackgroundView.backgroundColor = UIColor.green
+        
+        /*
         var i = 0
         print("")
         for layer in cell.layer.sublayers!{
             print("")
-            print("layer \(i) -> \(layer.sublayers!)")
+            print("layer \(i) -> \(String(describing: layer.sublayers))")
             print("")
             i = i + 1
         }
         print("")
-
+*/
         
         return cell
     }
@@ -208,6 +214,34 @@ class TodaysTableViewController: UITableViewController, UITabBarControllerDelega
             }}))
         self.present(alert, animated: true, completion: nil)
         print("presentErrorMessage - DONE")
+    }
+    
+    func getRarityColor(rarityStr: String) -> UIColor{
+        print("getRarityColor(\(rarityStr))")
+        
+        if(rarityStr == "common0"){
+            return UIColor(red: 193.0/255.0, green: 194.0/255.0, blue: 194, alpha: 1)
+        }else if(rarityStr == "common1"){
+            return UIColor(red: 146.0/255.0, green: 148.0/255.0, blue: 149.0/255.0, alpha: 1)
+        }else if(rarityStr == "uncommon0"){
+            return UIColor(red: 72.0/255.0, green: 160.0/255.0, blue: 4.0/255.0, alpha: 1)
+        }else if(rarityStr == "uncommon1"){
+            return UIColor(red: 12.0/255.0, green: 120.0/255.0, blue: 9.0/255.0, alpha: 1)
+        }else if(rarityStr == "rare0"){
+            return UIColor(red: 51.0/255.0, green: 180.0/255.0, blue: 239.0/255.0, alpha: 1)
+        }else if(rarityStr == "rare1"){
+            return UIColor(red: 9.0/255.0, green: 105.0/255.0, blue: 176.0/255.0, alpha: 1)
+        }else if(rarityStr == "epic0"){
+            return UIColor(red: 191.0/255.0, green: 98.0/255.0, blue: 227.0/255.0, alpha: 1)
+        }else if(rarityStr == "epic1"){
+            return UIColor(red: 131.0/255.0, green: 22.0/255.0, blue: 175.0/255.0, alpha: 1)
+        }else if(rarityStr == "legendary0"){
+            return UIColor(red: 223.0/255.0, green: 133.0/255.0, blue: 41.0/255.0, alpha: 1)
+        }else if(rarityStr == "legendary1"){
+            return UIColor(red: 147.0/255.0, green: 88.0/255.0, blue: 50.0/255.0, alpha: 1)
+        }
+        
+        return UIColor.black
     }
     
 }

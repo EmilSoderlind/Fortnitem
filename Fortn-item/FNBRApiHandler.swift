@@ -55,11 +55,10 @@ class FNBRApiHandler {
             // If we have recieved error, present error pop-up via vc.
             if(possibleError != ""){
                 DispatchQueue.main.async {
-                    
                     print("Found error: \(possibleError)")
                     vc.presentErrorMessage(err: possibleError)
-                    
                 }
+                return
             }
             
             
@@ -72,6 +71,7 @@ class FNBRApiHandler {
                         
             do {
                 
+                // Since the API mix and match datatypes i need to make all bools (false) to empty strings
                 var dataString = String(NSString(data: data, encoding: String.Encoding.utf8.rawValue)!)
                 dataString = dataString.replacingOccurrences(of: ":false}", with: ":\"\"}", options: .literal, range: nil)
                 dataString = dataString.replacingOccurrences(of: ":false,", with: ":\"\",", options: .literal, range: nil)
@@ -79,19 +79,16 @@ class FNBRApiHandler {
                 
                 let publishDate:Date = fetch.data.date.dateFromISO8601!
                 
-                let nrOfDaily:Int = fetch.data.daily.count
-                let nrOfFeatured:Int = fetch.data.featured.count
-
                 var iml:ItemModelList = ItemModelList(date: publishDate, featured: [], daily: [])
                 
                 // Parse daily to itemModelItem (with images)
-                for i in 0..<nrOfDaily {
-                    iml.daily.append(self.convertToItemModelItem(fi: (fetch.data.daily[i])))
+                for item in fetch.data.daily {
+                    iml.daily.append(self.convertToItemModelItem(fi: item))
                 }
                 
                 // Parse daily to itemModelItem (with images)
-                for i in 0..<nrOfFeatured {
-                    iml.featured.append(self.convertToItemModelItem(fi: (fetch.data.featured[i])))
+                for item in fetch.data.featured {
+                    iml.featured.append(self.convertToItemModelItem(fi: item))
                 }
                 
                 print("--- API ---")
@@ -103,21 +100,18 @@ class FNBRApiHandler {
                 
                 // When we got data, do stuff on main queue
                 DispatchQueue.main.async {
-                    
                     vc.doneParsing(parsedIML: iml)
-                    
                 }
              
             } catch let err {
                 print("Error serializing json:", err)
             }
             
-            
         }
         task.resume()
     }
     
-    func downloadImage(url: URL) {
+    /*func downloadImage(url: URL) {
         print("Download Started")
         getDataFromUrl(url: url) { data, response, error in
             guard let data = data, error == nil else { return }
@@ -130,7 +124,7 @@ class FNBRApiHandler {
                 //self.imageView.image = UIImage(data: data)
             }
         }
-    }
+    }*/
     
     func getDataFromUrl(url: URL, completion: @escaping (Data?, URLResponse?, Error?) -> ()) {
         URLSession.shared.dataTask(with: url) { data, response, error in
@@ -170,7 +164,7 @@ class FNBRApiHandler {
     
     func parseImgURL(uri:String)->UIImage{
         print("parseImgURL")
-        var img:UIImage = UIImage(url: (URL(string: uri)))!
+        let img:UIImage = UIImage(url: (URL(string: uri)))!
         print("parseImgURL - DONE")
         return img
     }
