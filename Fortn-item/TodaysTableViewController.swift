@@ -86,8 +86,6 @@ class TodaysTableViewController: UITableViewController, UITabBarControllerDelega
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> ItemTableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "itemCell", for: indexPath) as! ItemTableViewCell
         
-        
-        
         if(indexPath.section == 1){
             
             if(iml.featured[indexPath.row].type == "emote"){
@@ -100,21 +98,8 @@ class TodaysTableViewController: UITableViewController, UITabBarControllerDelega
             cell.priceLabel.text = iml.featured[indexPath.row].price
             cell.priceImg.image = iml.featured[indexPath.row].imgPriceIconLink
             
-            if(iml.featured[indexPath.row].rarity == "common"){
-                cell.addGradientBackground(firstColor: UIColor(red: 193.0/255.0, green: 194.0/255.0, blue: 194, alpha: 1), secondColor: UIColor(red: 146.0/255.0, green: 148.0/255.0, blue: 149.0/255.0, alpha: 1))
-                
-            }else if(iml.featured[indexPath.row].rarity == "uncommon"){
-                cell.addGradientBackground(firstColor: UIColor(red: 72.0/255.0, green: 160.0/255.0, blue: 4.0/255.0, alpha: 1), secondColor: UIColor(red: 12.0/255.0, green: 120.0/255.0, blue: 9.0/255.0, alpha: 1))
-                
-            }else if(iml.featured[indexPath.row].rarity == "rare"){
-                cell.addGradientBackground(firstColor: UIColor(red: 51.0/255.0, green: 180.0/255.0, blue: 239.0/255.0, alpha: 1), secondColor: UIColor(red: 9.0/255.0, green: 105.0/255.0, blue: 176.0/255.0, alpha: 1))
-                
-            }else if(iml.featured[indexPath.row].rarity == "epic"){
-                cell.addGradientBackground(firstColor: UIColor(red: 191.0/255.0, green: 98.0/255.0, blue: 227.0/255.0, alpha: 1), secondColor: UIColor(red: 131.0/255.0, green: 22.0/255.0, blue: 175.0/255.0, alpha: 1))
-                
-            }else if(iml.featured[indexPath.row].rarity == "legendary"){
-                cell.addGradientBackground(firstColor: UIColor(red: 223.0/255.0, green: 133.0/255.0, blue: 41.0/255.0, alpha: 1), secondColor: UIColor(red: 147.0/255.0, green: 88.0/255.0, blue: 50.0/255.0, alpha: 1))
-            }
+            cell.setGradientBackground(item: iml.featured[indexPath.row])
+
             
         }else if(indexPath.section == 2){
             
@@ -129,22 +114,8 @@ class TodaysTableViewController: UITableViewController, UITabBarControllerDelega
             cell.priceLabel.text = iml.daily[indexPath.row].price
             cell.priceImg.image = iml.daily[indexPath.row].imgPriceIconLink
             
+            cell.setGradientBackground(item: iml.daily[indexPath.row])
             
-            if(iml.daily[indexPath.row].rarity == "common"){
-                cell.addGradientBackground(firstColor: UIColor(red: 193.0/255.0, green: 194.0/255.0, blue: 194, alpha: 1), secondColor: UIColor(red: 146.0/255.0, green: 148.0/255.0, blue: 149.0/255.0, alpha: 1))
-                
-            }else if(iml.daily[indexPath.row].rarity == "uncommon"){
-                cell.addGradientBackground(firstColor: UIColor(red: 72.0/255.0, green: 160.0/255.0, blue: 4.0/255.0, alpha: 1), secondColor: UIColor(red: 12.0/255.0, green: 120.0/255.0, blue: 9.0/255.0, alpha: 1))
-                
-            }else if(iml.daily[indexPath.row].rarity == "rare"){
-                cell.addGradientBackground(firstColor: UIColor(red: 51.0/255.0, green: 180.0/255.0, blue: 239.0/255.0, alpha: 1), secondColor: UIColor(red: 9.0/255.0, green: 105.0/255.0, blue: 176.0/255.0, alpha: 1))
-                
-            }else if(iml.daily[indexPath.row].rarity == "epic"){
-                cell.addGradientBackground(firstColor: UIColor(red: 191.0/255.0, green: 98.0/255.0, blue: 227.0/255.0, alpha: 1), secondColor: UIColor(red: 131.0/255.0, green: 22.0/255.0, blue: 175.0/255.0, alpha: 1))
-                
-            }else if(iml.daily[indexPath.row].rarity == "legendary"){
-                cell.addGradientBackground(firstColor: UIColor(red: 223.0/255.0, green: 133.0/255.0, blue: 41.0/255.0, alpha: 1), secondColor: UIColor(red: 147.0/255.0, green: 88.0/255.0, blue: 50.0/255.0, alpha: 1))
-            }
         }
 
         return cell

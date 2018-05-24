@@ -86,7 +86,32 @@ extension Bundle {
 }
 
 extension UIView{
-    func addGradientBackground(firstColor: UIColor, secondColor: UIColor){
+    func setGradientBackground(item: itemModelItem){
+        
+        var firstColor:UIColor = UIColor()
+        var secondColor:UIColor = UIColor()
+        
+        if(item.rarity == "common"){
+            firstColor = UIColor(red: 193.0/255.0, green: 194.0/255.0, blue: 194, alpha: 1)
+            secondColor = UIColor(red: 146.0/255.0, green: 148.0/255.0, blue: 149.0/255.0, alpha: 1)
+            
+        }else if(item.rarity == "uncommon"){
+            firstColor = UIColor(red: 72.0/255.0, green: 160.0/255.0, blue: 4.0/255.0, alpha: 1)
+            secondColor = UIColor(red: 12.0/255.0, green: 120.0/255.0, blue: 9.0/255.0, alpha: 1)
+            
+        }else if(item.rarity == "rare"){
+            firstColor = UIColor(red: 51.0/255.0, green: 180.0/255.0, blue: 239.0/255.0, alpha: 1)
+            secondColor = UIColor(red: 9.0/255.0, green: 105.0/255.0, blue: 176.0/255.0, alpha: 1)
+            
+        }else if(item.rarity == "epic"){
+            firstColor = UIColor(red: 191.0/255.0, green: 98.0/255.0, blue: 227.0/255.0, alpha: 1)
+            secondColor = UIColor(red: 131.0/255.0, green: 22.0/255.0, blue: 175.0/255.0, alpha: 1)
+            
+        }else if(item.rarity == "legendary"){
+            firstColor = UIColor(red: 223.0/255.0, green: 133.0/255.0, blue: 41.0/255.0, alpha: 1)
+            secondColor = UIColor(red: 147.0/255.0, green: 88.0/255.0, blue: 50.0/255.0, alpha: 1)
+        }
+        
         clipsToBounds = true
         let gradientLayer = CAGradientLayer()
         gradientLayer.colors = [secondColor.cgColor, firstColor.cgColor]

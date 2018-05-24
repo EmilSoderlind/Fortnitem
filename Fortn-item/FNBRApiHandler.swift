@@ -78,6 +78,11 @@ class FNBRApiHandler {
                     iml.featured.append(self.convertToItemModelItem(fi: (fetch.data.featured[i])))
                 }
                 
+                print("--- API ---")
+                print(fetch)
+                print("-----------")
+
+                
                 print("Parse took: ",-startDate.timeIntervalSinceNow)
                 // When we got data, do stuff on main queue
                 DispatchQueue.main.async {
