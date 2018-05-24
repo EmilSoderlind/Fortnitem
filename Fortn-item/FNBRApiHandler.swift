@@ -14,9 +14,13 @@ class FNBRApiHandler {
     
     var mainView:TodaysTableViewController?
     
+    
+    // Parse API and update table via vc. Returns present error in vc if something go wrong.
     func parseCurrentItems(vc:TodaysTableViewController){
         
-        var startDate:Date = Date()
+        let startDate:Date = Date()
+        
+        var possibleError = ""
         
         mainView = vc
         
@@ -36,21 +40,33 @@ class FNBRApiHandler {
             // If we get a error
             if(err != nil){
                 print("Something wrong with URLSession.shared.dataTask - Error is NOT nill",err!)
-                return
+                possibleError = "Something wrong with URLSession.shared.dataTask - \(err!)"
             }
             
             // If response isn't code 200
             if let httpResponse = response as? HTTPURLResponse {
                 print("Status code: (\(httpResponse.statusCode))")
                 if(httpResponse.statusCode != 200){
-                    print("We didn't get status code 200.")
-                    return
+                    print("HTTP response: \(httpResponse.statusCode).")
+                    possibleError = "HTTP response: \(httpResponse.statusCode)."
                 }
             }
             
+            // If we have recieved error, present error pop-up via vc.
+            if(possibleError != ""){
+                DispatchQueue.main.async {
+                    
+                    print("Found error: \(possibleError)")
+                    vc.presentErrorMessage(err: possibleError)
+                    
+                }
+            }
+            
+            
             // If the data is faulty
             guard let data = data else {
-                print("Faulty data!")
+                print("Faulty data recieved.")
+                possibleError = "Faulty data recieved."
                 return
             }
                         
@@ -84,6 +100,7 @@ class FNBRApiHandler {
 
                 
                 print("Parse took: ",-startDate.timeIntervalSinceNow)
+                
                 // When we got data, do stuff on main queue
                 DispatchQueue.main.async {
                     
@@ -96,9 +113,8 @@ class FNBRApiHandler {
             }
             
             
-            }
-            task.resume()
-        
+        }
+        task.resume()
     }
     
     func downloadImage(url: URL) {

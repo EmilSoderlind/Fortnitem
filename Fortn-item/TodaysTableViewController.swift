@@ -94,7 +94,7 @@ class TodaysTableViewController: UITableViewController, UITabBarControllerDelega
                 cell.mainImage.image = iml.featured[indexPath.row].imgPng
             }
             
-            cell.title.text = iml.featured[indexPath.row].name
+            cell.title.text = iml.featured[indexPath.row].rarity
             cell.priceLabel.text = iml.featured[indexPath.row].price
             cell.priceImg.image = iml.featured[indexPath.row].imgPriceIconLink
             
@@ -110,14 +110,26 @@ class TodaysTableViewController: UITableViewController, UITabBarControllerDelega
                 cell.mainImage.image = iml.daily[indexPath.row].imgPng
             }
             
-            cell.title.text = iml.daily[indexPath.row].name
+            cell.title.text = iml.daily[indexPath.row].rarity
             cell.priceLabel.text = iml.daily[indexPath.row].price
             cell.priceImg.image = iml.daily[indexPath.row].imgPriceIconLink
             
             cell.setGradientBackground(item: iml.daily[indexPath.row])
             
         }
+        
+        
+        var i = 0
+        print("")
+        for layer in cell.layer.sublayers!{
+            print("")
+            print("layer \(i) -> \(layer.sublayers!)")
+            print("")
+            i = i + 1
+        }
+        print("")
 
+        
         return cell
     }
     
@@ -176,6 +188,26 @@ class TodaysTableViewController: UITableViewController, UITabBarControllerDelega
         if tabBarIndex == 0 {
             self.tableView.setContentOffset(CGPoint(x: 0, y: 0), animated: true)
         }
-    }    
+    }
+    
+    func presentErrorMessage(err: String){
+        print("presentErrorMessage")
+        let alert = UIAlertController(title: "Could not contact ITEM SHOP", message: err, preferredStyle: UIAlertControllerStyle.alert)
+        alert.addAction(UIAlertAction(title: "I'll try again later", style: .default, handler: { action in
+            switch action.style{
+            case .default:
+                print("default")
+                
+            case .cancel:
+                print("cancel")
+                
+            case .destructive:
+                print("destructive")
+                
+                
+            }}))
+        self.present(alert, animated: true, completion: nil)
+        print("presentErrorMessage - DONE")
+    }
     
 }

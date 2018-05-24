@@ -120,6 +120,7 @@ extension UIView{
         gradientLayer.endPoint = CGPoint(x: 0, y: 0)
         
         // If cell dosen't have gradient background, add it!
+        
         if(!(self.layer.sublayers?.contains(gradientLayer))!){
             self.layer.insertSublayer(gradientLayer, at: 0)
         }
