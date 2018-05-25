@@ -8,6 +8,7 @@
 
 import Foundation
 import UIKit
+import Firebase
 
 // Class responsible for talking directly to FNBR
 class FNBRApiHandler {
@@ -61,6 +62,8 @@ class FNBRApiHandler {
             
             // If we have recieved error, present error pop-up via vc.
             if(possibleError != ""){
+                // Generate Firebase crash-message
+                FirebaseCrashMessage(possibleError)
                 DispatchQueue.main.async {
                     print("Found error: \(possibleError)")
                     vc.presentErrorMessage(err: possibleError)

@@ -11,5 +11,6 @@ pod 'NVActivityIndicatorView'
 pod 'Firebase/Core'
 pod 'Alamofire'
 pod 'AlamofireImage'
+pod 'Firebase/Crash'
 
 end
