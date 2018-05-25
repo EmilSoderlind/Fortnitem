@@ -165,6 +165,7 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 #if __has_feature(modules)
 @import UIKit;
 @import Foundation;
+@import CoreData;
 @import CoreGraphics;
 #endif
 
@@ -199,6 +200,24 @@ SWIFT_CLASS("_TtC10Fortn_item11AppDelegate")
 @end
 
 
+
+@class NSEntityDescription;
+@class NSManagedObjectContext;
+
+SWIFT_CLASS_NAMED("FavoriteItem")
+@interface FavoriteItem : NSManagedObject
+- (nonnull instancetype)initWithEntity:(NSEntityDescription * _Nonnull)entity insertIntoManagedObjectContext:(NSManagedObjectContext * _Nullable)context OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+@interface FavoriteItem (SWIFT_EXTENSION(Fortn_item))
+@property (nonatomic, copy) NSString * _Nullable id;
+@property (nonatomic, copy) NSString * _Nullable name;
+@property (nonatomic, copy) NSString * _Nullable price;
+@property (nonatomic, copy) NSString * _Nullable priceIcon;
+@property (nonatomic, copy) NSString * _Nullable rarity;
+@property (nonatomic, copy) NSString * _Nullable type;
+@end
 
 
 

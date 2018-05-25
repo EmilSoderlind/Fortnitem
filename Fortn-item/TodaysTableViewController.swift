@@ -92,8 +92,13 @@ class TodaysTableViewController: UITableViewController, UITabBarControllerDelega
         return 0
     }
     
-    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> ItemTableViewCell {
+    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "itemCell", for: indexPath) as! ItemTableViewCell
+        
+        /*if(true){
+            let loadingCell = tableView.dequeueReusableCell(withIdentifier: "loadingCell", for: indexPath)
+            return loadingCell
+        }*/
         
         if(indexPath.section == 1){
             
@@ -127,7 +132,6 @@ class TodaysTableViewController: UITableViewController, UITabBarControllerDelega
             
             cell.gradientBackgroundView.startColor = getRarityColor(rarityStr: iml.daily[indexPath.row].rarity + "0")
             cell.gradientBackgroundView.endColor = getRarityColor(rarityStr: iml.daily[indexPath.row].rarity + "1")
-            
         }
         
         return cell

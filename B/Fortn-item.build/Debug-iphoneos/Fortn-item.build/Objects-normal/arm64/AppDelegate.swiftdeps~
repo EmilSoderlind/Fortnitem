@@ -15,8 +15,10 @@ provides-dynamic-lookup:
 - "window"
 depends-top-level:
 - "AppDelegate"
+- "AssignmentPrecedence"
 - "Bool"
 - !private "BooleanLiteralType"
+- !private "FirebaseApp"
 - "UIApplication"
 - "UIApplicationDelegate"
 - "UIApplicationLaunchOptionsKey"
@@ -24,6 +26,7 @@ depends-top-level:
 - "UIWindow"
 depends-member:
 - ["10Fortn_item11AppDelegateC", "Bool"]
+- !private ["10Fortn_item11AppDelegateC", "FirebaseApp"]
 - ["10Fortn_item11AppDelegateC", "UIApplication"]
 - ["10Fortn_item11AppDelegateC", "UIApplicationLaunchOptionsKey"]
 - ["10Fortn_item11AppDelegateC", "UIWindow"]
@@ -42,6 +45,8 @@ depends-member:
 - ["10Fortn_item11AppDelegateC", "deinit"]
 - ["10Fortn_item11AppDelegateC", "init"]
 - ["10Fortn_item11AppDelegateC", "window"]
+- !private ["s7CVarArgP", "FirebaseApp"]
+- !private ["s7CVarArgP", "UIApplication"]
 - ["s7CVarArgP", ""]
 - ["s7CVarArgP", "application"]
 - ["s7CVarArgP", "applicationDidBecomeActive"]
@@ -55,8 +60,13 @@ depends-member:
 - ["s7CVarArgP", "applicationWillEnterForeground"]
 - ["s7CVarArgP", "applicationWillResignActive"]
 - ["s7CVarArgP", "applicationWillTerminate"]
+- !private ["s7CVarArgP", "configure"]
 - !private ["s7CVarArgP", "init"]
+- !private ["s7CVarArgP", "shared"]
+- !private ["s7CVarArgP", "statusBarStyle"]
 - ["s7CVarArgP", "window"]
+- !private ["s28CustomDebugStringConvertibleP", "FirebaseApp"]
+- !private ["s28CustomDebugStringConvertibleP", "UIApplication"]
 - ["s28CustomDebugStringConvertibleP", ""]
 - ["s28CustomDebugStringConvertibleP", "application"]
 - ["s28CustomDebugStringConvertibleP", "applicationDidBecomeActive"]
@@ -70,8 +80,13 @@ depends-member:
 - ["s28CustomDebugStringConvertibleP", "applicationWillEnterForeground"]
 - ["s28CustomDebugStringConvertibleP", "applicationWillResignActive"]
 - ["s28CustomDebugStringConvertibleP", "applicationWillTerminate"]
+- !private ["s28CustomDebugStringConvertibleP", "configure"]
 - !private ["s28CustomDebugStringConvertibleP", "init"]
+- !private ["s28CustomDebugStringConvertibleP", "shared"]
+- !private ["s28CustomDebugStringConvertibleP", "statusBarStyle"]
 - ["s28CustomDebugStringConvertibleP", "window"]
+- !private ["s23CustomStringConvertibleP", "FirebaseApp"]
+- !private ["s23CustomStringConvertibleP", "UIApplication"]
 - ["s23CustomStringConvertibleP", ""]
 - ["s23CustomStringConvertibleP", "application"]
 - ["s23CustomStringConvertibleP", "applicationDidBecomeActive"]
@@ -85,8 +100,13 @@ depends-member:
 - ["s23CustomStringConvertibleP", "applicationWillEnterForeground"]
 - ["s23CustomStringConvertibleP", "applicationWillResignActive"]
 - ["s23CustomStringConvertibleP", "applicationWillTerminate"]
+- !private ["s23CustomStringConvertibleP", "configure"]
 - !private ["s23CustomStringConvertibleP", "init"]
+- !private ["s23CustomStringConvertibleP", "shared"]
+- !private ["s23CustomStringConvertibleP", "statusBarStyle"]
 - ["s23CustomStringConvertibleP", "window"]
+- !private ["s9EquatableP", "FirebaseApp"]
+- !private ["s9EquatableP", "UIApplication"]
 - ["s9EquatableP", ""]
 - ["s9EquatableP", "application"]
 - ["s9EquatableP", "applicationDidBecomeActive"]
@@ -100,8 +120,15 @@ depends-member:
 - ["s9EquatableP", "applicationWillEnterForeground"]
 - ["s9EquatableP", "applicationWillResignActive"]
 - ["s9EquatableP", "applicationWillTerminate"]
+- !private ["s9EquatableP", "configure"]
 - !private ["s9EquatableP", "init"]
+- !private ["s9EquatableP", "lightContent"]
+- !private ["s9EquatableP", "shared"]
+- !private ["s9EquatableP", "statusBarStyle"]
 - ["s9EquatableP", "window"]
+- !private ["So11FirebaseAppC", "configure"]
+- !private ["s8HashableP", "FirebaseApp"]
+- !private ["s8HashableP", "UIApplication"]
 - ["s8HashableP", ""]
 - ["s8HashableP", "application"]
 - ["s8HashableP", "applicationDidBecomeActive"]
@@ -115,9 +142,14 @@ depends-member:
 - ["s8HashableP", "applicationWillEnterForeground"]
 - ["s8HashableP", "applicationWillResignActive"]
 - ["s8HashableP", "applicationWillTerminate"]
+- !private ["s8HashableP", "configure"]
 - !private ["s8HashableP", "init"]
+- !private ["s8HashableP", "lightContent"]
+- !private ["s8HashableP", "shared"]
+- !private ["s8HashableP", "statusBarStyle"]
 - ["s8HashableP", "window"]
 - ["So8NSObjectC", "Bool"]
+- !private ["So8NSObjectC", "FirebaseApp"]
 - ["So8NSObjectC", "UIApplication"]
 - ["So8NSObjectC", "UIApplicationLaunchOptionsKey"]
 - ["So8NSObjectC", "UIWindow"]
@@ -133,8 +165,13 @@ depends-member:
 - ["So8NSObjectC", "applicationWillEnterForeground"]
 - ["So8NSObjectC", "applicationWillResignActive"]
 - ["So8NSObjectC", "applicationWillTerminate"]
+- !private ["So8NSObjectC", "configure"]
 - ["So8NSObjectC", "init"]
+- !private ["So8NSObjectC", "shared"]
+- !private ["So8NSObjectC", "statusBarStyle"]
 - ["So8NSObjectC", "window"]
+- !private ["So16NSObjectProtocolP", "FirebaseApp"]
+- !private ["So16NSObjectProtocolP", "UIApplication"]
 - ["So16NSObjectProtocolP", ""]
 - ["So16NSObjectProtocolP", "application"]
 - ["So16NSObjectProtocolP", "applicationDidBecomeActive"]
@@ -148,8 +185,16 @@ depends-member:
 - ["So16NSObjectProtocolP", "applicationWillEnterForeground"]
 - ["So16NSObjectProtocolP", "applicationWillResignActive"]
 - ["So16NSObjectProtocolP", "applicationWillTerminate"]
+- !private ["So16NSObjectProtocolP", "configure"]
 - !private ["So16NSObjectProtocolP", "init"]
+- !private ["So16NSObjectProtocolP", "shared"]
+- !private ["So16NSObjectProtocolP", "statusBarStyle"]
 - ["So16NSObjectProtocolP", "window"]
+- !private ["s16RawRepresentableP", "lightContent"]
+- !private ["So13UIApplicationC", "shared"]
+- !private ["So13UIApplicationC", "statusBarStyle"]
+- !private ["So21UIApplicationDelegateP", "FirebaseApp"]
+- !private ["So21UIApplicationDelegateP", "UIApplication"]
 - ["So21UIApplicationDelegateP", ""]
 - ["So21UIApplicationDelegateP", "application"]
 - ["So21UIApplicationDelegateP", "applicationDidBecomeActive"]
@@ -164,6 +209,8 @@ depends-member:
 - ["So21UIApplicationDelegateP", "applicationWillResignActive"]
 - ["So21UIApplicationDelegateP", "applicationWillTerminate"]
 - ["So21UIApplicationDelegateP", "window"]
+- !private ["So30UIPasteConfigurationSupportingP", "FirebaseApp"]
+- !private ["So30UIPasteConfigurationSupportingP", "UIApplication"]
 - ["So30UIPasteConfigurationSupportingP", ""]
 - ["So30UIPasteConfigurationSupportingP", "application"]
 - ["So30UIPasteConfigurationSupportingP", "applicationDidBecomeActive"]
@@ -178,8 +225,11 @@ depends-member:
 - ["So30UIPasteConfigurationSupportingP", "applicationWillResignActive"]
 - ["So30UIPasteConfigurationSupportingP", "applicationWillTerminate"]
 - !private ["So30UIPasteConfigurationSupportingP", "init"]
+- !private ["So30UIPasteConfigurationSupportingP", "shared"]
+- !private ["So30UIPasteConfigurationSupportingP", "statusBarStyle"]
 - ["So30UIPasteConfigurationSupportingP", "window"]
 - ["So11UIResponderC", "Bool"]
+- !private ["So11UIResponderC", "FirebaseApp"]
 - ["So11UIResponderC", "UIApplication"]
 - ["So11UIResponderC", "UIApplicationLaunchOptionsKey"]
 - ["So11UIResponderC", "UIWindow"]
@@ -197,7 +247,11 @@ depends-member:
 - ["So11UIResponderC", "applicationWillResignActive"]
 - ["So11UIResponderC", "applicationWillTerminate"]
 - ["So11UIResponderC", "init"]
+- !private ["So11UIResponderC", "shared"]
+- !private ["So11UIResponderC", "statusBarStyle"]
 - ["So11UIResponderC", "window"]
+- !private ["So30UIResponderStandardEditActionsP", "FirebaseApp"]
+- !private ["So30UIResponderStandardEditActionsP", "UIApplication"]
 - ["So30UIResponderStandardEditActionsP", ""]
 - ["So30UIResponderStandardEditActionsP", "application"]
 - ["So30UIResponderStandardEditActionsP", "applicationDidBecomeActive"]
@@ -212,7 +266,12 @@ depends-member:
 - ["So30UIResponderStandardEditActionsP", "applicationWillResignActive"]
 - ["So30UIResponderStandardEditActionsP", "applicationWillTerminate"]
 - !private ["So30UIResponderStandardEditActionsP", "init"]
+- !private ["So30UIResponderStandardEditActionsP", "shared"]
+- !private ["So30UIResponderStandardEditActionsP", "statusBarStyle"]
 - ["So30UIResponderStandardEditActionsP", "window"]
+- !private ["SC16UIStatusBarStyleO", "lightContent"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "FirebaseApp"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "UIApplication"]
 - ["10Foundation27_KeyValueCodingAndObservingP", ""]
 - ["10Foundation27_KeyValueCodingAndObservingP", "application"]
 - ["10Foundation27_KeyValueCodingAndObservingP", "applicationDidBecomeActive"]
@@ -226,7 +285,10 @@ depends-member:
 - ["10Foundation27_KeyValueCodingAndObservingP", "applicationWillEnterForeground"]
 - ["10Foundation27_KeyValueCodingAndObservingP", "applicationWillResignActive"]
 - ["10Foundation27_KeyValueCodingAndObservingP", "applicationWillTerminate"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "configure"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "init"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "shared"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "statusBarStyle"]
 - ["10Foundation27_KeyValueCodingAndObservingP", "window"]
 depends-nominal:
 - "10Fortn_item11AppDelegateC"
@@ -234,13 +296,17 @@ depends-nominal:
 - "s28CustomDebugStringConvertibleP"
 - "s23CustomStringConvertibleP"
 - "s9EquatableP"
+- !private "So11FirebaseAppC"
 - "s8HashableP"
 - "So8NSObjectC"
 - "So16NSObjectProtocolP"
+- !private "s16RawRepresentableP"
+- !private "So13UIApplicationC"
 - "So21UIApplicationDelegateP"
 - "So30UIPasteConfigurationSupportingP"
 - "So11UIResponderC"
 - "So30UIResponderStandardEditActionsP"
+- !private "SC16UIStatusBarStyleO"
 - "10Foundation27_KeyValueCodingAndObservingP"
 depends-dynamic-lookup:
 depends-external:
@@ -260,13 +326,36 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Swift.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/UIKit.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/SwiftOnoneSupport.swiftmodule"
+- "/Users/Emil/Grov-Filer/Xcode_kod/Fortn-item/Pods/FirebaseInstanceID/Frameworks/FirebaseInstanceID.framework/Headers/FIRInstanceID.h"
+- "/Users/Emil/Grov-Filer/Xcode_kod/Fortn-item/Pods/FirebaseInstanceID/Frameworks/FirebaseInstanceID.framework/Headers/FirebaseInstanceID.h"
 - "/Users/Emil/Grov-Filer/Xcode_kod/Fortn-item/P/Debug-iphoneos/AlamofireImage/AlamofireImage.framework/Headers/AlamofireImage-umbrella.h"
 - "/Users/Emil/Grov-Filer/Xcode_kod/Fortn-item/P/Debug-iphoneos/Alamofire/Alamofire.framework/Headers/Alamofire-umbrella.h"
+- "/Users/Emil/Grov-Filer/Xcode_kod/Fortn-item/Pods/FirebaseCore/Frameworks/FirebaseCore.framework/Headers/FirebaseCore.h"
+- "/Users/Emil/Grov-Filer/Xcode_kod/Fortn-item/Pods/Firebase/Core/Sources/Firebase.h"
+- "/Users/Emil/Grov-Filer/Xcode_kod/Fortn-item/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRAnalytics+AppDelegate.h"
+- "/Users/Emil/Grov-Filer/Xcode_kod/Fortn-item/Pods/FirebaseCore/Frameworks/FirebaseCore.framework/Headers/FIRLoggerLevel.h"
+- "/Users/Emil/Grov-Filer/Xcode_kod/Fortn-item/Pods/FirebaseCore/Frameworks/FirebaseCore.framework/Headers/FIRConfiguration.h"
+- "/Users/Emil/Grov-Filer/Xcode_kod/Fortn-item/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRConfiguration.h"
+- "/Users/Emil/Grov-Filer/Xcode_kod/Fortn-item/Pods/FirebaseCore/Frameworks/FirebaseCore.framework/Headers/FIRAnalyticsConfiguration.h"
+- "/Users/Emil/Grov-Filer/Xcode_kod/Fortn-item/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRAnalyticsConfiguration.h"
+- "/Users/Emil/Grov-Filer/Xcode_kod/Fortn-item/Pods/FirebaseCore/Frameworks/FirebaseCore.framework/Headers/FIRApp.h"
+- "/Users/Emil/Grov-Filer/Xcode_kod/Fortn-item/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRApp.h"
+- "/Users/Emil/Grov-Filer/Xcode_kod/Fortn-item/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRAnalytics.h"
+- "/Users/Emil/Grov-Filer/Xcode_kod/Fortn-item/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FirebaseAnalytics.h"
+- "/Users/Emil/Grov-Filer/Xcode_kod/Fortn-item/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRParameterNames.h"
+- "/Users/Emil/Grov-Filer/Xcode_kod/Fortn-item/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIREventNames.h"
+- "/Users/Emil/Grov-Filer/Xcode_kod/Fortn-item/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRUserPropertyNames.h"
+- "/Users/Emil/Grov-Filer/Xcode_kod/Fortn-item/Pods/FirebaseCore/Frameworks/FirebaseCore.framework/Headers/FIROptions.h"
+- "/Users/Emil/Grov-Filer/Xcode_kod/Fortn-item/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIROptions.h"
 - "/Users/Emil/Grov-Filer/Xcode_kod/Fortn-item/P/Debug-iphoneos/AlamofireImage/AlamofireImage.framework/Headers/AlamofireImage-Swift.h"
 - "/Users/Emil/Grov-Filer/Xcode_kod/Fortn-item/P/Debug-iphoneos/Alamofire/Alamofire.framework/Headers/Alamofire-Swift.h"
+- "/Users/Emil/Grov-Filer/Xcode_kod/Fortn-item/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRAnalyticsSwiftNameSupport.h"
 - "/Users/Emil/Grov-Filer/Xcode_kod/Fortn-item/Pods/Firebase/Core/Sources/module.modulemap"
+- "/Users/Emil/Grov-Filer/Xcode_kod/Fortn-item/Pods/FirebaseInstanceID/Frameworks/FirebaseInstanceID.framework/Modules/module.modulemap"
 - "/Users/Emil/Grov-Filer/Xcode_kod/Fortn-item/P/Debug-iphoneos/AlamofireImage/AlamofireImage.framework/Modules/module.modulemap"
 - "/Users/Emil/Grov-Filer/Xcode_kod/Fortn-item/P/Debug-iphoneos/Alamofire/Alamofire.framework/Modules/module.modulemap"
+- "/Users/Emil/Grov-Filer/Xcode_kod/Fortn-item/Pods/FirebaseCore/Frameworks/FirebaseCore.framework/Modules/module.modulemap"
+- "/Users/Emil/Grov-Filer/Xcode_kod/Fortn-item/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Modules/module.modulemap"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/usr/include/objc/ObjectiveC.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/OpenGLES.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/CoreData.framework/Headers/CoreData.apinotes"
@@ -278,4 +367,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
-interface-hash: "540a6a5a95552571abc41f465a0c1379"
+interface-hash: "b4b24fab75fe28399d2653797178f076"

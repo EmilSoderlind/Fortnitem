@@ -18,15 +18,22 @@ depends-top-level:
 - "AssignmentPrecedence"
 - "Bool"
 - !private "BooleanLiteralType"
+- "CastingPrecedence"
 - !private "FirebaseApp"
+- !private "NSError"
+- "NSPersistentContainer"
+- "StringLiteralType"
 - "UIApplication"
 - "UIApplicationDelegate"
 - "UIApplicationLaunchOptionsKey"
 - "UIResponder"
 - "UIWindow"
+- !private "fatalError"
 depends-member:
 - ["10Fortn_item11AppDelegateC", "Bool"]
 - !private ["10Fortn_item11AppDelegateC", "FirebaseApp"]
+- !private ["10Fortn_item11AppDelegateC", "NSError"]
+- ["10Fortn_item11AppDelegateC", "NSPersistentContainer"]
 - ["10Fortn_item11AppDelegateC", "UIApplication"]
 - ["10Fortn_item11AppDelegateC", "UIApplicationLaunchOptionsKey"]
 - ["10Fortn_item11AppDelegateC", "UIWindow"]
@@ -43,11 +50,19 @@ depends-member:
 - ["10Fortn_item11AppDelegateC", "applicationWillResignActive"]
 - ["10Fortn_item11AppDelegateC", "applicationWillTerminate"]
 - ["10Fortn_item11AppDelegateC", "deinit"]
+- !private ["10Fortn_item11AppDelegateC", "fatalError"]
 - ["10Fortn_item11AppDelegateC", "init"]
+- ["10Fortn_item11AppDelegateC", "persistentContainer"]
+- !private ["10Fortn_item11AppDelegateC", "persistentContainer.storage"]
+- ["10Fortn_item11AppDelegateC", "saveContext"]
 - ["10Fortn_item11AppDelegateC", "window"]
+- !private ["s23BidirectionalCollectionP", "init"]
+- !private ["Sb", "_getBuiltinLogicValue"]
 - !private ["s7CVarArgP", "FirebaseApp"]
+- !private ["s7CVarArgP", "NSPersistentContainer"]
 - !private ["s7CVarArgP", "UIApplication"]
 - ["s7CVarArgP", ""]
+- !private ["s7CVarArgP", "_getBuiltinLogicValue"]
 - ["s7CVarArgP", "application"]
 - ["s7CVarArgP", "applicationDidBecomeActive"]
 - ["s7CVarArgP", "applicationDidEnterBackground"]
@@ -61,11 +76,21 @@ depends-member:
 - ["s7CVarArgP", "applicationWillResignActive"]
 - ["s7CVarArgP", "applicationWillTerminate"]
 - !private ["s7CVarArgP", "configure"]
+- !private ["s7CVarArgP", "fatalError"]
+- !private ["s7CVarArgP", "hasChanges"]
 - !private ["s7CVarArgP", "init"]
+- !private ["s7CVarArgP", "loadPersistentStores"]
+- !private ["s7CVarArgP", "persistentContainer"]
+- !private ["s7CVarArgP", "save"]
 - !private ["s7CVarArgP", "shared"]
 - !private ["s7CVarArgP", "statusBarStyle"]
+- !private ["s7CVarArgP", "userInfo"]
+- !private ["s7CVarArgP", "viewContext"]
 - ["s7CVarArgP", "window"]
+- !private ["s10CollectionP", "init"]
+- !private ["s10ComparableP", "init"]
 - !private ["s28CustomDebugStringConvertibleP", "FirebaseApp"]
+- !private ["s28CustomDebugStringConvertibleP", "NSPersistentContainer"]
 - !private ["s28CustomDebugStringConvertibleP", "UIApplication"]
 - ["s28CustomDebugStringConvertibleP", ""]
 - ["s28CustomDebugStringConvertibleP", "application"]
@@ -81,13 +106,26 @@ depends-member:
 - ["s28CustomDebugStringConvertibleP", "applicationWillResignActive"]
 - ["s28CustomDebugStringConvertibleP", "applicationWillTerminate"]
 - !private ["s28CustomDebugStringConvertibleP", "configure"]
+- !private ["s28CustomDebugStringConvertibleP", "fatalError"]
+- !private ["s28CustomDebugStringConvertibleP", "hasChanges"]
 - !private ["s28CustomDebugStringConvertibleP", "init"]
+- !private ["s28CustomDebugStringConvertibleP", "loadPersistentStores"]
+- !private ["s28CustomDebugStringConvertibleP", "persistentContainer"]
+- !private ["s28CustomDebugStringConvertibleP", "save"]
 - !private ["s28CustomDebugStringConvertibleP", "shared"]
 - !private ["s28CustomDebugStringConvertibleP", "statusBarStyle"]
+- !private ["s28CustomDebugStringConvertibleP", "userInfo"]
+- !private ["s28CustomDebugStringConvertibleP", "viewContext"]
 - ["s28CustomDebugStringConvertibleP", "window"]
+- !private ["s29CustomPlaygroundQuickLookableP", "_getBuiltinLogicValue"]
+- !private ["s29CustomPlaygroundQuickLookableP", "init"]
+- !private ["s17CustomReflectableP", "_getBuiltinLogicValue"]
+- !private ["s17CustomReflectableP", "init"]
 - !private ["s23CustomStringConvertibleP", "FirebaseApp"]
+- !private ["s23CustomStringConvertibleP", "NSPersistentContainer"]
 - !private ["s23CustomStringConvertibleP", "UIApplication"]
 - ["s23CustomStringConvertibleP", ""]
+- !private ["s23CustomStringConvertibleP", "_getBuiltinLogicValue"]
 - ["s23CustomStringConvertibleP", "application"]
 - ["s23CustomStringConvertibleP", "applicationDidBecomeActive"]
 - ["s23CustomStringConvertibleP", "applicationDidEnterBackground"]
@@ -101,13 +139,26 @@ depends-member:
 - ["s23CustomStringConvertibleP", "applicationWillResignActive"]
 - ["s23CustomStringConvertibleP", "applicationWillTerminate"]
 - !private ["s23CustomStringConvertibleP", "configure"]
+- !private ["s23CustomStringConvertibleP", "fatalError"]
+- !private ["s23CustomStringConvertibleP", "hasChanges"]
 - !private ["s23CustomStringConvertibleP", "init"]
+- !private ["s23CustomStringConvertibleP", "loadPersistentStores"]
+- !private ["s23CustomStringConvertibleP", "persistentContainer"]
+- !private ["s23CustomStringConvertibleP", "save"]
 - !private ["s23CustomStringConvertibleP", "shared"]
 - !private ["s23CustomStringConvertibleP", "statusBarStyle"]
+- !private ["s23CustomStringConvertibleP", "userInfo"]
+- !private ["s23CustomStringConvertibleP", "viewContext"]
 - ["s23CustomStringConvertibleP", "window"]
+- !private ["s9DecodableP", "_getBuiltinLogicValue"]
+- !private ["s9DecodableP", "init"]
+- !private ["s9EncodableP", "_getBuiltinLogicValue"]
+- !private ["s9EncodableP", "init"]
 - !private ["s9EquatableP", "FirebaseApp"]
+- !private ["s9EquatableP", "NSPersistentContainer"]
 - !private ["s9EquatableP", "UIApplication"]
 - ["s9EquatableP", ""]
+- !private ["s9EquatableP", "_getBuiltinLogicValue"]
 - ["s9EquatableP", "application"]
 - ["s9EquatableP", "applicationDidBecomeActive"]
 - ["s9EquatableP", "applicationDidEnterBackground"]
@@ -121,15 +172,29 @@ depends-member:
 - ["s9EquatableP", "applicationWillResignActive"]
 - ["s9EquatableP", "applicationWillTerminate"]
 - !private ["s9EquatableP", "configure"]
+- !private ["s9EquatableP", "fatalError"]
+- !private ["s9EquatableP", "hasChanges"]
 - !private ["s9EquatableP", "init"]
 - !private ["s9EquatableP", "lightContent"]
+- !private ["s9EquatableP", "loadPersistentStores"]
+- !private ["s9EquatableP", "persistentContainer"]
+- !private ["s9EquatableP", "save"]
 - !private ["s9EquatableP", "shared"]
 - !private ["s9EquatableP", "statusBarStyle"]
+- !private ["s9EquatableP", "userInfo"]
+- !private ["s9EquatableP", "viewContext"]
 - ["s9EquatableP", "window"]
+- !private ["s5ErrorP", "userInfo"]
+- !private ["s27ExpressibleByBooleanLiteralP", "_getBuiltinLogicValue"]
+- !private ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "init"]
+- !private ["s26ExpressibleByStringLiteralP", "init"]
+- !private ["s33ExpressibleByUnicodeScalarLiteralP", "init"]
 - !private ["So11FirebaseAppC", "configure"]
 - !private ["s8HashableP", "FirebaseApp"]
+- !private ["s8HashableP", "NSPersistentContainer"]
 - !private ["s8HashableP", "UIApplication"]
 - ["s8HashableP", ""]
+- !private ["s8HashableP", "_getBuiltinLogicValue"]
 - ["s8HashableP", "application"]
 - ["s8HashableP", "applicationDidBecomeActive"]
 - ["s8HashableP", "applicationDidEnterBackground"]
@@ -143,13 +208,34 @@ depends-member:
 - ["s8HashableP", "applicationWillResignActive"]
 - ["s8HashableP", "applicationWillTerminate"]
 - !private ["s8HashableP", "configure"]
+- !private ["s8HashableP", "fatalError"]
+- !private ["s8HashableP", "hasChanges"]
 - !private ["s8HashableP", "init"]
 - !private ["s8HashableP", "lightContent"]
+- !private ["s8HashableP", "loadPersistentStores"]
+- !private ["s8HashableP", "persistentContainer"]
+- !private ["s8HashableP", "save"]
 - !private ["s8HashableP", "shared"]
 - !private ["s8HashableP", "statusBarStyle"]
+- !private ["s8HashableP", "userInfo"]
+- !private ["s8HashableP", "viewContext"]
 - ["s8HashableP", "window"]
+- !private ["s25LosslessStringConvertibleP", "_getBuiltinLogicValue"]
+- !private ["s25LosslessStringConvertibleP", "init"]
+- !private ["s10MirrorPathP", "init"]
+- !private ["So8NSCodingP", "hasChanges"]
+- !private ["So8NSCodingP", "save"]
+- !private ["So8NSCodingP", "userInfo"]
+- !private ["So9NSCopyingP", "userInfo"]
+- !private ["So7NSErrorC", "userInfo"]
+- !private ["So9NSLockingP", "hasChanges"]
+- !private ["So9NSLockingP", "save"]
+- !private ["So22NSManagedObjectContextC", "hasChanges"]
+- !private ["So22NSManagedObjectContextC", "save"]
 - ["So8NSObjectC", "Bool"]
 - !private ["So8NSObjectC", "FirebaseApp"]
+- !private ["So8NSObjectC", "NSError"]
+- ["So8NSObjectC", "NSPersistentContainer"]
 - ["So8NSObjectC", "UIApplication"]
 - ["So8NSObjectC", "UIApplicationLaunchOptionsKey"]
 - ["So8NSObjectC", "UIWindow"]
@@ -166,11 +252,21 @@ depends-member:
 - ["So8NSObjectC", "applicationWillResignActive"]
 - ["So8NSObjectC", "applicationWillTerminate"]
 - !private ["So8NSObjectC", "configure"]
+- !private ["So8NSObjectC", "fatalError"]
+- !private ["So8NSObjectC", "hasChanges"]
 - ["So8NSObjectC", "init"]
+- !private ["So8NSObjectC", "loadPersistentStores"]
+- ["So8NSObjectC", "persistentContainer"]
+- ["So8NSObjectC", "persistentContainer.storage"]
+- !private ["So8NSObjectC", "save"]
+- ["So8NSObjectC", "saveContext"]
 - !private ["So8NSObjectC", "shared"]
 - !private ["So8NSObjectC", "statusBarStyle"]
+- !private ["So8NSObjectC", "userInfo"]
+- !private ["So8NSObjectC", "viewContext"]
 - ["So8NSObjectC", "window"]
 - !private ["So16NSObjectProtocolP", "FirebaseApp"]
+- !private ["So16NSObjectProtocolP", "NSPersistentContainer"]
 - !private ["So16NSObjectProtocolP", "UIApplication"]
 - ["So16NSObjectProtocolP", ""]
 - ["So16NSObjectProtocolP", "application"]
@@ -186,14 +282,33 @@ depends-member:
 - ["So16NSObjectProtocolP", "applicationWillResignActive"]
 - ["So16NSObjectProtocolP", "applicationWillTerminate"]
 - !private ["So16NSObjectProtocolP", "configure"]
+- !private ["So16NSObjectProtocolP", "fatalError"]
+- !private ["So16NSObjectProtocolP", "hasChanges"]
 - !private ["So16NSObjectProtocolP", "init"]
+- !private ["So16NSObjectProtocolP", "loadPersistentStores"]
+- !private ["So16NSObjectProtocolP", "persistentContainer"]
+- !private ["So16NSObjectProtocolP", "save"]
 - !private ["So16NSObjectProtocolP", "shared"]
 - !private ["So16NSObjectProtocolP", "statusBarStyle"]
+- !private ["So16NSObjectProtocolP", "userInfo"]
+- !private ["So16NSObjectProtocolP", "viewContext"]
 - ["So16NSObjectProtocolP", "window"]
+- !private ["So21NSPersistentContainerC", "init"]
+- !private ["So21NSPersistentContainerC", "loadPersistentStores"]
+- !private ["So21NSPersistentContainerC", "viewContext"]
+- !private ["So14NSSecureCodingP", "userInfo"]
+- !private ["s26RangeReplaceableCollectionP", "init"]
 - !private ["s16RawRepresentableP", "lightContent"]
+- !private ["s8SequenceP", "init"]
+- !private ["s12StaticStringV", "init"]
+- !private ["SS", "init"]
+- !private ["s14StringProtocolP", "init"]
+- !private ["s16TextOutputStreamP", "init"]
+- !private ["s20TextOutputStreamableP", "init"]
 - !private ["So13UIApplicationC", "shared"]
 - !private ["So13UIApplicationC", "statusBarStyle"]
 - !private ["So21UIApplicationDelegateP", "FirebaseApp"]
+- !private ["So21UIApplicationDelegateP", "NSPersistentContainer"]
 - !private ["So21UIApplicationDelegateP", "UIApplication"]
 - ["So21UIApplicationDelegateP", ""]
 - ["So21UIApplicationDelegateP", "application"]
@@ -208,8 +323,11 @@ depends-member:
 - ["So21UIApplicationDelegateP", "applicationWillEnterForeground"]
 - ["So21UIApplicationDelegateP", "applicationWillResignActive"]
 - ["So21UIApplicationDelegateP", "applicationWillTerminate"]
+- !private ["So21UIApplicationDelegateP", "fatalError"]
+- !private ["So21UIApplicationDelegateP", "persistentContainer"]
 - ["So21UIApplicationDelegateP", "window"]
 - !private ["So30UIPasteConfigurationSupportingP", "FirebaseApp"]
+- !private ["So30UIPasteConfigurationSupportingP", "NSPersistentContainer"]
 - !private ["So30UIPasteConfigurationSupportingP", "UIApplication"]
 - ["So30UIPasteConfigurationSupportingP", ""]
 - ["So30UIPasteConfigurationSupportingP", "application"]
@@ -224,12 +342,16 @@ depends-member:
 - ["So30UIPasteConfigurationSupportingP", "applicationWillEnterForeground"]
 - ["So30UIPasteConfigurationSupportingP", "applicationWillResignActive"]
 - ["So30UIPasteConfigurationSupportingP", "applicationWillTerminate"]
+- !private ["So30UIPasteConfigurationSupportingP", "fatalError"]
 - !private ["So30UIPasteConfigurationSupportingP", "init"]
+- !private ["So30UIPasteConfigurationSupportingP", "persistentContainer"]
 - !private ["So30UIPasteConfigurationSupportingP", "shared"]
 - !private ["So30UIPasteConfigurationSupportingP", "statusBarStyle"]
 - ["So30UIPasteConfigurationSupportingP", "window"]
 - ["So11UIResponderC", "Bool"]
 - !private ["So11UIResponderC", "FirebaseApp"]
+- !private ["So11UIResponderC", "NSError"]
+- ["So11UIResponderC", "NSPersistentContainer"]
 - ["So11UIResponderC", "UIApplication"]
 - ["So11UIResponderC", "UIApplicationLaunchOptionsKey"]
 - ["So11UIResponderC", "UIWindow"]
@@ -246,11 +368,16 @@ depends-member:
 - ["So11UIResponderC", "applicationWillEnterForeground"]
 - ["So11UIResponderC", "applicationWillResignActive"]
 - ["So11UIResponderC", "applicationWillTerminate"]
+- !private ["So11UIResponderC", "fatalError"]
 - ["So11UIResponderC", "init"]
+- ["So11UIResponderC", "persistentContainer"]
+- ["So11UIResponderC", "persistentContainer.storage"]
+- ["So11UIResponderC", "saveContext"]
 - !private ["So11UIResponderC", "shared"]
 - !private ["So11UIResponderC", "statusBarStyle"]
 - ["So11UIResponderC", "window"]
 - !private ["So30UIResponderStandardEditActionsP", "FirebaseApp"]
+- !private ["So30UIResponderStandardEditActionsP", "NSPersistentContainer"]
 - !private ["So30UIResponderStandardEditActionsP", "UIApplication"]
 - ["So30UIResponderStandardEditActionsP", ""]
 - ["So30UIResponderStandardEditActionsP", "application"]
@@ -265,12 +392,22 @@ depends-member:
 - ["So30UIResponderStandardEditActionsP", "applicationWillEnterForeground"]
 - ["So30UIResponderStandardEditActionsP", "applicationWillResignActive"]
 - ["So30UIResponderStandardEditActionsP", "applicationWillTerminate"]
+- !private ["So30UIResponderStandardEditActionsP", "fatalError"]
 - !private ["So30UIResponderStandardEditActionsP", "init"]
+- !private ["So30UIResponderStandardEditActionsP", "persistentContainer"]
 - !private ["So30UIResponderStandardEditActionsP", "shared"]
 - !private ["So30UIResponderStandardEditActionsP", "statusBarStyle"]
 - ["So30UIResponderStandardEditActionsP", "window"]
 - !private ["SC16UIStatusBarStyleO", "lightContent"]
+- !private ["9Alamofire14URLConvertibleP", "init"]
+- !private ["s35_ExpressibleByBuiltinBooleanLiteralP", "_getBuiltinLogicValue"]
+- !private ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", "init"]
+- !private ["s34_ExpressibleByBuiltinStringLiteralP", "init"]
+- !private ["s39_ExpressibleByBuiltinUTF16StringLiteralP", "init"]
+- !private ["s41_ExpressibleByBuiltinUnicodeScalarLiteralP", "init"]
+- !private ["s33_ExpressibleByStringInterpolationP", "init"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "FirebaseApp"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "NSPersistentContainer"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "UIApplication"]
 - ["10Foundation27_KeyValueCodingAndObservingP", ""]
 - ["10Foundation27_KeyValueCodingAndObservingP", "application"]
@@ -286,28 +423,76 @@ depends-member:
 - ["10Foundation27_KeyValueCodingAndObservingP", "applicationWillResignActive"]
 - ["10Foundation27_KeyValueCodingAndObservingP", "applicationWillTerminate"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "configure"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "fatalError"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "hasChanges"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "init"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "loadPersistentStores"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "persistentContainer"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "save"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "shared"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "statusBarStyle"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "userInfo"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "viewContext"]
 - ["10Foundation27_KeyValueCodingAndObservingP", "window"]
+- !private ["s21_ObjectiveCBridgeableP", "_getBuiltinLogicValue"]
+- !private ["s21_ObjectiveCBridgeableP", "init"]
+- !private ["s16_SwiftStringViewP", "init"]
 depends-nominal:
 - "10Fortn_item11AppDelegateC"
+- !private "s23BidirectionalCollectionP"
+- !private "Sb"
 - "s7CVarArgP"
+- !private "s10CollectionP"
+- !private "s10ComparableP"
 - "s28CustomDebugStringConvertibleP"
+- !private "s29CustomPlaygroundQuickLookableP"
+- !private "s17CustomReflectableP"
 - "s23CustomStringConvertibleP"
+- !private "s9DecodableP"
+- !private "s9EncodableP"
 - "s9EquatableP"
+- !private "s5ErrorP"
+- !private "s27ExpressibleByBooleanLiteralP"
+- !private "s43ExpressibleByExtendedGraphemeClusterLiteralP"
+- !private "s26ExpressibleByStringLiteralP"
+- !private "s33ExpressibleByUnicodeScalarLiteralP"
 - !private "So11FirebaseAppC"
 - "s8HashableP"
+- !private "s25LosslessStringConvertibleP"
+- !private "s10MirrorPathP"
+- !private "So8NSCodingP"
+- !private "So9NSCopyingP"
+- !private "So7NSErrorC"
+- !private "So9NSLockingP"
+- !private "So22NSManagedObjectContextC"
 - "So8NSObjectC"
 - "So16NSObjectProtocolP"
+- !private "So21NSPersistentContainerC"
+- !private "So14NSSecureCodingP"
+- !private "s26RangeReplaceableCollectionP"
 - !private "s16RawRepresentableP"
+- !private "s8SequenceP"
+- !private "s12StaticStringV"
+- !private "SS"
+- !private "s14StringProtocolP"
+- !private "s16TextOutputStreamP"
+- !private "s20TextOutputStreamableP"
 - !private "So13UIApplicationC"
 - "So21UIApplicationDelegateP"
 - "So30UIPasteConfigurationSupportingP"
 - "So11UIResponderC"
 - "So30UIResponderStandardEditActionsP"
 - !private "SC16UIStatusBarStyleO"
+- !private "9Alamofire14URLConvertibleP"
+- !private "s35_ExpressibleByBuiltinBooleanLiteralP"
+- !private "s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP"
+- !private "s34_ExpressibleByBuiltinStringLiteralP"
+- !private "s39_ExpressibleByBuiltinUTF16StringLiteralP"
+- !private "s41_ExpressibleByBuiltinUnicodeScalarLiteralP"
+- !private "s33_ExpressibleByStringInterpolationP"
 - "10Foundation27_KeyValueCodingAndObservingP"
+- !private "s21_ObjectiveCBridgeableP"
+- !private "s16_SwiftStringViewP"
 depends-dynamic-lookup:
 depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.apinotesc"
@@ -367,4 +552,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.3.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.3.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.3.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
-interface-hash: "b4b24fab75fe28399d2653797178f076"
+interface-hash: "036cc63da76a2b2a4b40fa7f63ba9b3d"

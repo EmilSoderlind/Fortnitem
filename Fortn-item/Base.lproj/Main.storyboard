@@ -78,7 +78,7 @@
                                     <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                     <subviews>
                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ufX-Bd-2oA" customClass="GradientView" customModule="Fortn_item">
-                                            <rect key="frame" x="0.0" y="-0.5" width="320" height="320"/>
+                                            <rect key="frame" x="0.0" y="-1" width="320" height="321"/>
                                             <userDefinedRuntimeAttributes>
                                                 <userDefinedRuntimeAttribute type="color" keyPath="startColor">
                                                     <color key="value" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -95,14 +95,14 @@
                                             </userDefinedRuntimeAttributes>
                                         </view>
                                         <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="png.png" translatesAutoresizingMaskIntoConstraints="NO" id="Rdd-C1-74N">
-                                            <rect key="frame" x="0.0" y="-0.5" width="320" height="320"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="320"/>
                                             <constraints>
                                                 <constraint firstAttribute="width" constant="320" id="W4g-JL-b6s"/>
                                                 <constraint firstAttribute="height" constant="320" id="Wde-oS-4tL"/>
                                             </constraints>
                                         </imageView>
                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sjm-eD-G3a" userLabel="priceContainer" customClass="priceContainerView" customModule="Fortn_item" customModuleProvider="target">
-                                            <rect key="frame" x="0.0" y="0.0" width="320" height="53"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="53.5"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="WWo-1S-7e5" userLabel="priceImg">
                                                     <rect key="frame" x="8" y="8" width="38" height="37"/>
@@ -112,22 +112,33 @@
                                                     </constraints>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="999,99" lineBreakMode="clip" numberOfLines="0" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dqQ-CV-bj9">
-                                                    <rect key="frame" x="54" y="8" width="261" height="45"/>
+                                                    <rect key="frame" x="54" y="8" width="212" height="45"/>
                                                     <fontDescription key="fontDescription" name="BurbankBigCondensed-Bold" family="Burbank Big Condensed" pointSize="28"/>
                                                     <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <nil key="highlightedColor"/>
                                                     <color key="shadowColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <size key="shadowOffset" width="1" height="1"/>
                                                 </label>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Favorite_off.png" translatesAutoresizingMaskIntoConstraints="NO" id="dnn-1f-L29" userLabel="savedIcon">
+                                                    <rect key="frame" x="274" y="8" width="38" height="37"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="38" id="uDj-QB-fsU"/>
+                                                    </constraints>
+                                                </imageView>
                                             </subviews>
                                             <constraints>
+                                                <constraint firstItem="dnn-1f-L29" firstAttribute="bottom" secondItem="WWo-1S-7e5" secondAttribute="bottom" id="DZj-XJ-1tA"/>
+                                                <constraint firstItem="dnn-1f-L29" firstAttribute="width" secondItem="WWo-1S-7e5" secondAttribute="width" id="FFZ-Ci-OEB"/>
                                                 <constraint firstItem="WWo-1S-7e5" firstAttribute="bottom" secondItem="dqQ-CV-bj9" secondAttribute="bottom" constant="-8" id="LZ5-Ek-iOD"/>
+                                                <constraint firstItem="dnn-1f-L29" firstAttribute="leading" secondItem="dqQ-CV-bj9" secondAttribute="trailing" constant="8" symbolic="YES" id="PG8-w5-fRO"/>
+                                                <constraint firstItem="dnn-1f-L29" firstAttribute="height" secondItem="WWo-1S-7e5" secondAttribute="height" id="Qmz-fh-Ygy"/>
                                                 <constraint firstItem="WWo-1S-7e5" firstAttribute="leading" secondItem="sjm-eD-G3a" secondAttribute="leadingMargin" id="RSV-9T-nZ9"/>
                                                 <constraint firstItem="WWo-1S-7e5" firstAttribute="top" secondItem="sjm-eD-G3a" secondAttribute="topMargin" id="Xvp-BH-1Ma"/>
                                                 <constraint firstAttribute="bottom" secondItem="WWo-1S-7e5" secondAttribute="bottom" constant="8" id="Zyr-QI-b0i"/>
                                                 <constraint firstItem="WWo-1S-7e5" firstAttribute="top" secondItem="dqQ-CV-bj9" secondAttribute="top" id="gau-T2-cnn"/>
-                                                <constraint firstAttribute="trailing" secondItem="dqQ-CV-bj9" secondAttribute="trailing" constant="5" id="hTc-SO-sKf"/>
                                                 <constraint firstItem="dqQ-CV-bj9" firstAttribute="leading" secondItem="WWo-1S-7e5" secondAttribute="trailing" constant="8" symbolic="YES" id="iuf-wN-DVv"/>
+                                                <constraint firstItem="dnn-1f-L29" firstAttribute="top" secondItem="dqQ-CV-bj9" secondAttribute="top" id="msh-Yb-BKl"/>
+                                                <constraint firstItem="dnn-1f-L29" firstAttribute="trailing" secondItem="sjm-eD-G3a" secondAttribute="trailingMargin" id="zOy-Tt-aKz"/>
                                             </constraints>
                                         </view>
                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1Bd-bN-d70" userLabel="labelContainer" customClass="titleContainerView" customModule="Fortn_item" customModuleProvider="target">
@@ -175,12 +186,37 @@
                                     </constraints>
                                 </tableViewCellContentView>
                                 <connections>
+                                    <outlet property="favoriteIcon" destination="dnn-1f-L29" id="JED-5C-F7m"/>
                                     <outlet property="gradientBackgroundView" destination="ufX-Bd-2oA" id="0S5-NW-si8"/>
                                     <outlet property="mainImage" destination="Rdd-C1-74N" id="Eqb-CT-oJA"/>
                                     <outlet property="priceImg" destination="WWo-1S-7e5" id="mf6-G3-0i9"/>
                                     <outlet property="priceLabel" destination="dqQ-CV-bj9" id="3iv-2D-Bvu"/>
                                     <outlet property="title" destination="0dm-yS-0fO" id="Cmk-Ai-4Wa"/>
                                 </connections>
+                            </tableViewCell>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="loadingCell" rowHeight="69" id="lWp-vF-aTs" customClass="ItemTableViewCell" customModule="Fortn_item" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="375.5" width="320" height="69"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="lWp-vF-aTs" id="mqY-eK-ybA">
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="68.5"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                    <subviews>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qxd-vj-Ef8">
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="68"/>
+                                            <color key="backgroundColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        </view>
+                                    </subviews>
+                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <constraints>
+                                        <constraint firstItem="qxd-vj-Ef8" firstAttribute="leading" secondItem="mqY-eK-ybA" secondAttribute="leading" id="6nU-oM-a1P"/>
+                                        <constraint firstItem="qxd-vj-Ef8" firstAttribute="top" secondItem="mqY-eK-ybA" secondAttribute="top" id="Fkw-yW-GQP"/>
+                                        <constraint firstAttribute="bottom" secondItem="qxd-vj-Ef8" secondAttribute="bottom" id="MqS-Ra-Jv7"/>
+                                        <constraint firstAttribute="trailing" secondItem="qxd-vj-Ef8" secondAttribute="trailing" id="PZu-pL-70p"/>
+                                        <constraint firstItem="qxd-vj-Ef8" firstAttribute="centerY" secondItem="mqY-eK-ybA" secondAttribute="centerY" id="SlT-f3-F1U"/>
+                                        <constraint firstItem="qxd-vj-Ef8" firstAttribute="centerX" secondItem="mqY-eK-ybA" secondAttribute="centerX" id="WdD-AN-qO4"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </tableViewCell>
                         </prototypes>
                         <sections/>
@@ -209,7 +245,7 @@
                                     <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo.png" translatesAutoresizingMaskIntoConstraints="NO" id="gc9-4x-p6D">
                                         <rect key="frame" x="0.0" y="0.0" width="288" height="247"/>
                                     </imageView>
-                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="m6X-rq-3Rp">
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="m6X-rq-3Rp">
                                         <rect key="frame" x="0.0" y="252" width="288" height="247"/>
                                         <mutableString key="text">ITEM SHOP
 
@@ -237,10 +273,7 @@ FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
 AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
-THE SOFTWARE.
-
-
-</mutableString>
+THE SOFTWARE.</mutableString>
                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         <fontDescription key="fontDescription" name="BurbankBigCondensed-Bold" family="Burbank Big Condensed" pointSize="24"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -284,6 +317,7 @@ THE SOFTWARE.
         </scene>
     </scenes>
     <resources>
+        <image name="Favorite_off.png" width="981" height="884"/>
         <image name="logo.png" width="1024" height="1024"/>
         <image name="png.png" width="1100" height="1100"/>
     </resources>

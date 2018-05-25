@@ -10,6 +10,7 @@ import UIKit
 
 class ItemTableViewCell: UITableViewCell {
     
+    @IBOutlet weak var favoriteIcon: UIImageView!
     @IBOutlet weak var gradientBackgroundView: GradientView!
     @IBOutlet weak var priceImg: UIImageView!
     @IBOutlet weak var title: UILabel!

@@ -165,6 +165,7 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 #if __has_feature(modules)
 @import UIKit;
 @import Foundation;
+@import CoreData;
 @import CoreGraphics;
 #endif
 
@@ -200,6 +201,24 @@ SWIFT_CLASS("_TtC10Fortn_item11AppDelegate")
 
 
 
+@class NSEntityDescription;
+@class NSManagedObjectContext;
+
+SWIFT_CLASS_NAMED("FavoriteItem")
+@interface FavoriteItem : NSManagedObject
+- (nonnull instancetype)initWithEntity:(NSEntityDescription * _Nonnull)entity insertIntoManagedObjectContext:(NSManagedObjectContext * _Nullable)context OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+@interface FavoriteItem (SWIFT_EXTENSION(Fortn_item))
+@property (nonatomic, copy) NSString * _Nullable id;
+@property (nonatomic, copy) NSString * _Nullable name;
+@property (nonatomic, copy) NSString * _Nullable price;
+@property (nonatomic, copy) NSString * _Nullable priceIcon;
+@property (nonatomic, copy) NSString * _Nullable rarity;
+@property (nonatomic, copy) NSString * _Nullable type;
+@end
+
 
 
 @class UIColor;
@@ -225,6 +244,7 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly) Class _Nonnull layer
 
 SWIFT_CLASS("_TtC10Fortn_item17ItemTableViewCell")
 @interface ItemTableViewCell : UITableViewCell
+@property (nonatomic, weak) IBOutlet UIImageView * _Null_unspecified favoriteIcon;
 @property (nonatomic, weak) IBOutlet GradientView * _Null_unspecified gradientBackgroundView;
 @property (nonatomic, weak) IBOutlet UIImageView * _Null_unspecified priceImg;
 @property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified title;
@@ -247,7 +267,7 @@ SWIFT_CLASS("_TtC10Fortn_item25TodaysTableViewController")
 - (NSInteger)numberOfSectionsInTableView:(UITableView * _Nonnull)tableView SWIFT_WARN_UNUSED_RESULT;
 - (NSString * _Nullable)tableView:(UITableView * _Nonnull)tableView titleForHeaderInSection:(NSInteger)section SWIFT_WARN_UNUSED_RESULT;
 - (NSInteger)tableView:(UITableView * _Nonnull)tableView numberOfRowsInSection:(NSInteger)section SWIFT_WARN_UNUSED_RESULT;
-- (ItemTableViewCell * _Nonnull)tableView:(UITableView * _Nonnull)tableView cellForRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath SWIFT_WARN_UNUSED_RESULT;
+- (UITableViewCell * _Nonnull)tableView:(UITableView * _Nonnull)tableView cellForRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath SWIFT_WARN_UNUSED_RESULT;
 - (void)tableView:(UITableView * _Nonnull)tableView willDisplayHeaderView:(UIView * _Nonnull)view forSection:(NSInteger)section;
 - (BOOL)tableView:(UITableView * _Nonnull)tableView canMoveRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath SWIFT_WARN_UNUSED_RESULT;
 - (void)tabBarController:(UITabBarController * _Nonnull)tabBarController didSelectViewController:(UIViewController * _Nonnull)viewController;
