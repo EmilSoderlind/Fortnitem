@@ -95,6 +95,33 @@
     },
     {
       'type': 'directory',
+      'name': "/Users/Emil/Grov-Filer/Xcode_kod/Fortn-item/P/Debug-iphonesimulator/NVActivityIndicatorView/NVActivityIndicatorView.framework/Headers",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "NVActivityIndicatorView-Swift.h",
+          'external-contents': "/Users/Emil/Grov-Filer/Xcode_kod/Fortn-item/P/Debug-iphonesimulator/NVActivityIndicatorView/NVActivityIndicatorView.framework/Headers/NVActivityIndicatorView-Swift.h"
+        },
+        {
+          'type': 'file',
+          'name': "NVActivityIndicatorView-umbrella.h",
+          'external-contents': "/Users/Emil/Grov-Filer/Xcode_kod/Fortn-item/Pods/Target Support Files/NVActivityIndicatorView/NVActivityIndicatorView-umbrella.h"
+        }
+      ]
+    },
+    {
+      'type': 'directory',
+      'name': "/Users/Emil/Grov-Filer/Xcode_kod/Fortn-item/P/Debug-iphonesimulator/NVActivityIndicatorView/NVActivityIndicatorView.framework/Modules",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "module.modulemap",
+          'external-contents': "/Users/Emil/Grov-Filer/Xcode_kod/Fortn-item/B/Pods.build/Debug-iphonesimulator/NVActivityIndicatorView.build/module.modulemap"
+        }
+      ]
+    },
+    {
+      'type': 'directory',
       'name': "/Users/Emil/Grov-Filer/Xcode_kod/Fortn-item/P/Debug-iphonesimulator/Pods_Fortn_item.framework/Headers",
       'contents': [
         {

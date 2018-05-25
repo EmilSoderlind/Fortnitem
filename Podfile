@@ -7,6 +7,7 @@ target 'Fortn-item' do
 
   # Pods for Fortn-item
 
+pod 'NVActivityIndicatorView'
 pod 'Firebase/Core'
 pod 'Alamofire'
 pod 'AlamofireImage'
