@@ -100,6 +100,7 @@ class TodaysTableViewController: UITableViewController, UITabBarControllerDelega
         
         if(indexPath.section == 1){
             
+            // Icon image for emote, png for other.
             if(iml.featured[indexPath.row].type == "emote"){
                 cell.mainImage.image = iml.featured[indexPath.row].imgIcon
             }else{
@@ -110,11 +111,13 @@ class TodaysTableViewController: UITableViewController, UITabBarControllerDelega
             cell.priceLabel.text = iml.featured[indexPath.row].price
             cell.priceImg.image = iml.featured[indexPath.row].imgPriceIconLink
             
+            // Gradient background based on rarity
             cell.gradientBackgroundView.startColor = getRarityColor(rarityStr: iml.featured[indexPath.row].rarity + "0")
             cell.gradientBackgroundView.endColor = getRarityColor(rarityStr: iml.featured[indexPath.row].rarity + "1")
             
         }else if(indexPath.section == 2){
             
+             // Icon image for emote, png for other.
             if(iml.daily[indexPath.row].type == "emote"){
                 cell.mainImage.image = iml.daily[indexPath.row].imgIcon
             }else{
@@ -125,8 +128,7 @@ class TodaysTableViewController: UITableViewController, UITabBarControllerDelega
             cell.priceLabel.text = iml.daily[indexPath.row].price
             cell.priceImg.image = iml.daily[indexPath.row].imgPriceIconLink
             
-            //cell.setGradientBackground(item: iml.daily[indexPath.row])
-            
+            // Gradient background based on rarity
             cell.gradientBackgroundView.startColor = getRarityColor(rarityStr: iml.daily[indexPath.row].rarity + "0")
             cell.gradientBackgroundView.endColor = getRarityColor(rarityStr: iml.daily[indexPath.row].rarity + "1")
         }
@@ -199,8 +201,8 @@ class TodaysTableViewController: UITableViewController, UITabBarControllerDelega
     
     func presentErrorMessage(err: String){
         print("presentErrorMessage")
-        let alert = UIAlertController(title: "Could not contact ITEM SHOP", message: err, preferredStyle: UIAlertControllerStyle.alert)
-        alert.addAction(UIAlertAction(title: "I'll try again later", style: .default, handler: { action in
+        let alert = UIAlertController(title: "Could not collect todays items", message: err, preferredStyle: UIAlertControllerStyle.alert)
+        alert.addAction(UIAlertAction(title: "I'll try again later", style: .cancel, handler: { action in
             switch action.style{
             case .default:
                 print("default")
@@ -216,6 +218,7 @@ class TodaysTableViewController: UITableViewController, UITabBarControllerDelega
         print("presentErrorMessage - DONE")
     }
     
+    // Return color based on rarity, up (0) and down (1) colors for gradient
     func getRarityColor(rarityStr: String) -> UIColor{
         print("getRarityColor(\(rarityStr))")
         
