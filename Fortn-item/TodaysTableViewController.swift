@@ -10,7 +10,6 @@ import UIKit
 
 class TodaysTableViewController: UITableViewController, UITabBarControllerDelegate {
     
-    
     var iml: ItemModelList = ItemModelList(date: Date(), featured: [], daily: [])
     var parseDone:Bool = false
     
@@ -78,7 +77,6 @@ class TodaysTableViewController: UITableViewController, UITabBarControllerDelega
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
         
-        
         if(section == 0){
             return 0
         }else if(section == 1){
@@ -117,7 +115,6 @@ class TodaysTableViewController: UITableViewController, UITabBarControllerDelega
             
         }else if(indexPath.section == 2){
             
-
             if(iml.daily[indexPath.row].type == "emote"){
                 cell.mainImage.image = iml.daily[indexPath.row].imgIcon
             }else{
@@ -147,7 +144,6 @@ class TodaysTableViewController: UITableViewController, UITabBarControllerDelega
         header.textLabel?.textAlignment = .center
     }
     
-
     /*
     // Override to support conditional editing of the table view.
     override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
@@ -181,8 +177,6 @@ class TodaysTableViewController: UITableViewController, UITabBarControllerDelega
         // Return false if you do not want the item to be re-orderable.
         return false
     }
-    
- 
 
     /*
     // MARK: - Navigation
@@ -217,7 +211,6 @@ class TodaysTableViewController: UITableViewController, UITabBarControllerDelega
             case .destructive:
                 print("destructive")
                 
-                
             }}))
         self.present(alert, animated: true, completion: nil)
         print("presentErrorMessage - DONE")
@@ -250,5 +243,4 @@ class TodaysTableViewController: UITableViewController, UITabBarControllerDelega
         
         return UIColor.black
     }
-    
 }
