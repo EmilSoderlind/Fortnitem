@@ -121,14 +121,16 @@ class TodaysTableViewController: UITableViewController, UITabBarControllerDelega
             
             cell.item = iml.featured[indexPath.row]
             
-            print("\(iml.featured[indexPath.row].name) - \(iml.featured[indexPath.row].favorited!)")
+            print("\(iml.featured[indexPath.row].name) - \(iml.featured[indexPath.row].favorited)")
             
-            if(iml.featured[indexPath.row].favorited!){
+            if(iml.featured[indexPath.row].favorited){
                 
                 // SET FAVORITED ICON
                 print("SET \(iml.featured[indexPath.row].name) to favorite!")
                 cell.favoriteIcon.image = UIImage(named: "icon_vbucks.png")
                 
+            }else{
+                cell.favoriteIcon.image = UIImage(named: "Favorite_off.png")
             }
             
             
@@ -152,15 +154,17 @@ class TodaysTableViewController: UITableViewController, UITabBarControllerDelega
             cell.item = iml.daily[indexPath.row]
             
             
-            print("\(iml.daily[indexPath.row].name) - \(iml.daily[indexPath.row].favorited!)")
+            print("\(iml.daily[indexPath.row].name) - \(iml.daily[indexPath.row].favorited)")
             
-            if(iml.daily[indexPath.row].favorited!){
+            if(iml.daily[indexPath.row].favorited){
                 
                 // SET FAVORITED ICON
                 
                 print("SET \(iml.daily[indexPath.row].name) to favorite!")
                 cell.favoriteIcon.image = UIImage(named: "icon_vbucks.png")
                 
+            }else{
+                cell.favoriteIcon.image = UIImage(named: "Favorite_off.png")
             }
             
             
@@ -187,6 +191,8 @@ class TodaysTableViewController: UITableViewController, UITabBarControllerDelega
     }
     */
 
+
+    
     /*
     // Override to support editing the table view.
     override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {

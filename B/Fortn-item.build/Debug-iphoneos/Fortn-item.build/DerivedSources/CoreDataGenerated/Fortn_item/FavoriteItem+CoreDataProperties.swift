@@ -2,7 +2,7 @@
 //  FavoriteItem+CoreDataProperties.swift
 //  
 //
-//  Created by Emil Söderlind on 2018-05-25.
+//  Created by Emil Söderlind on 2018-05-28.
 //
 //  This file was automatically generated and should not be edited.
 //
