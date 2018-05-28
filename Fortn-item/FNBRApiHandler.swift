@@ -85,6 +85,11 @@ class FNBRApiHandler {
                 var dataString = String(NSString(data: data, encoding: String.Encoding.utf8.rawValue)!)
                 dataString = dataString.replacingOccurrences(of: ":false}", with: ":\"\"}", options: .literal, range: nil)
                 dataString = dataString.replacingOccurrences(of: ":false,", with: ":\"\",", options: .literal, range: nil)
+                
+                print()
+                print("dataString: \(dataString)")
+                print()
+                
                 let fetch = try JSONDecoder().decode(FullFetch.self, from: dataString.data(using: String.Encoding.utf8)!)
                 
                 let publishDate:Date = fetch.data.date.dateFromISO8601!
@@ -100,11 +105,6 @@ class FNBRApiHandler {
                 for item in fetch.data.featured {
                     iml.featured.append(self.convertToItemModelItem(fi: item))
                 }
-                
-                print("--- API ---")
-                print(fetch)
-                print("-----------")
-
                 
                 print("Parse took: ",-startDate.timeIntervalSinceNow)
                 
@@ -144,23 +144,22 @@ class FNBRApiHandler {
     
     // Convert and parse images to itemModelItems
     func convertToItemModelItem(fi:FortniteItem) -> itemModelItem {
-        print("convertToItemModelItem (parse images)")
+        print("convertToItemModelItem (\(fi.name))")
         
         let newPriceIconLink:UIImage = parseImgURL(uri: fi.priceIconLink)
         
         var newIconImg = UIImage()
         var newPngImg = UIImage()
         
-        if(fi.type == "emote"){
+        // If there is a emote or png-image is missing. Return icon-image.
+        if((fi.type == "emote") || (fi.images["png"] == "")){
             newIconImg = parseImgURL(uri: fi.images["icon"]!)
-        
         }else{
             newPngImg = parseImgURL(uri: fi.images["png"]!)
-           
         }
         
-        // If there is a emote, return icon otherwise the png.png
-        if(fi.type == "emote"){
+        // If there is a emote or missing png-image, return icon otherwise the png.png
+        if(fi.type == "emote" || fi.images["png"] == ""){
             
             let imi:itemModelItem = itemModelItem(id: fi.id, name: fi.name, price: fi.price, priceIcon: fi.priceIcon, priceIconLink: fi.priceIconLink, images: fi.images, rarity: fi.rarity, type: fi.type, readableType: fi.readableType, imagesParsed: true, imgPriceIconLink: newPriceIconLink, imgPng: nil, imgIcon: newIconImg)
             return imi
@@ -168,15 +167,26 @@ class FNBRApiHandler {
         
         let imi:itemModelItem = itemModelItem(id: fi.id, name: fi.name, price: fi.price, priceIcon: fi.priceIcon, priceIconLink: fi.priceIconLink, images: fi.images, rarity: fi.rarity, type: fi.type, readableType: fi.readableType, imagesParsed: true, imgPriceIconLink: newPriceIconLink, imgPng: newPngImg, imgIcon: nil)
         
-        print("convertToItemModelItem (parse images) - DONE")
+        //print("convertToItemModelItem - DONE")
         return imi
     }
     
     func parseImgURL(uri:String)->UIImage{
-        print("parseImgURL")
-        let img:UIImage = UIImage(url: (URL(string: uri)))!
-        print("parseImgURL - DONE")
-        return img
+        //print("parseImgURL")
+        //print("Parsing: \(uri)")
+        
+        
+        if(uri == "https://image.fnbr.co/price/icon_vbucks.png"){
+            return UIImage(named: "icon_vbucks.png")!
+        }
+        
+        if let img:UIImage = UIImage(url: (URL(string: uri))){
+            //print("parseImgURL - DONE")
+            return img
+        }else{
+            print("parseImgURL - FAILED return logo.png")
+            return UIImage(named: "logo.png")!
+        }
     }
     
 }

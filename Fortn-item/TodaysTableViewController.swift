@@ -100,8 +100,8 @@ class TodaysTableViewController: UITableViewController, UITabBarControllerDelega
         
         if(indexPath.section == 1){
             
-            // Icon image for emote, png for other.
-            if(iml.featured[indexPath.row].type == "emote"){
+            // Icon image if png dosen't exist, png for other.
+            if(iml.featured[indexPath.row].imgPng == nil){
                 cell.mainImage.image = iml.featured[indexPath.row].imgIcon
             }else{
                 cell.mainImage.image = iml.featured[indexPath.row].imgPng
@@ -117,8 +117,8 @@ class TodaysTableViewController: UITableViewController, UITabBarControllerDelega
             
         }else if(indexPath.section == 2){
             
-             // Icon image for emote, png for other.
-            if(iml.daily[indexPath.row].type == "emote"){
+             // Icon image if png dosen't exist, png for other.
+            if(iml.daily[indexPath.row].imgPng == nil){
                 cell.mainImage.image = iml.daily[indexPath.row].imgIcon
             }else{
                 cell.mainImage.image = iml.daily[indexPath.row].imgPng

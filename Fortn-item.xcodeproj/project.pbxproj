@@ -23,6 +23,7 @@
 		204B130F20B193A4008AC4BE /* itemModelItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 204B130E20B193A4008AC4BE /* itemModelItem.swift */; };
 		204B131320B1B93E008AC4BE /* png.png in Resources */ = {isa = PBXBuildFile; fileRef = 204B131220B1B93D008AC4BE /* png.png */; };
 		204B131620B1BF95008AC4BE /* BurbankBigCondensed-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 204B131520B1BF3B008AC4BE /* BurbankBigCondensed-Bold.otf */; };
+		20555D4E20BBE6F7009C2EE8 /* icon_vbucks.png in Resources */ = {isa = PBXBuildFile; fileRef = 20555D4D20BBE6F7009C2EE8 /* icon_vbucks.png */; };
 		2093523820AEB7B8006AC361 /* imageExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2093523720AEB7B8006AC361 /* imageExt.swift */; };
 		20D0388420B813FB000BD2D6 /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 20D0388320B813FB000BD2D6 /* logo.png */; };
 		20D0388620B81431000BD2D6 /* Favorite_off.png in Resources */ = {isa = PBXBuildFile; fileRef = 20D0388520B81431000BD2D6 /* Favorite_off.png */; };
@@ -51,6 +52,7 @@
 		204B130E20B193A4008AC4BE /* itemModelItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = itemModelItem.swift; sourceTree = "<group>"; };
 		204B131220B1B93D008AC4BE /* png.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = png.png; sourceTree = "<group>"; };
 		204B131520B1BF3B008AC4BE /* BurbankBigCondensed-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "BurbankBigCondensed-Bold.otf"; sourceTree = "<group>"; };
+		20555D4D20BBE6F7009C2EE8 /* icon_vbucks.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_vbucks.png; sourceTree = "<group>"; };
 		2093523720AEB7B8006AC361 /* imageExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = imageExt.swift; sourceTree = "<group>"; };
 		20D0388320B813FB000BD2D6 /* logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = logo.png; path = ../font/logo.png; sourceTree = "<group>"; };
 		20D0388520B81431000BD2D6 /* Favorite_off.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Favorite_off.png; sourceTree = "<group>"; };
@@ -76,6 +78,7 @@
 		2021872C20B8137800D80D2E /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				20555D4D20BBE6F7009C2EE8 /* icon_vbucks.png */,
 				204B131220B1B93D008AC4BE /* png.png */,
 				20D0388320B813FB000BD2D6 /* logo.png */,
 				20D0388520B81431000BD2D6 /* Favorite_off.png */,
@@ -219,6 +222,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				20555D4E20BBE6F7009C2EE8 /* icon_vbucks.png in Resources */,
 				204B131620B1BF95008AC4BE /* BurbankBigCondensed-Bold.otf in Resources */,
 				2019768620B75C0D00C6D2F7 /* GoogleService-Info.plist in Resources */,
 				20D0388420B813FB000BD2D6 /* logo.png in Resources */,

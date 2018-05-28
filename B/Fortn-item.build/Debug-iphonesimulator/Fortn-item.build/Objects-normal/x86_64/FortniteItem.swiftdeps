@@ -206,7 +206,6 @@ depends-external:
 - "/Users/Emil/Grov-Filer/Xcode_kod/Fortn-item/P/Debug-iphonesimulator/Alamofire/Alamofire.framework/Modules/module.modulemap"
 - "/Users/Emil/Grov-Filer/Xcode_kod/Fortn-item/Pods/FirebaseCore/Frameworks/FirebaseCore.framework/Modules/module.modulemap"
 - "/Users/Emil/Grov-Filer/Xcode_kod/Fortn-item/Pods/FirebaseCrash/Frameworks/FirebaseCrash.framework/Modules/module.modulemap"
-- "/Users/Emil/Grov-Filer/Xcode_kod/Fortn-item/Pods/FirebaseAnalytics/Frameworks/FirebaseCoreDiagnostics.framework/Modules/module.modulemap"
 - "/Users/Emil/Grov-Filer/Xcode_kod/Fortn-item/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Modules/module.modulemap"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.3.sdk/usr/include/objc/ObjectiveC.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.3.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/OpenGLES.apinotes"
