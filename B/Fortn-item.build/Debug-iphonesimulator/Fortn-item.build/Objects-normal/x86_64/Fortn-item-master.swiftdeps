@@ -1,18 +1,18 @@
 version: "Apple Swift version 4.1 (swiftlang-902.0.48 clang-902.0.37.1)"
 options: "2eff14f369b90a16a0bf248cb53b3101"
-build_time: [1527494078, 272933000]
+build_time: [1527511650, 478520000]
 inputs:
   "/Users/Emil/Grov-Filer/Xcode_kod/Fortn-item/Fortn-item/FortniteItem.swift": [1526817490, 0]
-  "/Users/Emil/Grov-Filer/Xcode_kod/Fortn-item/Fortn-item/ItemTableViewCell.swift": [1527494016, 0]
+  "/Users/Emil/Grov-Filer/Xcode_kod/Fortn-item/Fortn-item/ItemTableViewCell.swift": [1527505391, 0]
   "/Users/Emil/Grov-Filer/Xcode_kod/Fortn-item/Fortn-item/Reachability.swift": [1527193880, 0]
   "/Users/Emil/Grov-Filer/Xcode_kod/Fortn-item/Fortn-item/FullFetch.swift": [1526594194, 0]
-  "/Users/Emil/Grov-Filer/Xcode_kod/Fortn-item/Fortn-item/TodaysTableViewController.swift": [1527494076, 0]
+  "/Users/Emil/Grov-Filer/Xcode_kod/Fortn-item/Fortn-item/TodaysTableViewController.swift": [1527511648, 0]
   "/Users/Emil/Grov-Filer/Xcode_kod/Fortn-item/Fortn-item/dataStruct.swift": [1526669775, 0]
   "/Users/Emil/Grov-Filer/Xcode_kod/Fortn-item/Fortn-item/ItemModelList.swift": [1526817486, 0]
   "/Users/Emil/Grov-Filer/Xcode_kod/Fortn-item/Fortn-item/imageExt.swift": [1527193256, 0]
-  "/Users/Emil/Grov-Filer/Xcode_kod/Fortn-item/Fortn-item/itemModelItem.swift": [1526831072, 0]
+  "/Users/Emil/Grov-Filer/Xcode_kod/Fortn-item/Fortn-item/itemModelItem.swift": [1527509816, 0]
   "/Users/Emil/Grov-Filer/Xcode_kod/Fortn-item/Fortn-item/AppDelegate.swift": [1527240667, 0]
-  "/Users/Emil/Grov-Filer/Xcode_kod/Fortn-item/Fortn-item/FNBRApiHandler.swift": [1527493454, 0]
+  "/Users/Emil/Grov-Filer/Xcode_kod/Fortn-item/Fortn-item/FNBRApiHandler.swift": [1527511013, 0]
   "/Users/Emil/Grov-Filer/Xcode_kod/Fortn-item/B/Fortn-item.build/Debug-iphonesimulator/Fortn-item.build/DerivedSources/CoreDataGenerated/Fortn_item/FavoriteItem+CoreDataClass.swift": [1527445092, 0]
   "/Users/Emil/Grov-Filer/Xcode_kod/Fortn-item/B/Fortn-item.build/Debug-iphonesimulator/Fortn-item.build/DerivedSources/CoreDataGenerated/Fortn_item/FavoriteItem+CoreDataProperties.swift": [1527445092, 0]
   "/Users/Emil/Grov-Filer/Xcode_kod/Fortn-item/B/Fortn-item.build/Debug-iphonesimulator/Fortn-item.build/DerivedSources/CoreDataGenerated/Fortn_item/Fortn_item+CoreDataModel.swift": [1527445092, 0]

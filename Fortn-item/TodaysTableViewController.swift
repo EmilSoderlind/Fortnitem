@@ -25,6 +25,9 @@ class TodaysTableViewController: UITableViewController, UITabBarControllerDelega
         let fortniteFont = UIFont(name: "BurbankBigCondensed-Bold", size: 17)
         UITabBarItem.appearance().setTitleTextAttributes([kCTFontAttributeName as NSAttributedStringKey: fortniteFont!], for: .normal)
         
+        
+        self.tableView.delaysContentTouches = true
+        
         print("TodaysTableViewController ViewDidLoad - DONE")
     }
     
@@ -100,6 +103,7 @@ class TodaysTableViewController: UITableViewController, UITabBarControllerDelega
         
         if(indexPath.section == 1){
             
+            
             // Icon image if png dosen't exist, png for other.
             if(iml.featured[indexPath.row].imgPng == nil){
                 cell.mainImage.image = iml.featured[indexPath.row].imgIcon
@@ -116,6 +120,17 @@ class TodaysTableViewController: UITableViewController, UITabBarControllerDelega
             cell.gradientBackgroundView.endColor = getRarityColor(rarityStr: iml.featured[indexPath.row].rarity + "1")
             
             cell.item = iml.featured[indexPath.row]
+            
+            print("\(iml.featured[indexPath.row].name) - \(iml.featured[indexPath.row].favorited!)")
+            
+            if(iml.featured[indexPath.row].favorited!){
+                
+                // SET FAVORITED ICON
+                print("SET \(iml.featured[indexPath.row].name) to favorite!")
+                cell.favoriteIcon.image = UIImage(named: "icon_vbucks.png")
+                
+            }
+            
             
         }else if(indexPath.section == 2){
             
@@ -135,6 +150,20 @@ class TodaysTableViewController: UITableViewController, UITabBarControllerDelega
             cell.gradientBackgroundView.endColor = getRarityColor(rarityStr: iml.daily[indexPath.row].rarity + "1")
             
             cell.item = iml.daily[indexPath.row]
+            
+            
+            print("\(iml.daily[indexPath.row].name) - \(iml.daily[indexPath.row].favorited!)")
+            
+            if(iml.daily[indexPath.row].favorited!){
+                
+                // SET FAVORITED ICON
+                
+                print("SET \(iml.daily[indexPath.row].name) to favorite!")
+                cell.favoriteIcon.image = UIImage(named: "icon_vbucks.png")
+                
+            }
+            
+            
         }
         
         return cell
@@ -176,7 +205,44 @@ class TodaysTableViewController: UITableViewController, UITabBarControllerDelega
 
     }
     */
+    
+    
 
+    @IBAction func pressedCell(_ sender: UIButton) {
+        
+        let buttonPosition = sender.convert(CGPoint.zero, to: self.tableView)
+        let indexPath = self.tableView.indexPathForRow(at: buttonPosition)!
+        
+        print("Button \(indexPath) tapped")
+        
+        
+        if(indexPath.section == 1){
+            
+            print(iml.featured[indexPath.row].name)
+            
+            if(iml.featured[indexPath.row].favorited){
+                iml.featured[indexPath.row].favorited = false
+            }else{
+                iml.featured[indexPath.row].favorited = true
+            }
+            
+        }else if(indexPath.section == 2){
+            
+            print(iml.daily[indexPath.row].name)
+            
+            if(iml.daily[indexPath.row].favorited){
+                iml.daily[indexPath.row].favorited = false
+            }else{
+                iml.daily[indexPath.row].favorited = true
+            }
+        }
+        
+        // SAVE TO CORE DATA
+        
+        // UPDATE ITEM ( WITH FAVORITE ICON )
+        
+        tableView.reloadRows(at: [indexPath], with: UITableViewRowAnimation.none)
+    }
     
     // Override to support conditional rearranging of the table view.
     override func tableView(_ tableView: UITableView, canMoveRowAt indexPath: IndexPath) -> Bool {
@@ -229,7 +295,7 @@ class TodaysTableViewController: UITableViewController, UITabBarControllerDelega
     
     // Return color based on rarity, up (0) and down (1) colors for gradient
     func getRarityColor(rarityStr: String) -> UIColor{
-        print("getRarityColor(\(rarityStr))")
+
         
         if(rarityStr == "common0"){
             return UIColor(red: 193.0/255.0, green: 194.0/255.0, blue: 194, alpha: 1)

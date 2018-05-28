@@ -36,7 +36,7 @@ struct itemModelItem {
     var imgPriceIconLink: UIImage
     var imgPng:UIImage?
     var imgIcon:UIImage?
-
-
+    
+    var favorited: Bool!
     
 }

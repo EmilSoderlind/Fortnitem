@@ -151,6 +151,13 @@ class FNBRApiHandler {
         var newIconImg = UIImage()
         var newPngImg = UIImage()
         
+        
+        // CHECK IF WE HAVE A SAVED ONE IN CORE DATA - FAVORITED
+        
+        
+        // RECIEVE THE ITEMMODELITEM FROM CORE DATA
+        
+        
         // If there is a emote or png-image is missing. Return icon-image.
         if((fi.type == "emote") || (fi.images["png"] == "")){
             newIconImg = parseImgURL(uri: fi.images["icon"]!)
@@ -161,11 +168,11 @@ class FNBRApiHandler {
         // If there is a emote or missing png-image, return icon otherwise the png.png
         if(fi.type == "emote" || fi.images["png"] == ""){
             
-            let imi:itemModelItem = itemModelItem(id: fi.id, name: fi.name, price: fi.price, priceIcon: fi.priceIcon, priceIconLink: fi.priceIconLink, images: fi.images, rarity: fi.rarity, type: fi.type, readableType: fi.readableType, imagesParsed: true, imgPriceIconLink: newPriceIconLink, imgPng: nil, imgIcon: newIconImg)
+            let imi:itemModelItem = itemModelItem(id: fi.id, name: fi.name, price: fi.price, priceIcon: fi.priceIcon, priceIconLink: fi.priceIconLink, images: fi.images, rarity: fi.rarity, type: fi.type, readableType: fi.readableType, imagesParsed: true, imgPriceIconLink: newPriceIconLink, imgPng: nil, imgIcon: newIconImg, favorited: false)
             return imi
         }
         
-        let imi:itemModelItem = itemModelItem(id: fi.id, name: fi.name, price: fi.price, priceIcon: fi.priceIcon, priceIconLink: fi.priceIconLink, images: fi.images, rarity: fi.rarity, type: fi.type, readableType: fi.readableType, imagesParsed: true, imgPriceIconLink: newPriceIconLink, imgPng: newPngImg, imgIcon: nil)
+        let imi:itemModelItem = itemModelItem(id: fi.id, name: fi.name, price: fi.price, priceIcon: fi.priceIcon, priceIconLink: fi.priceIconLink, images: fi.images, rarity: fi.rarity, type: fi.type, readableType: fi.readableType, imagesParsed: true, imgPriceIconLink: newPriceIconLink, imgPng: newPngImg, imgIcon: nil, favorited: false)
         
         //print("convertToItemModelItem - DONE")
         return imi

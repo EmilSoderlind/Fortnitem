@@ -74,7 +74,7 @@
                                 <rect key="frame" x="0.0" y="55.5" width="320" height="320"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="S1g-gR-dg2" id="Yen-Cr-Ge1">
-                                    <rect key="frame" x="0.0" y="0.0" width="320" height="319"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="319.5"/>
                                     <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                     <subviews>
                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ufX-Bd-2oA" customClass="GradientView" customModule="Fortn_item">
@@ -159,11 +159,18 @@
                                                 <constraint firstItem="0dm-yS-0fO" firstAttribute="centerX" secondItem="1Bd-bN-d70" secondAttribute="centerX" id="g7e-R2-MoC"/>
                                             </constraints>
                                         </view>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="N3V-12-kOe" userLabel="pressCellButton">
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="320"/>
+                                            <connections>
+                                                <action selector="pressedCell:" destination="GcM-vX-iF0" eventType="touchUpInside" id="oXV-NN-dN1"/>
+                                            </connections>
+                                        </button>
                                     </subviews>
                                     <constraints>
                                         <constraint firstItem="ufX-Bd-2oA" firstAttribute="top" secondItem="Yen-Cr-Ge1" secondAttribute="top" constant="-0.5" id="1kQ-Fo-MOh"/>
                                         <constraint firstItem="Rdd-C1-74N" firstAttribute="top" secondItem="Yen-Cr-Ge1" secondAttribute="top" id="3yd-dK-JII"/>
                                         <constraint firstItem="1Bd-bN-d70" firstAttribute="leading" secondItem="Yen-Cr-Ge1" secondAttribute="leading" id="4L4-qE-P27"/>
+                                        <constraint firstItem="N3V-12-kOe" firstAttribute="centerY" secondItem="Yen-Cr-Ge1" secondAttribute="centerY" id="9OQ-JD-4bo"/>
                                         <constraint firstItem="1Bd-bN-d70" firstAttribute="centerX" secondItem="Yen-Cr-Ge1" secondAttribute="centerX" id="DvK-eI-zlH"/>
                                         <constraint firstItem="ufX-Bd-2oA" firstAttribute="leading" secondItem="Yen-Cr-Ge1" secondAttribute="leading" id="HUi-hO-5Xh"/>
                                         <constraint firstItem="Rdd-C1-74N" firstAttribute="centerY" secondItem="Yen-Cr-Ge1" secondAttribute="centerY" id="Ip3-jN-dH8"/>
@@ -174,21 +181,27 @@
                                         <constraint firstAttribute="bottom" secondItem="sjm-eD-G3a" secondAttribute="bottom" constant="266" id="ScR-ta-Jtv"/>
                                         <constraint firstItem="sjm-eD-G3a" firstAttribute="trailing" secondItem="Rdd-C1-74N" secondAttribute="trailing" id="X5S-AY-yHf"/>
                                         <constraint firstAttribute="trailing" secondItem="1Bd-bN-d70" secondAttribute="trailing" id="XF0-C6-G1D"/>
+                                        <constraint firstItem="N3V-12-kOe" firstAttribute="leading" secondItem="Yen-Cr-Ge1" secondAttribute="leading" id="Y9X-yf-5j3"/>
                                         <constraint firstItem="Rdd-C1-74N" firstAttribute="centerX" secondItem="Yen-Cr-Ge1" secondAttribute="centerX" id="ZQu-Sk-UI4"/>
+                                        <constraint firstAttribute="trailing" secondItem="N3V-12-kOe" secondAttribute="trailing" id="aQN-3M-mI5"/>
                                         <constraint firstItem="1Bd-bN-d70" firstAttribute="top" secondItem="Yen-Cr-Ge1" secondAttribute="top" constant="273" id="acZ-be-Tla"/>
                                         <constraint firstItem="ufX-Bd-2oA" firstAttribute="centerX" secondItem="Yen-Cr-Ge1" secondAttribute="centerX" id="dD0-cN-Ubu"/>
                                         <constraint firstItem="Rdd-C1-74N" firstAttribute="leading" secondItem="Yen-Cr-Ge1" secondAttribute="leading" id="icY-GU-QLu"/>
                                         <constraint firstItem="ufX-Bd-2oA" firstAttribute="centerY" secondItem="Yen-Cr-Ge1" secondAttribute="centerY" id="jUA-64-qCz"/>
                                         <constraint firstAttribute="bottom" secondItem="Rdd-C1-74N" secondAttribute="bottom" id="laR-k0-oaL"/>
                                         <constraint firstItem="Rdd-C1-74N" firstAttribute="leading" secondItem="Yen-Cr-Ge1" secondAttribute="leading" id="nUW-Eu-HSX"/>
+                                        <constraint firstAttribute="bottom" secondItem="N3V-12-kOe" secondAttribute="bottom" id="oge-9o-oRW"/>
                                         <constraint firstAttribute="trailing" secondItem="Rdd-C1-74N" secondAttribute="trailing" id="shg-y4-vi9"/>
+                                        <constraint firstItem="N3V-12-kOe" firstAttribute="centerX" secondItem="Yen-Cr-Ge1" secondAttribute="centerX" id="spp-Z2-n1x"/>
                                         <constraint firstItem="sjm-eD-G3a" firstAttribute="top" secondItem="Rdd-C1-74N" secondAttribute="top" id="xnv-8l-RK4"/>
+                                        <constraint firstItem="N3V-12-kOe" firstAttribute="top" secondItem="Yen-Cr-Ge1" secondAttribute="top" id="xvE-3S-KIq"/>
                                     </constraints>
                                 </tableViewCellContentView>
                                 <connections>
                                     <outlet property="favoriteIcon" destination="dnn-1f-L29" id="JED-5C-F7m"/>
                                     <outlet property="gradientBackgroundView" destination="ufX-Bd-2oA" id="0S5-NW-si8"/>
                                     <outlet property="mainImage" destination="Rdd-C1-74N" id="Eqb-CT-oJA"/>
+                                    <outlet property="pressButton" destination="N3V-12-kOe" id="v5f-2w-5Rm"/>
                                     <outlet property="priceImg" destination="WWo-1S-7e5" id="mf6-G3-0i9"/>
                                     <outlet property="priceLabel" destination="dqQ-CV-bj9" id="3iv-2D-Bvu"/>
                                     <outlet property="title" destination="0dm-yS-0fO" id="Cmk-Ai-4Wa"/>
@@ -198,7 +211,7 @@
                                 <rect key="frame" x="0.0" y="375.5" width="320" height="69"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="lWp-vF-aTs" id="mqY-eK-ybA">
-                                    <rect key="frame" x="0.0" y="0.0" width="320" height="68"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="68.5"/>
                                     <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                     <subviews>
                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qxd-vj-Ef8">
@@ -247,7 +260,7 @@
                                     </imageView>
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="m6X-rq-3Rp">
                                         <rect key="frame" x="0.0" y="252" width="288" height="247"/>
-                                        <mutableString key="text">ITEM SHOP
+                                        <string key="text">ITEM SHOP
 
 Keep up with the daily Fortnite Item Shop, quick and easy. Never miss the pickaxe of your dreams again!
 
@@ -296,7 +309,7 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.
 
 
-</mutableString>
+</string>
                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         <fontDescription key="fontDescription" name="BurbankBigCondensed-Bold" family="Burbank Big Condensed" pointSize="24"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
