@@ -7,16 +7,20 @@
 //
 
 import UIKit
+import CoreData
 
 class TodaysTableViewController: UITableViewController, UITabBarControllerDelegate {
     
     var iml: ItemModelList = ItemModelList(date: Date(), featured: [], daily: [])
     var parseDone:Bool = false
     
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         print("TodaysTableViewController ViewDidLoad")
         
+       
         self.tabBarController?.delegate = self
         
         let ap: FNBRApiHandler = FNBRApiHandler()
@@ -28,8 +32,21 @@ class TodaysTableViewController: UITableViewController, UITabBarControllerDelega
         
         self.tableView.delaysContentTouches = true
         
+        
+        print("CONTENT IN CORE DATA ----")
+        CDhandler.getSavedItemsCoreData()
+
+        print("-------------------------")
+
+        print("ITEM WITH ID: 5ab1723e5f957f27504aa502 ------")
+        CDhandler.getSavedItemWithIDCoreData(id: "5ab1723e5f957f27504aa502")
+        print("---------------------------------------------")
+        
         print("TodaysTableViewController ViewDidLoad - DONE")
     }
+    
+    
+  
     
     func doneParsing(parsedIML: ItemModelList){
         print("Done parsing - updating tableView")
@@ -237,10 +254,13 @@ class TodaysTableViewController: UITableViewController, UITabBarControllerDelega
             }
         }
         
+        
         // SAVE TO CORE DATA
+        CDhandler.saveItemToCoreData(item: iml.daily[indexPath.row])
+        
+        
         
         // UPDATE ITEM ( WITH FAVORITE ICON )
-        
         tableView.reloadRows(at: [indexPath], with: UITableViewRowAnimation.none)
     }
     

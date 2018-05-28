@@ -2,7 +2,7 @@
 //  FavoriteItem+CoreDataProperties.swift
 //  
 //
-//  Created by Emil Söderlind on 2018-05-27.
+//  Created by Emil Söderlind on 2018-05-28.
 //
 //  This file was automatically generated and should not be edited.
 //
@@ -18,9 +18,11 @@ extension FavoriteItem {
     }
 
     @NSManaged public var id: String?
+    @NSManaged public var imgLink: String?
     @NSManaged public var name: String?
     @NSManaged public var price: String?
     @NSManaged public var priceIcon: String?
+    @NSManaged public var priceIconLink: String?
     @NSManaged public var rarity: String?
     @NSManaged public var type: String?
 

@@ -27,13 +27,13 @@ struct itemModelItem {
     var price: String
     var priceIcon: String
     var priceIconLink: String
-    var images: [String : String]
+    var images: [String : String]?
     var rarity: String
     var type: String
-    var readableType: String
+    var readableType: String?
     
     var imagesParsed:Bool = false
-    var imgPriceIconLink: UIImage
+    var imgPriceIconLink: UIImage?
     var imgPng:UIImage?
     var imgIcon:UIImage?
     

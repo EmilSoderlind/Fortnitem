@@ -212,9 +212,11 @@ SWIFT_CLASS_NAMED("FavoriteItem")
 
 @interface FavoriteItem (SWIFT_EXTENSION(Fortn_item))
 @property (nonatomic, copy) NSString * _Nullable id;
+@property (nonatomic, copy) NSString * _Nullable imgLink;
 @property (nonatomic, copy) NSString * _Nullable name;
 @property (nonatomic, copy) NSString * _Nullable price;
 @property (nonatomic, copy) NSString * _Nullable priceIcon;
+@property (nonatomic, copy) NSString * _Nullable priceIconLink;
 @property (nonatomic, copy) NSString * _Nullable rarity;
 @property (nonatomic, copy) NSString * _Nullable type;
 @end
