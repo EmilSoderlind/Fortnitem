@@ -52,12 +52,19 @@ class TodaysTableViewController: UITableViewController, UITabBarControllerDelega
         self.tableView.reloadData()
         
         
-        // CHECK FOR FAVORITES IN PARSE (BACKGROUND THREAD)
-
         
-        
-        
+            // CHECK FOR FAVORITES IN PARSE (BACKGROUND THREAD)
+            print("Checking for favorites in CD")
+            CDhandler.updateItemListWithFavorite(IMList: self.iml, vc: self)
+            
+             
+            
         print("Done parsing - updating tableView - DONE")
+    }
+    
+    func doneUpdateFavorites(){
+        self.tableView.reloadData()
+        print("Checking for favorites in CD - DONE")
     }
 
     override func didReceiveMemoryWarning() {

@@ -11,10 +11,23 @@ import CoreData
 
 class FavoriteTableViewController: UITableViewController {
 
+    var favoriteItems: [itemModelItem] = []
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         print("FavoriteTableViewController.viewDidLoad")
 
+        DispatchQueue.global(qos:.userInteractive).async {
+
+            self.favoriteItems = CDhandler.getSavedItemsCoreData()
+            
+            DispatchQueue.main.async {
+                self.tableView.reloadData()
+            }
+        }
+    
+    
+        
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 
@@ -34,23 +47,27 @@ class FavoriteTableViewController: UITableViewController {
 
     override func numberOfSections(in tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
-        return 0
+        return 1
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return 0
+        return favoriteItems.count
     }
 
-    /*
+    
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath) as! ItemTableViewCell
 
         // Configure the cell...
 
+        cell.title.text = favoriteItems[indexPath.row].name
+        cell.priceLabel.text = favoriteItems[indexPath.row].price
+        
+        
         return cell
     }
-    */
+ 
 
     
     // Override to support conditional editing of the table view.

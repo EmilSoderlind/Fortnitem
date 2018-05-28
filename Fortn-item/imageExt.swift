@@ -158,12 +158,10 @@ class GradientView: UIView {
     }
     
     override func layoutSubviews() {
-        print("GradientView.layoutSubviews")
         super.layoutSubviews()
         updatePoints()
         updateLocations()
         updateColors()
-        print("GradientView.layoutSubviews - DONE")
     }
 }
 
