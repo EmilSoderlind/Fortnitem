@@ -115,6 +115,8 @@ class TodaysTableViewController: UITableViewController, UITabBarControllerDelega
             cell.gradientBackgroundView.startColor = getRarityColor(rarityStr: iml.featured[indexPath.row].rarity + "0")
             cell.gradientBackgroundView.endColor = getRarityColor(rarityStr: iml.featured[indexPath.row].rarity + "1")
             
+            cell.item = iml.featured[indexPath.row]
+            
         }else if(indexPath.section == 2){
             
              // Icon image if png dosen't exist, png for other.
@@ -131,6 +133,8 @@ class TodaysTableViewController: UITableViewController, UITabBarControllerDelega
             // Gradient background based on rarity
             cell.gradientBackgroundView.startColor = getRarityColor(rarityStr: iml.daily[indexPath.row].rarity + "0")
             cell.gradientBackgroundView.endColor = getRarityColor(rarityStr: iml.daily[indexPath.row].rarity + "1")
+            
+            cell.item = iml.daily[indexPath.row]
         }
         
         return cell
@@ -178,6 +182,11 @@ class TodaysTableViewController: UITableViewController, UITabBarControllerDelega
     override func tableView(_ tableView: UITableView, canMoveRowAt indexPath: IndexPath) -> Bool {
         // Return false if you do not want the item to be re-orderable.
         return false
+    }
+    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        print("Detected press on cell")
+        print("IndexPath: \(indexPath)")
     }
 
     /*
