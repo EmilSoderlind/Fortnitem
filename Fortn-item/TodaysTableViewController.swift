@@ -26,21 +26,16 @@ class TodaysTableViewController: UITableViewController, UITabBarControllerDelega
         let ap: FNBRApiHandler = FNBRApiHandler()
         ap.parseCurrentItems(vc: self)
         
+        
+        
+        
         let fortniteFont = UIFont(name: "BurbankBigCondensed-Bold", size: 17)
         UITabBarItem.appearance().setTitleTextAttributes([kCTFontAttributeName as NSAttributedStringKey: fortniteFont!], for: .normal)
         
         
+        
         self.tableView.delaysContentTouches = true
         
-        
-        print("CONTENT IN CORE DATA ----")
-        CDhandler.getSavedItemsCoreData()
-
-        print("-------------------------")
-
-        print("ITEM WITH ID: 5ab1723e5f957f27504aa502 ------")
-        CDhandler.getSavedItemWithIDCoreData(id: "5ab1723e5f957f27504aa502")
-        print("---------------------------------------------")
         
         print("TodaysTableViewController ViewDidLoad - DONE")
     }
@@ -55,6 +50,13 @@ class TodaysTableViewController: UITableViewController, UITabBarControllerDelega
         parseDone = true
         
         self.tableView.reloadData()
+        
+        
+        // CHECK FOR FAVORITES IN PARSE (BACKGROUND THREAD)
+
+        
+        
+        
         print("Done parsing - updating tableView - DONE")
     }
 
@@ -133,17 +135,14 @@ class TodaysTableViewController: UITableViewController, UITabBarControllerDelega
             cell.priceImg.image = iml.featured[indexPath.row].imgPriceIconLink
             
             // Gradient background based on rarity
-            cell.gradientBackgroundView.startColor = getRarityColor(rarityStr: iml.featured[indexPath.row].rarity + "0")
-            cell.gradientBackgroundView.endColor = getRarityColor(rarityStr: iml.featured[indexPath.row].rarity + "1")
-            
+            cell.gradientBackgroundView.startColor = TodaysTableViewController.getRarityColor(rarityStr: iml.featured[indexPath.row].rarity + "0")
+            cell.gradientBackgroundView.endColor = TodaysTableViewController.getRarityColor(rarityStr: iml.featured[indexPath.row].rarity + "1")
+
             cell.item = iml.featured[indexPath.row]
             
-            print("\(iml.featured[indexPath.row].name) - \(iml.featured[indexPath.row].favorited)")
-            
+            // SET FAVORITED ICON
             if(iml.featured[indexPath.row].favorited){
                 
-                // SET FAVORITED ICON
-                print("SET \(iml.featured[indexPath.row].name) to favorite!")
                 cell.favoriteIcon.image = UIImage(named: "icon_vbucks.png")
                 
             }else{
@@ -165,19 +164,14 @@ class TodaysTableViewController: UITableViewController, UITabBarControllerDelega
             cell.priceImg.image = iml.daily[indexPath.row].imgPriceIconLink
             
             // Gradient background based on rarity
-            cell.gradientBackgroundView.startColor = getRarityColor(rarityStr: iml.daily[indexPath.row].rarity + "0")
-            cell.gradientBackgroundView.endColor = getRarityColor(rarityStr: iml.daily[indexPath.row].rarity + "1")
+            cell.gradientBackgroundView.startColor = TodaysTableViewController.getRarityColor(rarityStr: iml.daily[indexPath.row].rarity + "0")
+            cell.gradientBackgroundView.endColor = TodaysTableViewController.getRarityColor(rarityStr: iml.daily[indexPath.row].rarity + "1")
             
             cell.item = iml.daily[indexPath.row]
             
-            
-            print("\(iml.daily[indexPath.row].name) - \(iml.daily[indexPath.row].favorited)")
-            
+            // SET FAVORITED ICON
             if(iml.daily[indexPath.row].favorited){
                 
-                // SET FAVORITED ICON
-                
-                print("SET \(iml.daily[indexPath.row].name) to favorite!")
                 cell.favoriteIcon.image = UIImage(named: "icon_vbucks.png")
                 
             }else{
@@ -230,17 +224,25 @@ class TodaysTableViewController: UITableViewController, UITabBarControllerDelega
         let buttonPosition = sender.convert(CGPoint.zero, to: self.tableView)
         let indexPath = self.tableView.indexPathForRow(at: buttonPosition)!
         
-        print("Button \(indexPath) tapped")
-        
-        
         if(indexPath.section == 1){
             
             print(iml.featured[indexPath.row].name)
             
             if(iml.featured[indexPath.row].favorited){
+                
                 iml.featured[indexPath.row].favorited = false
+                
+                // REMOVE FROM CD
+                
+                CDhandler.removeItemInCoreData(id: iml.daily[indexPath.row].id)
+                
+                
             }else{
+                
                 iml.featured[indexPath.row].favorited = true
+                
+                // SAVE TO CORE DATA
+                CDhandler.saveItemToCoreData(item: iml.daily[indexPath.row])
             }
             
         }else if(indexPath.section == 2){
@@ -249,14 +251,20 @@ class TodaysTableViewController: UITableViewController, UITabBarControllerDelega
             
             if(iml.daily[indexPath.row].favorited){
                 iml.daily[indexPath.row].favorited = false
+                
+                // REMOVE FROM CD
+                CDhandler.removeItemInCoreData(id: iml.daily[indexPath.row].id)
+                
             }else{
                 iml.daily[indexPath.row].favorited = true
+                
+                // SAVE TO CORE DATA
+                CDhandler.saveItemToCoreData(item: iml.daily[indexPath.row])
+
             }
         }
         
         
-        // SAVE TO CORE DATA
-        CDhandler.saveItemToCoreData(item: iml.daily[indexPath.row])
         
         
         
@@ -314,7 +322,7 @@ class TodaysTableViewController: UITableViewController, UITabBarControllerDelega
     }
     
     // Return color based on rarity, up (0) and down (1) colors for gradient
-    func getRarityColor(rarityStr: String) -> UIColor{
+    static func getRarityColor(rarityStr: String) -> UIColor{
 
         if(rarityStr == "common0"){
             return UIColor(red: 193.0/255.0, green: 194.0/255.0, blue: 194, alpha: 1)

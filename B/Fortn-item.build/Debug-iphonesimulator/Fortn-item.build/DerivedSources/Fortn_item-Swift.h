@@ -221,10 +221,24 @@ SWIFT_CLASS_NAMED("FavoriteItem")
 @property (nonatomic, copy) NSString * _Nullable type;
 @end
 
+@class UITableView;
+@class NSCoder;
+
+SWIFT_CLASS("_TtC10Fortn_item27FavoriteTableViewController")
+@interface FavoriteTableViewController : UITableViewController
+- (void)viewDidLoad;
+- (void)didReceiveMemoryWarning;
+- (NSInteger)numberOfSectionsInTableView:(UITableView * _Nonnull)tableView SWIFT_WARN_UNUSED_RESULT;
+- (NSInteger)tableView:(UITableView * _Nonnull)tableView numberOfRowsInSection:(NSInteger)section SWIFT_WARN_UNUSED_RESULT;
+- (BOOL)tableView:(UITableView * _Nonnull)tableView canEditRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath SWIFT_WARN_UNUSED_RESULT;
+- (nonnull instancetype)initWithStyle:(UITableViewStyle)style OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+@end
+
 
 
 @class UIColor;
-@class NSCoder;
 
 SWIFT_CLASS("_TtC10Fortn_item12GradientView")
 @interface GradientView : UIView
@@ -260,7 +274,6 @@ SWIFT_CLASS("_TtC10Fortn_item17ItemTableViewCell")
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
 
-@class UITableView;
 @class UITabBarController;
 @class UIViewController;
 
