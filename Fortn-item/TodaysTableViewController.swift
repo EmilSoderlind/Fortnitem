@@ -167,12 +167,10 @@ class TodaysTableViewController: UITableViewController, UITabBarControllerDelega
                 cell.favoriteIcon.image = UIImage(named: "Favorite_off.png")
             }
             
-            
         }
         
         return cell
     }
-    
     
     override func tableView(_ tableView: UITableView, willDisplayHeaderView view: UIView, forSection section: Int) {
         guard let header = view as? UITableViewHeaderFooterView else { return }
@@ -190,8 +188,6 @@ class TodaysTableViewController: UITableViewController, UITabBarControllerDelega
         return true
     }
     */
-
-
     
     /*
     // Override to support editing the table view.
@@ -211,8 +207,6 @@ class TodaysTableViewController: UITableViewController, UITabBarControllerDelega
 
     }
     */
-    
-    
 
     @IBAction func pressedCell(_ sender: UIButton) {
         
@@ -302,7 +296,6 @@ class TodaysTableViewController: UITableViewController, UITabBarControllerDelega
     // Return color based on rarity, up (0) and down (1) colors for gradient
     func getRarityColor(rarityStr: String) -> UIColor{
 
-        
         if(rarityStr == "common0"){
             return UIColor(red: 193.0/255.0, green: 194.0/255.0, blue: 194, alpha: 1)
         }else if(rarityStr == "common1"){
