@@ -7,13 +7,13 @@
 //
 
 import UIKit
+import Crashlytics
 
 class MoreViewController: UIViewController {
 
     @IBOutlet weak var headerImg: UIImageView!
     override func viewDidLoad() {
         super.viewDidLoad()
-
         
         // Do any additional setup after loading the view.
     }

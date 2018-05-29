@@ -355,8 +355,6 @@ class TodaysTableViewController: UITableViewController{
     }
     
     
-    
-    
     // Countdown code ----
     var countDownTimer: Timer?
     
