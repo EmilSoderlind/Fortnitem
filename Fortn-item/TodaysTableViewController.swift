@@ -27,8 +27,6 @@ class TodaysTableViewController: UITableViewController{
         let fortniteFont = UIFont(name: "BurbankBigCondensed-Bold", size: 17)
         UITabBarItem.appearance().setTitleTextAttributes([kCTFontAttributeName as NSAttributedStringKey: fortniteFont!], for: .normal)
         
-        
-        
         self.tableView.delaysContentTouches = true
         
         
