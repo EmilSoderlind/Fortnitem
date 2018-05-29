@@ -12,9 +12,9 @@
 	<string>CoreData</string>
 	<string>FirebaseMessaging</string>
 	<string>Protobuf</string>
+	<string>MobileCoreServices</string>
 	<string>FirebaseCore</string>
 	<string>CoreFoundation</string>
-	<string>MobileCoreServices</string>
 	<string>AlamofireImage</string>
 	<string>CoreImage</string>
 	<string>FirebaseInstanceID</string>
@@ -27,12 +27,12 @@
 	<string>Dispatch</string>
 	<string>FirebaseCrash</string>
 	<string>Foundation</string>
+	<string>mach</string>
 	<string>QuartzCore</string>
 	<string>Fabric</string>
-	<string>WatchKit</string>
 	<string>FirebaseAppIndexing</string>
 	<string>Alamofire</string>
-	<string>mach</string>
+	<string>WatchKit</string>
 	<string>AppKit</string>
 	<string>FirebaseInvites</string>
 	<string>FirebaseStorage</string>

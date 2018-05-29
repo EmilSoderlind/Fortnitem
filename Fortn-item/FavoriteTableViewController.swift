@@ -17,16 +17,7 @@ class FavoriteTableViewController: UITableViewController {
         super.viewDidLoad()
         print("FavoriteTableViewController.viewDidLoad")
 
-        DispatchQueue.global(qos:.userInteractive).async {
-
-            self.favoriteItems = CDhandler.getSavedItemsCoreData()
-            
-            DispatchQueue.main.async {
-                self.tableView.reloadData()
-            }
-        }
-    
-    
+        refreshTable()
         
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
@@ -37,6 +28,27 @@ class FavoriteTableViewController: UITableViewController {
         
         print("FavoriteTableViewController.viewDidLoad - DONE")
     }
+    
+    func refreshTable(){
+        DispatchQueue.global(qos:.background).async {
+            print("Getting favorite items")
+            
+            var updatedFavoriteList:[itemModelItem] = CDhandler.getSavedItemsCoreData()
+            
+            if(updatedFavoriteList == self.favoriteItems){
+                print("Nothing have changed")
+                return
+            }
+            
+            self.favoriteItems = updatedFavoriteList
+            
+            DispatchQueue.main.async {
+                self.tableView.reloadData()
+                print("Getting favorite items - DONE")
+            }
+        }
+    }
+    
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
@@ -57,13 +69,27 @@ class FavoriteTableViewController: UITableViewController {
 
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath) as! ItemTableViewCell
-
-        // Configure the cell...
+        let cell = tableView.dequeueReusableCell(withIdentifier: "favoriteCell", for: indexPath) as! ItemTableViewCell
+        
+        
+        // IMAGES FROM DISK
+        
 
         cell.title.text = favoriteItems[indexPath.row].name
         cell.priceLabel.text = favoriteItems[indexPath.row].price
         
+        // Gradient background based on rarity
+        cell.gradientBackgroundView.startColor = TodaysTableViewController.getRarityColor(rarityStr: favoriteItems[indexPath.row].rarity + "0")
+        cell.gradientBackgroundView.endColor = TodaysTableViewController.getRarityColor(rarityStr: favoriteItems[indexPath.row].rarity + "1")
+        
+        if(favoriteItems[indexPath.row].priceIcon == "vbucks"){
+            cell.priceImg.image = UIImage(named: "icon_vbucks.png")
+        }else{
+            
+            // OTHER PRICE ICONS
+            
+            
+        }
         
         return cell
     }
@@ -77,17 +103,22 @@ class FavoriteTableViewController: UITableViewController {
     }
  
 
-    /*
+    
     // Override to support editing the table view.
     override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
         if editingStyle == .delete {
+            
             // Delete the row from the data source
             tableView.deleteRows(at: [indexPath], with: .fade)
+        
+            favoriteItems.remove(at: indexPath.row)
+            CDhandler.removeItemInCoreData(id: favoriteItems[indexPath.row].id)
+            
         } else if editingStyle == .insert {
             // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
         }    
     }
-    */
+    
 
     /*
     // Override to support rearranging the table view.
@@ -113,5 +144,8 @@ class FavoriteTableViewController: UITableViewController {
         // Pass the selected object to the new view controller.
     }
     */
-
+    @IBAction func refreshButton(_ sender: Any) {
+        refreshTable()
+    }
+    
 }

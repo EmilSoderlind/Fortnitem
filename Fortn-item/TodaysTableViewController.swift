@@ -51,14 +51,10 @@ class TodaysTableViewController: UITableViewController, UITabBarControllerDelega
         
         self.tableView.reloadData()
         
+        // CHECK FOR FAVORITES IN PARSE (BACKGROUND THREAD)
+        print("Checking for favorites in CD")
+        CDhandler.updateItemListWithFavorite(vc: self)
         
-        
-            // CHECK FOR FAVORITES IN PARSE (BACKGROUND THREAD)
-            print("Checking for favorites in CD")
-            CDhandler.updateItemListWithFavorite(IMList: self.iml, vc: self)
-            
-             
-            
         print("Done parsing - updating tableView - DONE")
     }
     
@@ -240,8 +236,7 @@ class TodaysTableViewController: UITableViewController, UITabBarControllerDelega
                 iml.featured[indexPath.row].favorited = false
                 
                 // REMOVE FROM CD
-                
-                CDhandler.removeItemInCoreData(id: iml.daily[indexPath.row].id)
+                CDhandler.removeItemInCoreData(id: iml.featured[indexPath.row].id)
                 
                 
             }else{
@@ -249,7 +244,7 @@ class TodaysTableViewController: UITableViewController, UITabBarControllerDelega
                 iml.featured[indexPath.row].favorited = true
                 
                 // SAVE TO CORE DATA
-                CDhandler.saveItemToCoreData(item: iml.daily[indexPath.row])
+                CDhandler.saveItemToCoreData(item: iml.featured[indexPath.row])
             }
             
         }else if(indexPath.section == 2){

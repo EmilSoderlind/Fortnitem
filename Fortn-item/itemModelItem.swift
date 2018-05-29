@@ -21,7 +21,7 @@ import UIKit
 import Alamofire
 import AlamofireImage
 
-struct itemModelItem {
+struct itemModelItem:Equatable {
     var id: String
     var name: String
     var price: String
