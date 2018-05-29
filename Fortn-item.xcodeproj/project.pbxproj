@@ -27,6 +27,7 @@
 		20555D5020BC477F009C2EE8 /* CDhandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20555D4F20BC477F009C2EE8 /* CDhandler.swift */; };
 		20555D5220BC5760009C2EE8 /* FavoriteTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20555D5120BC5760009C2EE8 /* FavoriteTableViewController.swift */; };
 		2078755C20BD7F73007ED442 /* Favorite_on.png in Resources */ = {isa = PBXBuildFile; fileRef = 2078755B20BD7F73007ED442 /* Favorite_on.png */; };
+		2078755E20BD98F7007ED442 /* dateHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2078755D20BD98F7007ED442 /* dateHandler.swift */; };
 		2093523820AEB7B8006AC361 /* imageExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2093523720AEB7B8006AC361 /* imageExt.swift */; };
 		20D0388420B813FB000BD2D6 /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 20D0388320B813FB000BD2D6 /* logo.png */; };
 		20D0388620B81431000BD2D6 /* Favorite_off.png in Resources */ = {isa = PBXBuildFile; fileRef = 20D0388520B81431000BD2D6 /* Favorite_off.png */; };
@@ -59,6 +60,7 @@
 		20555D4F20BC477F009C2EE8 /* CDhandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CDhandler.swift; sourceTree = "<group>"; };
 		20555D5120BC5760009C2EE8 /* FavoriteTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteTableViewController.swift; sourceTree = "<group>"; };
 		2078755B20BD7F73007ED442 /* Favorite_on.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Favorite_on.png; sourceTree = "<group>"; };
+		2078755D20BD98F7007ED442 /* dateHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = dateHandler.swift; sourceTree = "<group>"; };
 		2093523720AEB7B8006AC361 /* imageExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = imageExt.swift; sourceTree = "<group>"; };
 		20D0388320B813FB000BD2D6 /* logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = logo.png; path = ../font/logo.png; sourceTree = "<group>"; };
 		20D0388520B81431000BD2D6 /* Favorite_off.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Favorite_off.png; sourceTree = "<group>"; };
@@ -137,6 +139,7 @@
 				2093523720AEB7B8006AC361 /* imageExt.swift */,
 				2019768320B757A700C6D2F7 /* Reachability.swift */,
 				2019768520B75C0D00C6D2F7 /* GoogleService-Info.plist */,
+				2078755D20BD98F7007ED442 /* dateHandler.swift */,
 			);
 			path = "Fortn-item";
 			sourceTree = "<group>";
@@ -301,6 +304,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2078755E20BD98F7007ED442 /* dateHandler.swift in Sources */,
 				202E6C5720AA2C4F00FFC784 /* FortniteItem.swift in Sources */,
 				202E7F8F20AF468700B8D0FD /* ItemTableViewCell.swift in Sources */,
 				2019768420B757A700C6D2F7 /* Reachability.swift in Sources */,

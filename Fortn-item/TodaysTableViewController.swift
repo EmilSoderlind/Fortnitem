@@ -38,6 +38,14 @@ class TodaysTableViewController: UITableViewController{
         CDhandler.updateItemListWithFavorite(vc: self)
     }
     
+    override func viewDidAppear(_ animated: Bool) {
+        startTimer()
+    }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        stopTimer()
+    }
+    
     
     func doneParsing(parsedIML: ItemModelList){
         print("Done parsing - updating tableView")
@@ -45,7 +53,8 @@ class TodaysTableViewController: UITableViewController{
         iml = parsedIML
         parseDone = true
         
-        self.tableView.reloadData()
+        self.tableView.reloadData() // UNCOMMENT TO MAKE TABLE APPEAR FASTER
+        
         
         // CHECK FOR FAVORITES IN PARSE (BACKGROUND THREAD)
         print("Checking for favorites in CD")
@@ -56,6 +65,7 @@ class TodaysTableViewController: UITableViewController{
     
     func doneUpdateFavorites(){
         self.tableView.reloadData()
+        
         print("Checking for favorites in CD - DONE")
     }
 
@@ -85,7 +95,7 @@ class TodaysTableViewController: UITableViewController{
         let result = formatter.string(from: date)
         
         if(section == 0){
-            return "Item Shop | Version: \(Bundle.main.releaseVersionNumber!)"
+            return "v\(Bundle.main.releaseVersionNumber!) | \(dateHandler.newItemsCountdown())"
         }else if(section == 1 && parseDone){
             return "Featured"
         }else if(section == 2 && parseDone){
@@ -333,4 +343,32 @@ class TodaysTableViewController: UITableViewController{
         
         return UIColor.black
     }
+    
+    var countDownTimer: Timer?
+    
+    func startTimer() {
+        
+        if countDownTimer == nil {
+            countDownTimer = Timer.scheduledTimer(withTimeInterval: 1, repeats: true){_ in
+                
+                // Your code is here:
+                self.loop()
+            }
+        }
+    }
+    
+    func stopTimer() {
+        if countDownTimer != nil {
+            countDownTimer?.invalidate()
+            countDownTimer = nil
+        }
+    }
+    
+    func loop() {
+        let sectionToReload = 0
+        let indexSet: IndexSet = [sectionToReload]
+
+        self.tableView.reloadSections(indexSet, with: .none)
+    }
+    
 }
