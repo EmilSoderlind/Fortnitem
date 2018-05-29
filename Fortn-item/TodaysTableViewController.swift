@@ -9,25 +9,20 @@
 import UIKit
 import CoreData
 
-class TodaysTableViewController: UITableViewController, UITabBarControllerDelegate {
+class TodaysTableViewController: UITableViewController{
     
     var iml: ItemModelList = ItemModelList(date: Date(), featured: [], daily: [])
     var parseDone:Bool = false
-    
-    
     
     override func viewDidLoad() {
         super.viewDidLoad()
         print("TodaysTableViewController ViewDidLoad")
         
-       
-        self.tabBarController?.delegate = self
-        
         let ap: FNBRApiHandler = FNBRApiHandler()
         ap.parseCurrentItems(vc: self)
         
-        
-        
+        tableView.rowHeight = UITableViewAutomaticDimension
+        tableView.estimatedRowHeight = 320
         
         let fortniteFont = UIFont(name: "BurbankBigCondensed-Bold", size: 17)
         UITabBarItem.appearance().setTitleTextAttributes([kCTFontAttributeName as NSAttributedStringKey: fortniteFont!], for: .normal)
@@ -38,6 +33,13 @@ class TodaysTableViewController: UITableViewController, UITabBarControllerDelega
         
         
         print("TodaysTableViewController ViewDidLoad - DONE")
+    }
+    
+    
+    override func viewWillAppear(_ animated: Bool) {
+        
+        
+        
     }
     
     
@@ -266,12 +268,8 @@ class TodaysTableViewController: UITableViewController, UITabBarControllerDelega
             }
         }
         
-        
-        
-        
-        
         // UPDATE ITEM ( WITH FAVORITE ICON )
-        tableView.reloadRows(at: [indexPath], with: UITableViewRowAnimation.none)
+        tableView.reloadRows(at: [indexPath], with: .automatic)
     }
     
     // Override to support conditional rearranging of the table view.
@@ -294,15 +292,6 @@ class TodaysTableViewController: UITableViewController, UITabBarControllerDelega
         // Pass the selected object to the new view controller.
     }
     */
-    
-    func tabBarController(_ tabBarController: UITabBarController, didSelect viewController: UIViewController) {
-        
-        let tabBarIndex = tabBarController.selectedIndex
-                
-        if tabBarIndex == 0 {
-            self.tableView.setContentOffset(CGPoint(x: 0, y: 0), animated: true)
-        }
-    }
     
     func presentErrorMessage(err: String){
         print("presentErrorMessage")

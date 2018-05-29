@@ -19,6 +19,9 @@ class FavoriteTableViewController: UITableViewController {
 
         refreshTable()
         
+        tableView.rowHeight = UITableViewAutomaticDimension
+        tableView.estimatedRowHeight = 320
+        
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 
@@ -27,6 +30,10 @@ class FavoriteTableViewController: UITableViewController {
         
         
         print("FavoriteTableViewController.viewDidLoad - DONE")
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        refreshTable()
     }
     
     func refreshTable(){
@@ -72,7 +79,12 @@ class FavoriteTableViewController: UITableViewController {
         let cell = tableView.dequeueReusableCell(withIdentifier: "favoriteCell", for: indexPath) as! ItemTableViewCell
         
         
-        // IMAGES FROM DISK
+        // Icon image if png dosen't exist, png for other.
+        if(favoriteItems[indexPath.row].imgPng != nil){
+            cell.mainImage.image = favoriteItems[indexPath.row].imgPng
+        }else if(favoriteItems[indexPath.row].imgIcon != nil){
+            cell.mainImage.image = favoriteItems[indexPath.row].imgIcon
+        }
         
 
         cell.title.text = favoriteItems[indexPath.row].name
@@ -85,6 +97,7 @@ class FavoriteTableViewController: UITableViewController {
         if(favoriteItems[indexPath.row].priceIcon == "vbucks"){
             cell.priceImg.image = UIImage(named: "icon_vbucks.png")
         }else{
+            
             
             // OTHER PRICE ICONS
             
@@ -108,11 +121,14 @@ class FavoriteTableViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
         if editingStyle == .delete {
             
-            // Delete the row from the data source
-            tableView.deleteRows(at: [indexPath], with: .fade)
-        
+            let removeID = favoriteItems[indexPath.row].id
+            
             favoriteItems.remove(at: indexPath.row)
-            CDhandler.removeItemInCoreData(id: favoriteItems[indexPath.row].id)
+            
+            // Delete the row from the data source
+            tableView.deleteRows(at: [indexPath], with: .right)
+            
+            CDhandler.removeItemInCoreData(id: removeID)
             
         } else if editingStyle == .insert {
             // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
@@ -144,8 +160,5 @@ class FavoriteTableViewController: UITableViewController {
         // Pass the selected object to the new view controller.
     }
     */
-    @IBAction func refreshButton(_ sender: Any) {
-        refreshTable()
-    }
-    
+
 }

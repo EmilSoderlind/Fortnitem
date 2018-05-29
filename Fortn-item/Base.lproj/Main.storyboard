@@ -45,7 +45,7 @@
                                 <rect key="frame" x="0.0" y="28" width="320" height="320"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="okC-V4-oag" id="m3b-4H-0fi">
-                                    <rect key="frame" x="0.0" y="0.0" width="320" height="319.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="320"/>
                                     <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                     <subviews>
                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0vL-zh-kKc" customClass="GradientView" customModule="Fortn_item">
@@ -155,6 +155,7 @@
                                         <constraint firstItem="6Wf-sV-co2" firstAttribute="leading" secondItem="m3b-4H-0fi" secondAttribute="leading" id="aqO-FB-v7E"/>
                                         <constraint firstItem="0vL-zh-kKc" firstAttribute="leading" secondItem="m3b-4H-0fi" secondAttribute="leading" id="dur-Zn-mop"/>
                                         <constraint firstItem="6K7-HV-ihb" firstAttribute="centerX" secondItem="m3b-4H-0fi" secondAttribute="centerX" id="eVa-cO-880"/>
+                                        <constraint firstItem="00D-L3-vAH" firstAttribute="centerX" secondItem="m3b-4H-0fi" secondAttribute="centerX" id="ebb-Lc-1SI"/>
                                         <constraint firstItem="0vL-zh-kKc" firstAttribute="top" secondItem="m3b-4H-0fi" secondAttribute="top" constant="-0.5" id="fJ9-lW-ERY"/>
                                         <constraint firstItem="6K7-HV-ihb" firstAttribute="top" secondItem="m3b-4H-0fi" secondAttribute="top" id="jMW-Nv-aKo"/>
                                         <constraint firstAttribute="trailing" secondItem="6K7-HV-ihb" secondAttribute="trailing" id="nN3-ir-IYr"/>
@@ -185,14 +186,7 @@
                             <outlet property="delegate" destination="4qw-Np-Hsd" id="0Xe-Ag-B6Y"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Favorites" id="2Wn-eJ-cJH">
-                        <barButtonItem key="leftBarButtonItem" systemItem="refresh" id="qHQ-zE-pj1">
-                            <color key="tintColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                            <connections>
-                                <action selector="refreshButton:" destination="4qw-Np-Hsd" id="dNb-tg-mIj"/>
-                            </connections>
-                        </barButtonItem>
-                    </navigationItem>
+                    <navigationItem key="navigationItem" title="Favorites" id="2Wn-eJ-cJH"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KUC-5c-Ccg" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -212,7 +206,7 @@
                                 <rect key="frame" x="0.0" y="55.5" width="320" height="320"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="S1g-gR-dg2" id="Yen-Cr-Ge1">
-                                    <rect key="frame" x="0.0" y="0.0" width="320" height="319.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="319"/>
                                     <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                     <subviews>
                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ufX-Bd-2oA" customClass="GradientView" customModule="Fortn_item">
@@ -305,6 +299,7 @@
                                         </button>
                                     </subviews>
                                     <constraints>
+                                        <constraint firstItem="0dm-yS-0fO" firstAttribute="centerX" secondItem="Yen-Cr-Ge1" secondAttribute="centerX" id="13k-DY-11z"/>
                                         <constraint firstItem="ufX-Bd-2oA" firstAttribute="top" secondItem="Yen-Cr-Ge1" secondAttribute="top" constant="-0.5" id="1kQ-Fo-MOh"/>
                                         <constraint firstItem="Rdd-C1-74N" firstAttribute="top" secondItem="Yen-Cr-Ge1" secondAttribute="top" id="3yd-dK-JII"/>
                                         <constraint firstItem="1Bd-bN-d70" firstAttribute="leading" secondItem="Yen-Cr-Ge1" secondAttribute="leading" id="4L4-qE-P27"/>
@@ -349,7 +344,7 @@
                                 <rect key="frame" x="0.0" y="375.5" width="320" height="69"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="lWp-vF-aTs" id="mqY-eK-ybA">
-                                    <rect key="frame" x="0.0" y="0.0" width="320" height="68.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="68"/>
                                     <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                     <subviews>
                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qxd-vj-Ef8">

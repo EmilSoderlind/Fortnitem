@@ -36,6 +36,7 @@ struct itemModelItem:Equatable {
     var imgPriceIconLink: UIImage?
     var imgPng:UIImage?
     var imgIcon:UIImage?
+    var imgLink:String
     
     var favorited: Bool
     
