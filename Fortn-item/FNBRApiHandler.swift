@@ -23,7 +23,6 @@ class FNBRApiHandler {
         
         var possibleError = ""
         
-        
         mainView = vc
         
         let urlString = URL(string: "https://fnbr.co/api/shop")
@@ -58,6 +57,9 @@ class FNBRApiHandler {
             
             if(!Reachability.isConnectedToNetwork()){
                 possibleError = "No internet connection."
+                DispatchQueue.main.async {
+                    vc.tableView.reloadData()
+                }
             }
             
             // If we have recieved error, present error pop-up via vc.
@@ -85,10 +87,6 @@ class FNBRApiHandler {
                 var dataString = String(NSString(data: data, encoding: String.Encoding.utf8.rawValue)!)
                 dataString = dataString.replacingOccurrences(of: ":false}", with: ":\"\"}", options: .literal, range: nil)
                 dataString = dataString.replacingOccurrences(of: ":false,", with: ":\"\",", options: .literal, range: nil)
-                
-                print()
-                print("dataString: \(dataString)")
-                print()
                 
                 let fetch = try JSONDecoder().decode(FullFetch.self, from: dataString.data(using: String.Encoding.utf8)!)
                 
@@ -144,19 +142,31 @@ class FNBRApiHandler {
     
     // Convert and parse images to itemModelItems
     func convertToItemModelItem(fi:FortniteItem) -> itemModelItem {
-        print("convertToItemModelItem (\(fi.name))")
-        
-        let newPriceIconLink:UIImage = parseImgURL(uri: fi.priceIconLink)
+                
+        var newPriceIconLink:UIImage = imageOnDiskHandler.getImage(id: fi.priceIconLink)
+            
+        if(newPriceIconLink.size == CGSize(width: 0, height: 0)){
+            newPriceIconLink = parseImgURL(uri: fi.priceIconLink, id: fi.priceIconLink)
+        }
         
         var newIconImg = UIImage()
         var newPngImg = UIImage()
         
- 
-        // If there is a emote or png-image is missing. Return icon-image.
-        if((fi.type == "emote") || (fi.images["png"] == "")){
-            newIconImg = parseImgURL(uri: fi.images["icon"]!)
-        }else{
-            newPngImg = parseImgURL(uri: fi.images["png"]!)
+        // If we got image saved on disk, take it before parsing from internet
+        newIconImg = imageOnDiskHandler.getImage(id: fi.id)
+        newPngImg = newIconImg
+        print("newIconImg (disk):\(newIconImg)")
+        
+        if(newIconImg.size == CGSize(width: 0, height: 0)){
+            print("Didn't find image on disk, parse.")
+            
+            // If there is a emote or png-image is missing. Return icon-image.
+            if((fi.type == "emote") || (fi.images["png"] == "")){
+                newIconImg = parseImgURL(uri: fi.images["icon"]!, id: fi.id)
+            }else{
+                newPngImg = parseImgURL(uri: fi.images["png"]!, id: fi.id)
+            }
+            
         }
         
         // If there is a emote or missing png-image, return icon otherwise the png.png
@@ -173,7 +183,7 @@ class FNBRApiHandler {
         return imi
     }
     
-    func parseImgURL(uri:String)->UIImage{
+    func parseImgURL(uri:String, id:String)->UIImage{
         //print("parseImgURL")
         //print("Parsing: \(uri)")
         
@@ -184,6 +194,7 @@ class FNBRApiHandler {
         
         if let img:UIImage = UIImage(url: (URL(string: uri))){
             //print("parseImgURL - DONE")
+            imageOnDiskHandler.saveImage(img: img, id: id)
             return img
         }else{
             print("parseImgURL - FAILED return logo.png")

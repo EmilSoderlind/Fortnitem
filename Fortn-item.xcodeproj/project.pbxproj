@@ -29,6 +29,8 @@
 		2078755C20BD7F73007ED442 /* Favorite_on.png in Resources */ = {isa = PBXBuildFile; fileRef = 2078755B20BD7F73007ED442 /* Favorite_on.png */; };
 		2078755E20BD98F7007ED442 /* dateHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2078755D20BD98F7007ED442 /* dateHandler.swift */; };
 		2093523820AEB7B8006AC361 /* imageExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2093523720AEB7B8006AC361 /* imageExt.swift */; };
+		20C2A7B720BDE836001FE18B /* imageOnDiskHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20C2A7B620BDE836001FE18B /* imageOnDiskHandler.swift */; };
+		20C2A7B920BDEAC5001FE18B /* MoreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20C2A7B820BDEAC5001FE18B /* MoreViewController.swift */; };
 		20D0388420B813FB000BD2D6 /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 20D0388320B813FB000BD2D6 /* logo.png */; };
 		20D0388620B81431000BD2D6 /* Favorite_off.png in Resources */ = {isa = PBXBuildFile; fileRef = 20D0388520B81431000BD2D6 /* Favorite_off.png */; };
 		20ED64EF20AE30B8002FA6E9 /* FullFetch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20ED64EE20AE30B8002FA6E9 /* FullFetch.swift */; };
@@ -62,6 +64,8 @@
 		2078755B20BD7F73007ED442 /* Favorite_on.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Favorite_on.png; sourceTree = "<group>"; };
 		2078755D20BD98F7007ED442 /* dateHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = dateHandler.swift; sourceTree = "<group>"; };
 		2093523720AEB7B8006AC361 /* imageExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = imageExt.swift; sourceTree = "<group>"; };
+		20C2A7B620BDE836001FE18B /* imageOnDiskHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = imageOnDiskHandler.swift; sourceTree = "<group>"; };
+		20C2A7B820BDEAC5001FE18B /* MoreViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoreViewController.swift; sourceTree = "<group>"; };
 		20D0388320B813FB000BD2D6 /* logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = logo.png; path = ../font/logo.png; sourceTree = "<group>"; };
 		20D0388520B81431000BD2D6 /* Favorite_off.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Favorite_off.png; sourceTree = "<group>"; };
 		20ED64EE20AE30B8002FA6E9 /* FullFetch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FullFetch.swift; sourceTree = "<group>"; };
@@ -121,6 +125,7 @@
 				204B131420B1BF2E008AC4BE /* font */,
 				202E7F8C20AF45DC00B8D0FD /* TodaysTableViewController.swift */,
 				20555D5120BC5760009C2EE8 /* FavoriteTableViewController.swift */,
+				20C2A7B820BDEAC5001FE18B /* MoreViewController.swift */,
 				202E6C3F20AA1B4500FFC784 /* AppDelegate.swift */,
 				20555D4F20BC477F009C2EE8 /* CDhandler.swift */,
 				202E7F8E20AF468700B8D0FD /* ItemTableViewCell.swift */,
@@ -140,6 +145,7 @@
 				2019768320B757A700C6D2F7 /* Reachability.swift */,
 				2019768520B75C0D00C6D2F7 /* GoogleService-Info.plist */,
 				2078755D20BD98F7007ED442 /* dateHandler.swift */,
+				20C2A7B620BDE836001FE18B /* imageOnDiskHandler.swift */,
 			);
 			path = "Fortn-item";
 			sourceTree = "<group>";
@@ -310,12 +316,14 @@
 				2019768420B757A700C6D2F7 /* Reachability.swift in Sources */,
 				20ED64EF20AE30B8002FA6E9 /* FullFetch.swift in Sources */,
 				202E7F8D20AF45DC00B8D0FD /* TodaysTableViewController.swift in Sources */,
+				20C2A7B920BDEAC5001FE18B /* MoreViewController.swift in Sources */,
 				20ED64F120AE314A002FA6E9 /* dataStruct.swift in Sources */,
 				202E7F9520AF7B1900B8D0FD /* ItemModelList.swift in Sources */,
 				202E6C4820AA1B4500FFC784 /* Fortn_item.xcdatamodeld in Sources */,
 				2093523820AEB7B8006AC361 /* imageExt.swift in Sources */,
 				204B130F20B193A4008AC4BE /* itemModelItem.swift in Sources */,
 				202E6C4020AA1B4500FFC784 /* AppDelegate.swift in Sources */,
+				20C2A7B720BDE836001FE18B /* imageOnDiskHandler.swift in Sources */,
 				202E6C5520AA242700FFC784 /* FNBRApiHandler.swift in Sources */,
 				20555D5020BC477F009C2EE8 /* CDhandler.swift in Sources */,
 				20555D5220BC5760009C2EE8 /* FavoriteTableViewController.swift in Sources */,

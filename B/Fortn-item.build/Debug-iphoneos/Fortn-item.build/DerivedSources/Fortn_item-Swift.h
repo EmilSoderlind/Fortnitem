@@ -279,6 +279,16 @@ SWIFT_CLASS("_TtC10Fortn_item17ItemTableViewCell")
 @end
 
 
+SWIFT_CLASS("_TtC10Fortn_item18MoreViewController")
+@interface MoreViewController : UIViewController
+@property (nonatomic, weak) IBOutlet UIImageView * _Null_unspecified headerImg;
+- (void)viewDidLoad;
+- (void)didReceiveMemoryWarning;
+- (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
 SWIFT_CLASS("_TtC10Fortn_item25TodaysTableViewController")
 @interface TodaysTableViewController : UITableViewController
 - (void)viewDidLoad;

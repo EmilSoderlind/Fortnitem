@@ -14,6 +14,7 @@ depends-top-level:
 - "Array"
 - "AssignmentPrecedence"
 - !private "BooleanLiteralType"
+- !private "CGSize"
 - "CastingPrecedence"
 - "Data"
 - !private "Date"
@@ -38,6 +39,7 @@ depends-top-level:
 - "URLResponse"
 - !private "URLSession"
 - "UnicodeScalarType"
+- !private "imageOnDiskHandler"
 - "itemModelItem"
 - !private "print"
 - !private "||"
@@ -50,6 +52,8 @@ depends-member:
 - !private ["s23BidirectionalCollectionP", "init"]
 - !private ["s23BidirectionalCollectionP", "replacingOccurrences"]
 - !private ["Sb", "_getBuiltinLogicValue"]
+- !private ["So15CALayerDelegateP", "reloadData"]
+- !private ["SC6CGSizeV", "init"]
 - !private ["s7CVarArgP", "Encoding"]
 - !private ["s7CVarArgP", "_getBuiltinLogicValue"]
 - !private ["s7CVarArgP", "addValue"]
@@ -63,11 +67,14 @@ depends-member:
 - !private ["s7CVarArgP", "init"]
 - !private ["s7CVarArgP", "main"]
 - !private ["s7CVarArgP", "presentErrorMessage"]
+- !private ["s7CVarArgP", "reloadData"]
 - !private ["s7CVarArgP", "replacingOccurrences"]
 - !private ["s7CVarArgP", "resume"]
 - !private ["s7CVarArgP", "shared"]
+- !private ["s7CVarArgP", "size"]
 - !private ["s7CVarArgP", "statusCode"]
 - !private ["s7CVarArgP", "subscript"]
+- !private ["s7CVarArgP", "tableView"]
 - !private ["s10CollectionP", "Encoding"]
 - !private ["s10CollectionP", "append"]
 - !private ["s10CollectionP", "data"]
@@ -94,11 +101,14 @@ depends-member:
 - !private ["s28CustomDebugStringConvertibleP", "init"]
 - !private ["s28CustomDebugStringConvertibleP", "main"]
 - !private ["s28CustomDebugStringConvertibleP", "presentErrorMessage"]
+- !private ["s28CustomDebugStringConvertibleP", "reloadData"]
 - !private ["s28CustomDebugStringConvertibleP", "replacingOccurrences"]
 - !private ["s28CustomDebugStringConvertibleP", "resume"]
 - !private ["s28CustomDebugStringConvertibleP", "shared"]
+- !private ["s28CustomDebugStringConvertibleP", "size"]
 - !private ["s28CustomDebugStringConvertibleP", "statusCode"]
 - !private ["s28CustomDebugStringConvertibleP", "subscript"]
+- !private ["s28CustomDebugStringConvertibleP", "tableView"]
 - !private ["s28CustomDebugStringConvertibleP", "timeIntervalSinceNow"]
 - !private ["s29CustomPlaygroundQuickLookableP", "Encoding"]
 - !private ["s29CustomPlaygroundQuickLookableP", "_getBuiltinLogicValue"]
@@ -130,11 +140,14 @@ depends-member:
 - !private ["s23CustomStringConvertibleP", "main"]
 - !private ["s23CustomStringConvertibleP", "presentErrorMessage"]
 - !private ["s23CustomStringConvertibleP", "rawValue"]
+- !private ["s23CustomStringConvertibleP", "reloadData"]
 - !private ["s23CustomStringConvertibleP", "replacingOccurrences"]
 - !private ["s23CustomStringConvertibleP", "resume"]
 - !private ["s23CustomStringConvertibleP", "shared"]
+- !private ["s23CustomStringConvertibleP", "size"]
 - !private ["s23CustomStringConvertibleP", "statusCode"]
 - !private ["s23CustomStringConvertibleP", "subscript"]
+- !private ["s23CustomStringConvertibleP", "tableView"]
 - !private ["s23CustomStringConvertibleP", "timeIntervalSinceNow"]
 - !private ["s23CustomStringConvertibleP", "utf8"]
 - !private ["10Foundation4DateV", "init"]
@@ -193,11 +206,14 @@ depends-member:
 - !private ["s9EquatableP", "main"]
 - !private ["s9EquatableP", "presentErrorMessage"]
 - !private ["s9EquatableP", "rawValue"]
+- !private ["s9EquatableP", "reloadData"]
 - !private ["s9EquatableP", "replacingOccurrences"]
 - !private ["s9EquatableP", "resume"]
 - !private ["s9EquatableP", "shared"]
+- !private ["s9EquatableP", "size"]
 - !private ["s9EquatableP", "statusCode"]
 - !private ["s9EquatableP", "subscript"]
+- !private ["s9EquatableP", "tableView"]
 - !private ["s9EquatableP", "timeIntervalSinceNow"]
 - !private ["s9EquatableP", "utf8"]
 - !private ["s25ExpressibleByArrayLiteralP", "append"]
@@ -219,6 +235,7 @@ depends-member:
 - !private ["s33ExpressibleByUnicodeScalarLiteralP", "dateFromISO8601"]
 - !private ["s33ExpressibleByUnicodeScalarLiteralP", "init"]
 - !private ["s33ExpressibleByUnicodeScalarLiteralP", "replacingOccurrences"]
+- !private ["10Fortn_item14FNBRApiHandlerC", "CGSize"]
 - ["10Fortn_item14FNBRApiHandlerC", "Data"]
 - !private ["10Fortn_item14FNBRApiHandlerC", "Date"]
 - !private ["10Fortn_item14FNBRApiHandlerC", "DispatchQueue"]
@@ -242,6 +259,7 @@ depends-member:
 - ["10Fortn_item14FNBRApiHandlerC", "convertToItemModelItem"]
 - ["10Fortn_item14FNBRApiHandlerC", "deinit"]
 - ["10Fortn_item14FNBRApiHandlerC", "getDataFromUrl"]
+- !private ["10Fortn_item14FNBRApiHandlerC", "imageOnDiskHandler"]
 - ["10Fortn_item14FNBRApiHandlerC", "init"]
 - ["10Fortn_item14FNBRApiHandlerC", "itemModelItem"]
 - ["10Fortn_item14FNBRApiHandlerC", "mainView"]
@@ -273,10 +291,13 @@ depends-member:
 - !private ["s8HashableP", "main"]
 - !private ["s8HashableP", "presentErrorMessage"]
 - !private ["s8HashableP", "rawValue"]
+- !private ["s8HashableP", "reloadData"]
 - !private ["s8HashableP", "replacingOccurrences"]
 - !private ["s8HashableP", "resume"]
 - !private ["s8HashableP", "shared"]
+- !private ["s8HashableP", "size"]
 - !private ["s8HashableP", "statusCode"]
+- !private ["s8HashableP", "tableView"]
 - !private ["s8HashableP", "timeIntervalSinceNow"]
 - !private ["s8HashableP", "utf8"]
 - !private ["10Fortn_item13ItemModelListV", "daily"]
@@ -303,8 +324,11 @@ depends-member:
 - !private ["So8NSCodingP", "httpMethod"]
 - !private ["So8NSCodingP", "init"]
 - !private ["So8NSCodingP", "presentErrorMessage"]
+- !private ["So8NSCodingP", "reloadData"]
 - !private ["So8NSCodingP", "replacingOccurrences"]
+- !private ["So8NSCodingP", "size"]
 - !private ["So8NSCodingP", "statusCode"]
+- !private ["So8NSCodingP", "tableView"]
 - !private ["So9NSCopyingP", "addValue"]
 - !private ["So9NSCopyingP", "data"]
 - !private ["So9NSCopyingP", "dateFromISO8601"]
@@ -315,14 +339,17 @@ depends-member:
 - !private ["So9NSCopyingP", "statusCode"]
 - !private ["So26NSExtensionRequestHandlingP", "doneParsing"]
 - !private ["So26NSExtensionRequestHandlingP", "presentErrorMessage"]
+- !private ["So26NSExtensionRequestHandlingP", "tableView"]
 - !private ["So21NSItemProviderReadingP", "data"]
 - !private ["So21NSItemProviderReadingP", "dateFromISO8601"]
 - !private ["So21NSItemProviderReadingP", "init"]
 - !private ["So21NSItemProviderReadingP", "replacingOccurrences"]
+- !private ["So21NSItemProviderReadingP", "size"]
 - !private ["So21NSItemProviderWritingP", "data"]
 - !private ["So21NSItemProviderWritingP", "dateFromISO8601"]
 - !private ["So21NSItemProviderWritingP", "init"]
 - !private ["So21NSItemProviderWritingP", "replacingOccurrences"]
+- !private ["So21NSItemProviderWritingP", "size"]
 - !private ["So16NSMutableCopyingP", "addValue"]
 - !private ["So16NSMutableCopyingP", "data"]
 - !private ["So16NSMutableCopyingP", "dateFromISO8601"]
@@ -342,10 +369,13 @@ depends-member:
 - !private ["So8NSObjectC", "init"]
 - !private ["So8NSObjectC", "main"]
 - !private ["So8NSObjectC", "presentErrorMessage"]
+- !private ["So8NSObjectC", "reloadData"]
 - !private ["So8NSObjectC", "replacingOccurrences"]
 - !private ["So8NSObjectC", "resume"]
 - !private ["So8NSObjectC", "shared"]
+- !private ["So8NSObjectC", "size"]
 - !private ["So8NSObjectC", "statusCode"]
+- !private ["So8NSObjectC", "tableView"]
 - !private ["So16NSObjectProtocolP", "addValue"]
 - !private ["So16NSObjectProtocolP", "async"]
 - !private ["So16NSObjectProtocolP", "data"]
@@ -356,16 +386,20 @@ depends-member:
 - !private ["So16NSObjectProtocolP", "init"]
 - !private ["So16NSObjectProtocolP", "main"]
 - !private ["So16NSObjectProtocolP", "presentErrorMessage"]
+- !private ["So16NSObjectProtocolP", "reloadData"]
 - !private ["So16NSObjectProtocolP", "replacingOccurrences"]
 - !private ["So16NSObjectProtocolP", "resume"]
 - !private ["So16NSObjectProtocolP", "shared"]
+- !private ["So16NSObjectProtocolP", "size"]
 - !private ["So16NSObjectProtocolP", "statusCode"]
+- !private ["So16NSObjectProtocolP", "tableView"]
 - !private ["So14NSSecureCodingP", "addValue"]
 - !private ["So14NSSecureCodingP", "data"]
 - !private ["So14NSSecureCodingP", "dateFromISO8601"]
 - !private ["So14NSSecureCodingP", "httpMethod"]
 - !private ["So14NSSecureCodingP", "init"]
 - !private ["So14NSSecureCodingP", "replacingOccurrences"]
+- !private ["So14NSSecureCodingP", "size"]
 - !private ["So14NSSecureCodingP", "statusCode"]
 - !private ["So8NSStringC", "data"]
 - !private ["So8NSStringC", "dateFromISO8601"]
@@ -419,37 +453,71 @@ depends-member:
 - !private ["s20TextOutputStreamableP", "dateFromISO8601"]
 - !private ["s20TextOutputStreamableP", "init"]
 - !private ["s20TextOutputStreamableP", "replacingOccurrences"]
+- !private ["10Fortn_item25TodaysTableViewControllerC", "deinit"]
 - !private ["10Fortn_item25TodaysTableViewControllerC", "doneParsing"]
 - !private ["10Fortn_item25TodaysTableViewControllerC", "presentErrorMessage"]
+- !private ["10Fortn_item25TodaysTableViewControllerC", "tableView"]
 - !private ["So29UIAccessibilityIdentificationP", "init"]
+- !private ["So29UIAccessibilityIdentificationP", "reloadData"]
+- !private ["So29UIAccessibilityIdentificationP", "size"]
+- !private ["So12UIAppearanceP", "reloadData"]
 - !private ["So21UIAppearanceContainerP", "doneParsing"]
 - !private ["So21UIAppearanceContainerP", "presentErrorMessage"]
+- !private ["So21UIAppearanceContainerP", "reloadData"]
+- !private ["So21UIAppearanceContainerP", "tableView"]
 - !private ["So18UIContentContainerP", "doneParsing"]
 - !private ["So18UIContentContainerP", "presentErrorMessage"]
+- !private ["So18UIContentContainerP", "tableView"]
+- !private ["So17UICoordinateSpaceP", "reloadData"]
+- !private ["So23UIDataSourceTranslatingP", "reloadData"]
+- !private ["So13UIDynamicItemP", "reloadData"]
 - !private ["So18UIFocusEnvironmentP", "doneParsing"]
 - !private ["So18UIFocusEnvironmentP", "presentErrorMessage"]
+- !private ["So18UIFocusEnvironmentP", "reloadData"]
+- !private ["So18UIFocusEnvironmentP", "tableView"]
+- !private ["So11UIFocusItemP", "reloadData"]
 - !private ["So7UIImageC", "init"]
+- !private ["So7UIImageC", "size"]
 - !private ["So39UIItemProviderPresentationSizeProvidingP", "init"]
+- !private ["So39UIItemProviderPresentationSizeProvidingP", "size"]
 - !private ["So30UIPasteConfigurationSupportingP", "doneParsing"]
 - !private ["So30UIPasteConfigurationSupportingP", "presentErrorMessage"]
+- !private ["So30UIPasteConfigurationSupportingP", "reloadData"]
+- !private ["So30UIPasteConfigurationSupportingP", "tableView"]
 - !private ["So11UIResponderC", "doneParsing"]
 - !private ["So11UIResponderC", "presentErrorMessage"]
+- !private ["So11UIResponderC", "reloadData"]
+- !private ["So11UIResponderC", "tableView"]
 - !private ["So30UIResponderStandardEditActionsP", "doneParsing"]
 - !private ["So30UIResponderStandardEditActionsP", "presentErrorMessage"]
+- !private ["So30UIResponderStandardEditActionsP", "reloadData"]
+- !private ["So30UIResponderStandardEditActionsP", "tableView"]
+- !private ["So12UIScrollViewC", "reloadData"]
 - !private ["So20UIScrollViewDelegateP", "doneParsing"]
 - !private ["So20UIScrollViewDelegateP", "presentErrorMessage"]
+- !private ["So20UIScrollViewDelegateP", "tableView"]
+- !private ["So35UISpringLoadedInteractionSupportingP", "reloadData"]
 - !private ["So16UIStateRestoringP", "doneParsing"]
 - !private ["So16UIStateRestoringP", "presentErrorMessage"]
+- !private ["So16UIStateRestoringP", "tableView"]
+- !private ["So11UITableViewC", "reloadData"]
 - !private ["So21UITableViewControllerC", "doneParsing"]
 - !private ["So21UITableViewControllerC", "presentErrorMessage"]
+- !private ["So21UITableViewControllerC", "tableView"]
 - !private ["So21UITableViewDataSourceP", "doneParsing"]
 - !private ["So21UITableViewDataSourceP", "presentErrorMessage"]
+- !private ["So21UITableViewDataSourceP", "tableView"]
 - !private ["So19UITableViewDelegateP", "doneParsing"]
 - !private ["So19UITableViewDelegateP", "presentErrorMessage"]
+- !private ["So19UITableViewDelegateP", "tableView"]
 - !private ["So18UITraitEnvironmentP", "doneParsing"]
 - !private ["So18UITraitEnvironmentP", "presentErrorMessage"]
+- !private ["So18UITraitEnvironmentP", "reloadData"]
+- !private ["So18UITraitEnvironmentP", "tableView"]
+- !private ["So6UIViewC", "reloadData"]
 - !private ["So16UIViewControllerC", "doneParsing"]
 - !private ["So16UIViewControllerC", "presentErrorMessage"]
+- !private ["So16UIViewControllerC", "tableView"]
 - !private ["10Foundation3URLV", "init"]
 - !private ["9Alamofire14URLConvertibleP", "Encoding"]
 - !private ["9Alamofire14URLConvertibleP", "data"]
@@ -462,6 +530,7 @@ depends-member:
 - !private ["So18URLSessionDataTaskC", "resume"]
 - !private ["So14URLSessionTaskC", "resume"]
 - !private ["s14_ArrayProtocolP", "append"]
+- !private ["s37_DefaultCustomPlaygroundQuickLookableP", "reloadData"]
 - !private ["s24_DestructorSafeContainerP", "append"]
 - !private ["s35_ExpressibleByBuiltinBooleanLiteralP", "_getBuiltinLogicValue"]
 - !private ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", "Encoding"]
@@ -486,6 +555,7 @@ depends-member:
 - !private ["s41_ExpressibleByBuiltinUnicodeScalarLiteralP", "replacingOccurrences"]
 - !private ["s34_ExpressibleByFileReferenceLiteralP", "init"]
 - !private ["s26_ExpressibleByImageLiteralP", "init"]
+- !private ["s26_ExpressibleByImageLiteralP", "size"]
 - !private ["s33_ExpressibleByStringInterpolationP", "Encoding"]
 - !private ["s33_ExpressibleByStringInterpolationP", "data"]
 - !private ["s33_ExpressibleByStringInterpolationP", "dateFromISO8601"]
@@ -507,10 +577,13 @@ depends-member:
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "init"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "main"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "presentErrorMessage"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "reloadData"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "replacingOccurrences"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "resume"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "shared"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "size"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "statusCode"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "tableView"]
 - !private ["s21_ObjectiveCBridgeableP", "Encoding"]
 - !private ["s21_ObjectiveCBridgeableP", "_getBuiltinLogicValue"]
 - !private ["s21_ObjectiveCBridgeableP", "append"]
@@ -528,11 +601,15 @@ depends-member:
 - !private ["10Fortn_item4dataV", "daily"]
 - !private ["10Fortn_item4dataV", "date"]
 - !private ["10Fortn_item4dataV", "featured"]
+- !private ["10Fortn_item18imageOnDiskHandlerC", "getImage"]
+- !private ["10Fortn_item18imageOnDiskHandlerC", "saveImage"]
 - !private ["10Fortn_item0B9ModelItemV", "init"]
 depends-nominal:
 - !private "Sa"
 - !private "s23BidirectionalCollectionP"
 - !private "Sb"
+- !private "So15CALayerDelegateP"
+- !private "SC6CGSizeV"
 - !private "s7CVarArgP"
 - !private "s10CollectionP"
 - !private "s10ComparableP"
@@ -593,20 +670,29 @@ depends-nominal:
 - !private "s20TextOutputStreamableP"
 - !private "10Fortn_item25TodaysTableViewControllerC"
 - !private "So29UIAccessibilityIdentificationP"
+- !private "So12UIAppearanceP"
 - !private "So21UIAppearanceContainerP"
 - !private "So18UIContentContainerP"
+- !private "So17UICoordinateSpaceP"
+- !private "So23UIDataSourceTranslatingP"
+- !private "So13UIDynamicItemP"
 - !private "So18UIFocusEnvironmentP"
+- !private "So11UIFocusItemP"
 - !private "So7UIImageC"
 - !private "So39UIItemProviderPresentationSizeProvidingP"
 - !private "So30UIPasteConfigurationSupportingP"
 - !private "So11UIResponderC"
 - !private "So30UIResponderStandardEditActionsP"
+- !private "So12UIScrollViewC"
 - !private "So20UIScrollViewDelegateP"
+- !private "So35UISpringLoadedInteractionSupportingP"
 - !private "So16UIStateRestoringP"
+- !private "So11UITableViewC"
 - !private "So21UITableViewControllerC"
 - !private "So21UITableViewDataSourceP"
 - !private "So19UITableViewDelegateP"
 - !private "So18UITraitEnvironmentP"
+- !private "So6UIViewC"
 - !private "So16UIViewControllerC"
 - !private "10Foundation3URLV"
 - !private "9Alamofire14URLConvertibleP"
@@ -615,6 +701,7 @@ depends-nominal:
 - !private "So18URLSessionDataTaskC"
 - !private "So14URLSessionTaskC"
 - !private "s14_ArrayProtocolP"
+- !private "s37_DefaultCustomPlaygroundQuickLookableP"
 - !private "s24_DestructorSafeContainerP"
 - !private "s35_ExpressibleByBuiltinBooleanLiteralP"
 - !private "s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP"
@@ -629,6 +716,7 @@ depends-nominal:
 - !private "s21_ObjectiveCBridgeableP"
 - !private "s16_SwiftStringViewP"
 - !private "10Fortn_item4dataV"
+- !private "10Fortn_item18imageOnDiskHandlerC"
 - !private "10Fortn_item0B9ModelItemV"
 depends-dynamic-lookup:
 depends-external:
@@ -693,4 +781,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
-interface-hash: "9fb07430c6c46d330c6756d9f47b97b0"
+interface-hash: "0463c55610266a292df9d32010b2d196"

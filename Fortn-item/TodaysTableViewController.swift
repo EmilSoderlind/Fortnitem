@@ -14,9 +14,13 @@ class TodaysTableViewController: UITableViewController{
     var iml: ItemModelList = ItemModelList(date: Date(), featured: [], daily: [])
     var parseDone:Bool = false
     
+    var startedDate = Date()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         print("TodaysTableViewController ViewDidLoad")
+        
+        startedDate = Date()
         
         let ap: FNBRApiHandler = FNBRApiHandler()
         ap.parseCurrentItems(vc: self)
@@ -65,7 +69,9 @@ class TodaysTableViewController: UITableViewController{
     
     func doneUpdateFavorites(){
         self.tableView.reloadData()
-        
+        print("--")
+        print("TimeSinceBoot: \(-startedDate.timeIntervalSinceNow)")
+        print("--")
         print("Checking for favorites in CD - DONE")
     }
 
@@ -102,7 +108,11 @@ class TodaysTableViewController: UITableViewController{
             return "Daily"
         }
         
-        return "Loading..."
+        if(!Reachability.isConnectedToNetwork()){
+            return "No internet connection."
+        }else{
+            return "Loading..."
+        }
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -344,6 +354,10 @@ class TodaysTableViewController: UITableViewController{
         return UIColor.black
     }
     
+    
+    
+    
+    // Countdown code ----
     var countDownTimer: Timer?
     
     func startTimer() {
@@ -370,5 +384,7 @@ class TodaysTableViewController: UITableViewController{
 
         self.tableView.reloadSections(indexSet, with: .none)
     }
+    
+    // ------------
     
 }

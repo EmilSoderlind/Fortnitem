@@ -379,10 +379,10 @@
             </objects>
             <point key="canvasLocation" x="1599.375" y="1145.0704225352113"/>
         </scene>
-        <!--View Controller-->
+        <!--More View Controller-->
         <scene sceneID="YAf-1B-Cvx">
             <objects>
-                <viewController id="3rR-Mv-D8e" sceneMemberID="viewController">
+                <viewController id="3rR-Mv-D8e" customClass="MoreViewController" customModule="Fortn_item" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="VUS-s8-r5Z">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -401,6 +401,7 @@ Keep up with the daily Fortnite Item Shop, quick and easy. Never miss the pickax
 
 Thank you for downloading the ITEM SHOP app. If you got any ideas or feedback, don’t hesitate contacting me!
 
+Thanks to fnbr.co for providing a magnificent API.
 
 Licenses below:
 Copyright (c) 2016 NVActivityIndicatorView Vinh Nguyen @ninjaprox  (https://github.com/ninjaprox/NVActivityIndicatorView)
@@ -462,6 +463,9 @@ THE SOFTWARE.
                         <viewLayoutGuide key="safeArea" id="ebD-CT-cyZ"/>
                     </view>
                     <tabBarItem key="tabBarItem" systemItem="more" id="O8r-nN-Pla"/>
+                    <connections>
+                        <outlet property="headerImg" destination="gc9-4x-p6D" id="qMh-AJ-1jn"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sn6-T8-OZw" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
