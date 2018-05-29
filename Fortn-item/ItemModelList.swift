@@ -8,7 +8,7 @@
 
 import Foundation
 
-struct ItemModelList {
+struct ItemModelList:Equatable {
     
     var date:Date
     var featured:[itemModelItem]

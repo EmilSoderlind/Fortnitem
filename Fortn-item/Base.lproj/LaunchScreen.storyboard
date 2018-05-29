@@ -22,7 +22,6 @@
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             </imageView>
                         </subviews>
-                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="vSX-dI-cUZ" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="2L3-AR-1hZ"/>
                             <constraint firstItem="vSX-dI-cUZ" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" id="CSB-hd-tUW"/>

@@ -37,13 +37,9 @@ class TodaysTableViewController: UITableViewController{
     
     
     override func viewWillAppear(_ animated: Bool) {
-        
-        
-        
+        CDhandler.updateItemListWithFavorite(vc: self)
     }
     
-    
-  
     
     func doneParsing(parsedIML: ItemModelList){
         print("Done parsing - updating tableView")
@@ -148,7 +144,7 @@ class TodaysTableViewController: UITableViewController{
             // SET FAVORITED ICON
             if(iml.featured[indexPath.row].favorited){
                 
-                cell.favoriteIcon.image = UIImage(named: "icon_vbucks.png")
+                cell.favoriteIcon.image = UIImage(named: "Favorite_on.png")
                 
             }else{
                 cell.favoriteIcon.image = UIImage(named: "Favorite_off.png")
@@ -177,7 +173,7 @@ class TodaysTableViewController: UITableViewController{
             // SET FAVORITED ICON
             if(iml.daily[indexPath.row].favorited){
                 
-                cell.favoriteIcon.image = UIImage(named: "icon_vbucks.png")
+                cell.favoriteIcon.image = UIImage(named: "Favorite_on.png")
                 
             }else{
                 cell.favoriteIcon.image = UIImage(named: "Favorite_off.png")
@@ -191,7 +187,7 @@ class TodaysTableViewController: UITableViewController{
     override func tableView(_ tableView: UITableView, willDisplayHeaderView view: UIView, forSection section: Int) {
         guard let header = view as? UITableViewHeaderFooterView else { return }
         header.textLabel?.textColor = UIColor.white
-        header.textLabel?.font = UIFont(name: "BurbankBigCondensed-Bold", size: 25)
+        header.textLabel?.font = UIFont(name: "BurbankBigCondensed-Bold", size: 32)
             //UIFont.fontNames(forFamilyName: "BurbankBigCondensed-Bold.otf")[0]
         header.textLabel?.frame = header.frame
         header.textLabel?.textAlignment = .center
