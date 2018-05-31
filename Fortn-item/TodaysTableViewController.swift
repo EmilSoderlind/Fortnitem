@@ -22,6 +22,8 @@ class TodaysTableViewController: UITableViewController{
         
         startedDate = Date()
         
+        print("DateStr: \(dateHandler.getShopDate())")
+        
         let ap: FNBRApiHandler = FNBRApiHandler()
         ap.parseCurrentItems(vc: self)
         
@@ -58,7 +60,7 @@ class TodaysTableViewController: UITableViewController{
         parseDone = true
         
         self.tableView.reloadData() // UNCOMMENT TO MAKE TABLE APPEAR FASTER
-        
+        print("TIME | Time to doneParsing: \(-startedDate.timeIntervalSinceNow)")
         
         // CHECK FOR FAVORITES IN PARSE (BACKGROUND THREAD)
         print("Checking for favorites in CD")
@@ -69,9 +71,7 @@ class TodaysTableViewController: UITableViewController{
     
     func doneUpdateFavorites(){
         self.tableView.reloadData()
-        print("--")
-        print("TimeSinceBoot: \(-startedDate.timeIntervalSinceNow)")
-        print("--")
+        print("TIME | Time to doneUpdateFavorites: \(-startedDate.timeIntervalSinceNow)")
         print("Checking for favorites in CD - DONE")
     }
 
@@ -101,7 +101,7 @@ class TodaysTableViewController: UITableViewController{
         let result = formatter.string(from: date)
         
         if(section == 0){
-            return "v\(Bundle.main.releaseVersionNumber!) | \(dateHandler.newItemsCountdown())"
+            return "\(dateHandler.getShopDate()) | \(dateHandler.newItemsCountdown())"
         }else if(section == 1 && parseDone){
             return "Featured"
         }else if(section == 2 && parseDone){

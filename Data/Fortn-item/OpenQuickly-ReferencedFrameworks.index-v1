@@ -27,12 +27,12 @@
 	<string>Dispatch</string>
 	<string>WatchKit</string>
 	<string>Foundation</string>
+	<string>mach</string>
 	<string>QuartzCore</string>
 	<string>Fabric</string>
-	<string>FirebaseCrash</string>
 	<string>FirebaseAppIndexing</string>
 	<string>Alamofire</string>
-	<string>mach</string>
+	<string>FirebaseCrash</string>
 	<string>AppKit</string>
 	<string>FirebaseInvites</string>
 	<string>FirebaseStorage</string>
