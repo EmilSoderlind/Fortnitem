@@ -45,7 +45,7 @@
                                 <rect key="frame" x="0.0" y="55.5" width="320" height="320"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="okC-V4-oag" id="m3b-4H-0fi">
-                                    <rect key="frame" x="0.0" y="0.0" width="320" height="319.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="319"/>
                                     <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                     <subviews>
                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0vL-zh-kKc" customClass="GradientView" customModule="Fortn_item">
@@ -207,7 +207,7 @@
                                 <rect key="frame" x="0.0" y="55.5" width="320" height="320"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="S1g-gR-dg2" id="Yen-Cr-Ge1">
-                                    <rect key="frame" x="0.0" y="0.0" width="320" height="319.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="319"/>
                                     <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                     <subviews>
                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ufX-Bd-2oA" customClass="GradientView" customModule="Fortn_item">
@@ -346,7 +346,7 @@
                                 <rect key="frame" x="0.0" y="375.5" width="320" height="69"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="lWp-vF-aTs" id="mqY-eK-ybA">
-                                    <rect key="frame" x="0.0" y="0.0" width="320" height="68.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="68"/>
                                     <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                     <subviews>
                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qxd-vj-Ef8">
@@ -390,14 +390,12 @@
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="Yy6-G7-aXV">
                                 <rect key="frame" x="16" y="20" width="288" height="499"/>
                                 <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo.png" translatesAutoresizingMaskIntoConstraints="NO" id="gc9-4x-p6D">
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo_iconround.png" translatesAutoresizingMaskIntoConstraints="NO" id="gc9-4x-p6D">
                                         <rect key="frame" x="0.0" y="0.0" width="288" height="247"/>
                                     </imageView>
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="m6X-rq-3Rp">
                                         <rect key="frame" x="0.0" y="252" width="288" height="247"/>
-                                        <string key="text">ITEM SHOP
-
-Keep up with the daily Fortnite Item Shop, quick and easy. Never miss the pickaxe of your dreams again!
+                                        <mutableString key="text">Keep up with the daily Fortnite Item Shop, quick and easy. Never miss the pickaxe of your dreams again!
 
 Thank you for downloading the ITEM SHOP app. If you got any ideas or feedback, don’t hesitate contacting me!
 
@@ -445,7 +443,7 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.
 
 
-</string>
+</mutableString>
                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         <fontDescription key="fontDescription" name="BurbankBigCondensed-Bold" family="Burbank Big Condensed" pointSize="24"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -523,7 +521,7 @@ THE SOFTWARE.
         <image name="Favorite_off.png" width="981" height="884"/>
         <image name="Favorite_on.png" width="1600" height="1600"/>
         <image name="icon_vbucks.png" width="512" height="512"/>
-        <image name="logo.png" width="1024" height="1024"/>
+        <image name="logo_iconround.png" width="1024" height="1024"/>
         <image name="png.png" width="1100" height="1100"/>
     </resources>
 </document>
