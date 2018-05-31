@@ -395,55 +395,11 @@
                                     </imageView>
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="m6X-rq-3Rp">
                                         <rect key="frame" x="0.0" y="252" width="288" height="247"/>
-                                        <mutableString key="text">Keep up with the daily Fortnite Item Shop, quick and easy. Never miss the pickaxe of your dreams again!
+                                        <string key="text">Keep up with the daily Fortnite Item Shop, quick and easy. Never miss the pickaxe of your dreams again!
 
-Thank you for downloading the ITEM SHOP app. If you got any ideas or feedback, don’t hesitate contacting me!
+Thank you for downloading the ITEM SHOP app. If you got any ideas or feedback, don’t hesitate contacting us!
 
-Thanks to fnbr.co for providing a magnificent API.
-
-Licenses below:
-Copyright (c) 2016 NVActivityIndicatorView Vinh Nguyen @ninjaprox  (https://github.com/ninjaprox/NVActivityIndicatorView)
-
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
-
-The above copyright notice and this permission notice shall be included in
-all copies or substantial portions of the Software.
-
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
-THE SOFTWARE.
-
-Copyright (c) 2014-2018 Alamofire Software Foundation (http://alamofire.org/)
-
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
-
-The above copyright notice and this permission notice shall be included in
-all copies or substantial portions of the Software.
-
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
-THE SOFTWARE.
-
-
-</mutableString>
+Thanks to fnbr.co for providing a magnificent API.</string>
                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         <fontDescription key="fontDescription" name="BurbankBigCondensed-Bold" family="Burbank Big Condensed" pointSize="24"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -462,6 +418,7 @@ THE SOFTWARE.
                     </view>
                     <tabBarItem key="tabBarItem" systemItem="more" id="O8r-nN-Pla"/>
                     <connections>
+                        <outlet property="descrText" destination="m6X-rq-3Rp" id="pQS-Fr-Oyr"/>
                         <outlet property="headerImg" destination="gc9-4x-p6D" id="qMh-AJ-1jn"/>
                     </connections>
                 </viewController>

@@ -226,7 +226,7 @@ SWIFT_CLASS_NAMED("FavoriteItem")
 @class NSCoder;
 
 SWIFT_CLASS("_TtC10Fortn_item27FavoriteTableViewController")
-@interface FavoriteTableViewController : UITableViewController
+@interface FavoriteTableViewController : UITableViewController <UITabBarControllerDelegate>
 - (void)viewDidLoad;
 - (void)viewWillAppear:(BOOL)animated;
 - (void)didReceiveMemoryWarning;
@@ -278,11 +278,14 @@ SWIFT_CLASS("_TtC10Fortn_item17ItemTableViewCell")
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
 
+@class UITextView;
 
 SWIFT_CLASS("_TtC10Fortn_item18MoreViewController")
 @interface MoreViewController : UIViewController
+@property (nonatomic, weak) IBOutlet UITextView * _Null_unspecified descrText;
 @property (nonatomic, weak) IBOutlet UIImageView * _Null_unspecified headerImg;
 - (void)viewDidLoad;
+- (void)viewDidAppear:(BOOL)animated;
 - (void)didReceiveMemoryWarning;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
@@ -290,7 +293,7 @@ SWIFT_CLASS("_TtC10Fortn_item18MoreViewController")
 
 
 SWIFT_CLASS("_TtC10Fortn_item25TodaysTableViewController")
-@interface TodaysTableViewController : UITableViewController
+@interface TodaysTableViewController : UITableViewController <UITabBarControllerDelegate>
 - (void)viewDidLoad;
 - (void)viewWillAppear:(BOOL)animated;
 - (void)viewDidAppear:(BOOL)animated;

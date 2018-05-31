@@ -9,7 +9,7 @@
 import UIKit
 import CoreData
 
-class FavoriteTableViewController: UITableViewController {
+class FavoriteTableViewController: UITableViewController, UITabBarControllerDelegate {
 
     var favoriteItems: [itemModelItem] = []
     
@@ -17,6 +17,8 @@ class FavoriteTableViewController: UITableViewController {
         super.viewDidLoad()
         print("FavoriteTableViewController.viewDidLoad")
 
+        tabBarController?.delegate = self
+        
         refreshTable()
         
         tableView.rowHeight = UITableViewAutomaticDimension

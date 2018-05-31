@@ -31,6 +31,9 @@
 		2093523820AEB7B8006AC361 /* imageExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2093523720AEB7B8006AC361 /* imageExt.swift */; };
 		20ABCEA220C000D00051B2B9 /* logo_onlyText.png in Resources */ = {isa = PBXBuildFile; fileRef = 20ABCEA020C000C90051B2B9 /* logo_onlyText.png */; };
 		20ABCEA320C000D00051B2B9 /* logo_iconround.png in Resources */ = {isa = PBXBuildFile; fileRef = 20ABCEA120C000D00051B2B9 /* logo_iconround.png */; };
+		20ABCEA520C016D20051B2B9 /* TabBar_Favorites.png in Resources */ = {isa = PBXBuildFile; fileRef = 20ABCEA420C016D20051B2B9 /* TabBar_Favorites.png */; };
+		20ABCEAB20C017FB0051B2B9 /* TabBar_More.png in Resources */ = {isa = PBXBuildFile; fileRef = 20ABCEA920C017F60051B2B9 /* TabBar_More.png */; };
+		20ABCEAC20C017FB0051B2B9 /* TabBar_MostRecent.png in Resources */ = {isa = PBXBuildFile; fileRef = 20ABCEAA20C017FB0051B2B9 /* TabBar_MostRecent.png */; };
 		20C2A7B720BDE836001FE18B /* imageOnDiskHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20C2A7B620BDE836001FE18B /* imageOnDiskHandler.swift */; };
 		20C2A7B920BDEAC5001FE18B /* MoreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20C2A7B820BDEAC5001FE18B /* MoreViewController.swift */; };
 		20D0388420B813FB000BD2D6 /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 20D0388320B813FB000BD2D6 /* logo.png */; };
@@ -68,6 +71,9 @@
 		2093523720AEB7B8006AC361 /* imageExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = imageExt.swift; sourceTree = "<group>"; };
 		20ABCEA020C000C90051B2B9 /* logo_onlyText.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo_onlyText.png; sourceTree = "<group>"; };
 		20ABCEA120C000D00051B2B9 /* logo_iconround.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo_iconround.png; sourceTree = "<group>"; };
+		20ABCEA420C016D20051B2B9 /* TabBar_Favorites.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TabBar_Favorites.png; sourceTree = "<group>"; };
+		20ABCEA920C017F60051B2B9 /* TabBar_More.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TabBar_More.png; sourceTree = "<group>"; };
+		20ABCEAA20C017FB0051B2B9 /* TabBar_MostRecent.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TabBar_MostRecent.png; sourceTree = "<group>"; };
 		20C2A7B620BDE836001FE18B /* imageOnDiskHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = imageOnDiskHandler.swift; sourceTree = "<group>"; };
 		20C2A7B820BDEAC5001FE18B /* MoreViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoreViewController.swift; sourceTree = "<group>"; };
 		20D0388320B813FB000BD2D6 /* logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = logo.png; path = ../font/logo.png; sourceTree = "<group>"; };
@@ -94,6 +100,9 @@
 		2021872C20B8137800D80D2E /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				20ABCEA920C017F60051B2B9 /* TabBar_More.png */,
+				20ABCEAA20C017FB0051B2B9 /* TabBar_MostRecent.png */,
+				20ABCEA420C016D20051B2B9 /* TabBar_Favorites.png */,
 				20555D4D20BBE6F7009C2EE8 /* icon_vbucks.png */,
 				204B131220B1B93D008AC4BE /* png.png */,
 				20D0388320B813FB000BD2D6 /* logo.png */,
@@ -251,13 +260,16 @@
 				20555D4E20BBE6F7009C2EE8 /* icon_vbucks.png in Resources */,
 				204B131620B1BF95008AC4BE /* BurbankBigCondensed-Bold.otf in Resources */,
 				2019768620B75C0D00C6D2F7 /* GoogleService-Info.plist in Resources */,
+				20ABCEAB20C017FB0051B2B9 /* TabBar_More.png in Resources */,
 				20D0388420B813FB000BD2D6 /* logo.png in Resources */,
 				20D0388620B81431000BD2D6 /* Favorite_off.png in Resources */,
+				20ABCEAC20C017FB0051B2B9 /* TabBar_MostRecent.png in Resources */,
 				204B131320B1B93E008AC4BE /* png.png in Resources */,
 				202E6C4D20AA1B4C00FFC784 /* LaunchScreen.storyboard in Resources */,
 				202E6C4A20AA1B4C00FFC784 /* Assets.xcassets in Resources */,
 				20ABCEA320C000D00051B2B9 /* logo_iconround.png in Resources */,
 				2078755C20BD7F73007ED442 /* Favorite_on.png in Resources */,
+				20ABCEA520C016D20051B2B9 /* TabBar_Favorites.png in Resources */,
 				202E7F9120AF4BD100B8D0FD /* gallery.jpg in Resources */,
 				202E6C4520AA1B4500FFC784 /* Main.storyboard in Resources */,
 			);
@@ -425,7 +437,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -479,7 +491,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
@@ -504,7 +516,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.sone.Fortn-item";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -524,7 +536,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.sone.Fortn-item";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

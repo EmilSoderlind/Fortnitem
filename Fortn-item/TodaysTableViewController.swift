@@ -9,7 +9,7 @@
 import UIKit
 import CoreData
 
-class TodaysTableViewController: UITableViewController{
+class TodaysTableViewController: UITableViewController, UITabBarControllerDelegate{
     
     var iml: ItemModelList = ItemModelList(date: Date(), featured: [], daily: [])
     var parseDone:Bool = false
@@ -21,6 +21,8 @@ class TodaysTableViewController: UITableViewController{
         print("TodaysTableViewController ViewDidLoad")
         
         startedDate = Date()
+        
+        tabBarController?.delegate = self
         
         print("DateStr: \(dateHandler.getShopDate())")
         
@@ -41,14 +43,19 @@ class TodaysTableViewController: UITableViewController{
     
     
     override func viewWillAppear(_ animated: Bool) {
-        CDhandler.updateItemListWithFavorite(vc: self)
+        if(parseDone){
+            CDhandler.updateItemListWithFavorite(vc: self)
+        }
+        loop() // Update countdown
     }
     
     override func viewDidAppear(_ animated: Bool) {
         startTimer()
+        loop() // Update countdown
     }
     
     override func viewWillDisappear(_ animated: Bool) {
+        CDhandler.updateItemListWithFavorite(vc: self)
         stopTimer()
     }
     
@@ -284,6 +291,9 @@ class TodaysTableViewController: UITableViewController{
         
         // UPDATE ITEM ( WITH FAVORITE ICON )
         tableView.reloadRows(at: [indexPath], with: .automatic)
+        
+        CDhandler.updateItemListWithFavorite(vc:self)
+        
     }
     
     // Override to support conditional rearranging of the table view.

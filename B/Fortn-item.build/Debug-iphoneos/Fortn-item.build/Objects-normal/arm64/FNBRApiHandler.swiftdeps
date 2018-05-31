@@ -500,6 +500,9 @@ depends-member:
 - !private ["So16UIStateRestoringP", "doneParsing"]
 - !private ["So16UIStateRestoringP", "presentErrorMessage"]
 - !private ["So16UIStateRestoringP", "tableView"]
+- !private ["So26UITabBarControllerDelegateP", "doneParsing"]
+- !private ["So26UITabBarControllerDelegateP", "presentErrorMessage"]
+- !private ["So26UITabBarControllerDelegateP", "tableView"]
 - !private ["So11UITableViewC", "reloadData"]
 - !private ["So21UITableViewControllerC", "doneParsing"]
 - !private ["So21UITableViewControllerC", "presentErrorMessage"]
@@ -687,6 +690,7 @@ depends-nominal:
 - !private "So20UIScrollViewDelegateP"
 - !private "So35UISpringLoadedInteractionSupportingP"
 - !private "So16UIStateRestoringP"
+- !private "So26UITabBarControllerDelegateP"
 - !private "So11UITableViewC"
 - !private "So21UITableViewControllerC"
 - !private "So21UITableViewDataSourceP"

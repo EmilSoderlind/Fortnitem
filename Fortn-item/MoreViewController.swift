@@ -11,11 +11,17 @@ import Crashlytics
 
 class MoreViewController: UIViewController {
 
+    @IBOutlet weak var descrText: UITextView!
     @IBOutlet weak var headerImg: UIImageView!
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        // Do any additional setup after loading the view.
+        descrText.isScrollEnabled = false
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+
+            descrText.isScrollEnabled = true
     }
 
     override func didReceiveMemoryWarning() {
