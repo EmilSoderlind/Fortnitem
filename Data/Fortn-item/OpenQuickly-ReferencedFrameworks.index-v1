@@ -25,14 +25,14 @@
 	<string>FirebaseRemoteConfig</string>
 	<string>Crashlytics</string>
 	<string>Dispatch</string>
-	<string>WatchKit</string>
+	<string>FirebaseCrash</string>
 	<string>Foundation</string>
-	<string>mach</string>
 	<string>QuartzCore</string>
 	<string>Fabric</string>
+	<string>WatchKit</string>
 	<string>FirebaseAppIndexing</string>
 	<string>Alamofire</string>
-	<string>FirebaseCrash</string>
+	<string>mach</string>
 	<string>AppKit</string>
 	<string>FirebaseInvites</string>
 	<string>FirebaseStorage</string>

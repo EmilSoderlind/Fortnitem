@@ -37,10 +37,8 @@ class TodaysTableViewController: UITableViewController, UITabBarControllerDelega
         
         self.tableView.delaysContentTouches = true
         
-        
         print("TodaysTableViewController ViewDidLoad - DONE")
     }
-    
     
     override func viewWillAppear(_ animated: Bool) {
         if(parseDone){

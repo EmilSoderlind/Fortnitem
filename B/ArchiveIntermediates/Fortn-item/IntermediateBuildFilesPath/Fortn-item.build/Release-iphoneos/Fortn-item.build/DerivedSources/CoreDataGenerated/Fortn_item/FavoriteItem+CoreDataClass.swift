@@ -2,7 +2,7 @@
 //  FavoriteItem+CoreDataClass.swift
 //  
 //
-//  Created by Emil Söderlind on 2018-05-29.
+//  Created by Emil Söderlind on 2018-05-31.
 //
 //  This file was automatically generated and should not be edited.
 //
